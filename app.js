@@ -117,9 +117,10 @@
     });
   }
 
-  // 5. Scroll Reveal Observer
+  // 5. Bulletproof Scroll Reveal Observer
   const revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-anim');
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -129,9 +130,18 @@
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.01, rootMargin: '0px 0px -20px 0px' }
     );
     revealEls.forEach((el) => io.observe(el));
+    // Safety fallback: ensure any element above or near fold becomes visible on scroll
+    window.addEventListener('scroll', () => {
+      const vh = window.innerHeight;
+      revealEls.forEach((el) => {
+        if (!el.classList.contains('visible') && el.getBoundingClientRect().top < vh + 40) {
+          el.classList.add('visible');
+        }
+      });
+    }, { passive: true });
   } else {
     revealEls.forEach((el) => el.classList.add('visible'));
   }
