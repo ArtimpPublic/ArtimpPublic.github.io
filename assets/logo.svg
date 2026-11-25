@@ -1,0 +1,44 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="artimpBg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a0f1d"/>
+      <stop offset="1" stop-color="#05152b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00f2ff"/>
+      <stop offset="1" stop-color="#0088ff"/>
+    </linearGradient>
+    <linearGradient id="magentaGrad" x1="48" y1="0" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff007f"/>
+      <stop offset="1" stop-color="#aa00ff"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="48" x2="48" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd700"/>
+      <stop offset="1" stop-color="#ff8800"/>
+    </linearGradient>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Badge con borde cian y fondo azul noche -->
+  <rect width="48" height="48" rx="10" fill="url(#artimpBg)" stroke="#00f2ff" stroke-width="1.6"/>
+
+  <!-- Capas de Impresión Gráfica (CMYK Layers) -->
+  <!-- Capa 1: Rombo / Hoja Amarilla posterior -->
+  <path d="M24 10L36 22L24 34L12 22Z" fill="url(#goldGrad)" fill-opacity="0.25"/>
+
+  <!-- Capa 2: Rombo / Hoja Magenta intermedia -->
+  <path d="M24 13L34 23L24 33L14 23Z" fill="url(#magentaGrad)" fill-opacity="0.35"/>
+
+  <!-- Isotipo: Letra 'A' Geométrica estilizada de Artimp -->
+  <!-- Trazo izquierdo (Cian degradado) -->
+  <path d="M24 9L13 36H19L24 23L29 36H35L24 9Z" fill="url(#cyanGrad)" filter="url(#cyanGlow)"/>
+
+  <!-- Barra horizontal (Acento de impresión dorado) -->
+  <path d="M18.5 27H29.5L28 23H20L18.5 27Z" fill="#ffd700"/>
+
+  <!-- Punto de luz / Prisma de impresión en el vértice -->
+  <circle cx="24" cy="9" r="2.2" fill="#ffffff" filter="url(#cyanGlow)"/>
+</svg>
