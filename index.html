@@ -1010,47 +1010,44 @@
             </div>
           </div>
 
-          <!-- Visual Product Gallery (2x2 Grid on Mobile, 4 Columns on Desktop!) -->
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 pt-2">
-            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
-              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
-                <img src="assets/hablador-qr.jpg" alt="Hablador QR en acrílico negro mate y dorado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <!-- Vitrina Híbrida de Trabajos Reales (8 Destacados desde catalogo-data.js) -->
+          <div class="space-y-4 pt-3">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-1 border-b border-white/10">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse shrink-0"></span>
+                <h3 class="font-headline-sm text-[17px] sm:text-[20px] font-bold text-on-surface">Trabajos Reales ARTIMP · Vitrina Destacada</h3>
               </div>
-              <div class="p-3 sm:p-4">
-                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-tertiary-container uppercase font-bold block">Mostrador QR</span>
-                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Habladores Acrílico</h4>
-              </div>
-            </article>
+              <a href="catalogo.html" class="inline-flex items-center gap-1.5 font-label-md text-[12px] uppercase tracking-wider text-primary font-bold hover:underline">
+                <span>Explorar Catálogo Completo (20 Fotos)</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
 
-            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
-              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
-                <img src="assets/avisos-led.jpg" alt="Aviso comercial en letras volumétricas 3D LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div class="p-3 sm:p-4">
-                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-primary uppercase font-bold block">Fachadas</span>
-                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Letras 3D LED</h4>
-              </div>
-            </article>
+            <div id="featured-showcase-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+              <!-- Poblado dinámicamente desde catalogo-data.js -->
+            </div>
 
-            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
-              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
-                <img src="assets/tarjetas-qr.jpg" alt="Tarjetas de presentación inteligentes con Código QR y brillo UV" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <!-- CTA Editorial al Catálogo Completo -->
+            <div class="rounded-2xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container border border-primary-container/25 p-4 sm:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4 shadow-xl">
+              <div class="space-y-2">
+                <span class="font-label-sm text-[10.5px] uppercase tracking-widest text-primary font-bold block">Portafolio Fotográfico Real · Cali</span>
+                <h4 class="font-headline-sm text-[18px] sm:text-[22px] font-extrabold text-on-surface leading-snug">
+                  ¿Quieres ver más trabajos reales instalados y entregados?
+                </h4>
+                <div class="flex flex-wrap gap-1.5 pt-0.5">
+                  <a href="catalogo.html?cat=avisos" class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-white/10 hover:border-primary-container/50 text-[11px] text-on-surface-variant hover:text-primary transition-colors">Avisos &amp; Fachadas</a>
+                  <a href="catalogo.html?cat=vinilos" class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-white/10 hover:border-secondary-container/50 text-[11px] text-on-surface-variant hover:text-secondary transition-colors">Vinilos &amp; Vitrinas</a>
+                  <a href="catalogo.html?cat=litografia" class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-white/10 hover:border-tertiary-container/50 text-[11px] text-on-surface-variant hover:text-tertiary-container transition-colors">Litografía &amp; Foil</a>
+                  <a href="catalogo.html?cat=senalizacion" class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-white/10 hover:border-primary-container/50 text-[11px] text-on-surface-variant hover:text-primary transition-colors">Acrílico &amp; QR</a>
+                  <a href="catalogo.html?cat=empaques" class="px-2.5 py-1 rounded-lg bg-surface-container-lowest border border-white/10 hover:border-tertiary-container/50 text-[11px] text-on-surface-variant hover:text-tertiary-container transition-colors">Empaques &amp; Marca</a>
+                </div>
               </div>
-              <div class="p-3 sm:p-4">
-                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-secondary uppercase font-bold block">Litografía</span>
-                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Tarjetas QR + UV</h4>
-              </div>
-            </article>
-
-            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
-              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
-                <img src="assets/hero-studio.jpg" alt="Ecosistema visual ARTIMP Físico + Digital" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div class="p-3 sm:p-4">
-                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-primary uppercase font-bold block">Proyecto 360°</span>
-                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Marca + Web + Print</h4>
-              </div>
-            </article>
+              <a href="catalogo.html" class="shrink-0 px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-[12.5px] uppercase tracking-wider font-extrabold hover:brightness-110 transition-all inline-flex items-center justify-center gap-2 shadow-lg shadow-primary-container/25">
+                <span class="material-symbols-outlined text-[19px]">photo_library</span>
+                <span>Explorar Catálogo Completo</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1489,7 +1486,7 @@
             <li><a class="hover:text-primary transition-colors" href="#tres-lineas">3 Líneas de Producción</a></li>
             <li><a class="hover:text-secondary transition-colors" href="#soluciones">Soluciones Híbridas</a></li>
             <li><a class="hover:text-tertiary-container transition-colors" href="demo-menu.html">Demo Menú Digital QR</a></li>
-            <li><a class="hover:text-on-surface transition-colors" href="#catalogo">Catálogo Integral</a></li>
+            <li><a class="hover:text-on-surface transition-colors" href="catalogo.html">Catálogo Real (20 Fotos)</a></li>
             <li><a class="hover:text-primary transition-colors" href="#diseno-web">Diseño de Páginas Web</a></li>
           </ul>
         </div>
@@ -1557,7 +1554,38 @@
   </a>
 
   <!-- Interactive Scripts -->
+  <script src="catalogo-data.js"></script>
   <script>
+    (function renderFeaturedShowcase() {
+      const grid = document.getElementById('featured-showcase-grid');
+      if (!grid || !Array.isArray(window.ARTIMP_CATALOGO)) return;
+      const featured = window.ARTIMP_CATALOGO.filter(item => item.featured).slice(0, 8);
+      const catColor = {
+        avisos: 'text-primary',
+        vinilos: 'text-secondary',
+        litografia: 'text-tertiary-container',
+        senalizacion: 'text-primary',
+        empaques: 'text-tertiary-container'
+      };
+      grid.innerHTML = featured.map(item => `
+        <a href="catalogo.html?item=${encodeURIComponent(item.slug)}" class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 hover:border-primary-container/50 transition-all duration-300 group flex flex-col shadow-lg">
+          <div class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest">
+            <img src="${item.thumb}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-[#060911]/80 backdrop-blur-md border border-white/10 text-[9.5px] font-bold text-tertiary-container inline-flex items-center gap-1">
+              <span class="material-symbols-outlined text-[11px]">verified</span>Real
+            </span>
+          </div>
+          <div class="p-3 sm:p-4 flex-1 flex flex-col justify-between gap-1.5">
+            <div>
+              <span class="font-label-sm text-[9.5px] sm:text-[10px] ${catColor[item.category] || 'text-primary'} uppercase font-bold block">${item.categoryLabel}</span>
+              <h4 class="font-title-md text-[13px] sm:text-[15.5px] text-on-surface font-bold leading-snug group-hover:text-primary transition-colors pt-0.5">${item.title}</h4>
+            </div>
+            <span class="font-body-sm text-[11px] text-on-surface-variant truncate hidden sm:block">${item.technique}</span>
+          </div>
+        </a>
+      `).join('');
+    })();
+
     let demoCart = [];
     let selectedProducts = [];
 
