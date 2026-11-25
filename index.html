@@ -1,27 +1,127 @@
 <!DOCTYPE html>
-<html lang="es-CO">
+<html class="dark scroll-smooth" lang="es-CO">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARTIMP Publicidad Cali | El Arte de la Impresión, Avisos 3D LED, Menús QR y Diseño Web</title>
-  <meta name="description" content="ARTIMP, El Arte de la Impresión en Cali, Valle del Cauca. Avisos 3D LED, litografía, tarjetas con brillo UV, habladores QR, menús digitales con pedidos a WhatsApp, empaques y diseño de páginas web a medida." />
+  <title>ARTIMP · El Arte de la Impresión | Publicidad Física + Digital en Cali</title>
+  <meta name="description" content="ARTIMP · El Arte de la Impresión en Cali, Valle del Cauca. Avisos 3D LED, litografía de lujo, tarjetas con brillo UV, habladores QR Nequi/Google, menús digitales QR sin mensualidades, empaques y diseño de páginas web de alta conversión." />
   <meta name="keywords" content="Artimp, publicidad Cali, imprenta Cali, avisos 3D LED Cali, menús digitales QR Cali, habladores QR Nequi, litografía Cali, tarjetas brillo UV, stickers Cali, diseño web Cali" />
-  <meta name="theme-color" content="#040710" />
+  <meta name="theme-color" content="#0f131d" />
 
   <!-- Open Graph / WhatsApp Preview -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ARTIMP · El Arte de la Impresión | Publicidad Física + Digital en Cali" />
-  <meta property="og:description" content="Avisos 3D LED, Litografía, Empaques, Habladores QR, Menús Digitales y Páginas Web. Tres líneas de producción adaptadas a tu negocio." />
-  <meta property="og:image" content="https://artimppublic.github.io/assets/hero-studio.jpg" />
+  <meta property="og:description" content="Avisos 3D LED, Litografía, Empaques, Habladores QR, Menús Digitales y Páginas Web. Tres líneas de producción a la medida de tu negocio." />
+  <meta property="og:image" content="https://artimppublic.github.io/assets/atelier-artimp.jpg" />
   <meta property="og:url" content="https://artimppublic.github.io/" />
 
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 
-  <!-- LocalBusiness Schema -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#3b494c",
+            "on-secondary-container": "#580031",
+            "error": "#ff5454",
+            "surface-container-high": "#232834",
+            "inverse-primary": "#006875",
+            "on-tertiary": "#322400",
+            "on-primary": "#00363d",
+            "tertiary-fixed": "#ffdf92",
+            "surface-container-low": "#151924",
+            "surface": "#0b0f19",
+            "on-primary-fixed": "#001f24",
+            "primary-fixed-dim": "#00daf3",
+            "surface-tint": "#00daf3",
+            "surface-bright": "#313644",
+            "surface-container": "#181d29",
+            "tertiary": "#ffebc0",
+            "secondary-container": "#ff2e9b",
+            "primary-container": "#00e5ff",
+            "surface-dim": "#0b0f19",
+            "surface-container-lowest": "#060911",
+            "primary": "#9cf0ff",
+            "secondary": "#ff8ac5",
+            "on-surface-variant": "#b5c4c9",
+            "outline": "#849396",
+            "on-surface": "#ecf0fa",
+            "tertiary-container": "#f7c948",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#2e3340",
+            "surface-container-highest": "#2c3140",
+            "background": "#0b0f19",
+            "on-background": "#ecf0fa"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.75rem",
+            "gutter": "2rem",
+            "gutter-mobile": "1.15rem"
+          },
+          fontFamily: {
+            "display": ["Syne", "sans-serif"],
+            "headline-lg": ["Syne", "sans-serif"],
+            "headline-md": ["Syne", "sans-serif"],
+            "headline-sm": ["Syne", "sans-serif"],
+            "label-lg": ["Space Grotesk", "sans-serif"],
+            "label-md": ["Space Grotesk", "sans-serif"],
+            "label-sm": ["Space Grotesk", "sans-serif"],
+            "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          fontSize: {
+            "label-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["38px", { "lineHeight": "45px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "title-md": ["15px", { "lineHeight": "22px", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "19px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html { scroll-padding-top: 88px; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #060911; }
+    ::-webkit-scrollbar-thumb { background: #232834; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00e5ff; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    @keyframes marqueeScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 32s linear infinite;
+    }
+    .animate-marquee:hover { animation-play-state: paused; }
+  </style>
+
+  <!-- LocalBusiness SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,7 +129,7 @@
     "name": "ARTIMP Publicidad — El Arte de la Impresión",
     "url": "https://artimppublic.github.io/",
     "logo": "https://artimppublic.github.io/assets/artimp-logo-circle.png",
-    "image": "https://artimppublic.github.io/assets/hero-studio.jpg",
+    "image": "https://artimppublic.github.io/assets/atelier-artimp.jpg",
     "telephone": "+573167283557",
     "email": "artimp.cali@gmail.com",
     "address": {
@@ -48,786 +148,1565 @@
   }
   </script>
 </head>
-<body>
-  <div class="bg-grid" aria-hidden="true"></div>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="brand" aria-label="ARTIMP Inicio">
-        <div class="brand-mark">
-          <img src="assets/artimp-logo-circle.png" alt="Logotipo Oficial ARTIMP" width="42" height="42" />
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">ARTIMP</span>
-          <span class="brand-sub">El Arte de la Impresión</span>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed overflow-x-hidden">
+
+  <!-- ==========================================
+       HEADER / NAVBAR GLASSMORPHISM (Google Stitch System)
+  ========================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#060911]/85 backdrop-blur-xl border-b border-white/10">
+    <div class="h-20 max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-3">
+      <!-- Official ARTIMP Brand Lockup -->
+      <a class="flex items-center gap-3 group min-w-0" href="#">
+        <img
+          alt="Logotipo Oficial ARTIMP · El Arte de la Impresión"
+          class="h-11 w-11 rounded-full object-cover ring-1 ring-primary-container/40 shadow-[0_0_18px_rgba(0,229,255,0.3)] transition-transform duration-300 group-hover:scale-105 flex-shrink-0"
+          src="assets/artimp-logo-circle.png"
+        />
+        <div class="flex flex-col min-w-0">
+          <span class="font-headline-sm text-[19px] sm:text-headline-sm font-extrabold tracking-tight text-on-surface flex items-center gap-1.5 leading-none">
+            ARTIMP <span class="text-primary text-[10px] font-label-sm font-semibold tracking-widest hidden sm:inline">· ATELIER</span>
+          </span>
+          <span class="font-label-sm text-[9.5px] sm:text-label-sm uppercase tracking-wider bg-gradient-to-r from-primary-container via-secondary to-tertiary-container bg-clip-text text-transparent font-bold truncate pt-0.5">
+            El Arte de la Impresión · Cali
+          </span>
         </div>
       </a>
 
-      <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#lineas">3 Líneas</a>
-        <a href="#soluciones">Soluciones</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#demo-qr">Demo QR</a>
-        <a href="#diseno-web">Diseño Web</a>
-        <a href="#cotizador">Cotizar</a>
+      <!-- Desktop Segmented Pill Nav -->
+      <nav aria-label="Navegación principal" class="hidden xl:flex items-center gap-1 px-1.5 py-1 rounded-xl bg-surface-container-lowest/80 border border-white/10 backdrop-blur-md">
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#tres-lineas">3 Líneas</a>
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#soluciones">Soluciones</a>
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#demo-qr-section">Demo QR</a>
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#catalogo">Catálogo</a>
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#diseno-web">Diseño Web</a>
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#cotizador-section">Cotizador</a>
+        <a class="px-3 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#comunidad">Redes</a>
       </nav>
 
-      <div class="nav-actions">
-        <div class="nav-socials" aria-label="Redes sociales oficiales">
-          <a class="social-icon-btn yt" href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener" aria-label="YouTube ARTIMP" title="YouTube ARTIMP">
+      <!-- Socials + WhatsApp + Mobile Hamburger -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <div class="hidden md:flex items-center gap-1.5 pr-2 border-r border-white/10">
+          <a aria-label="YouTube ARTIMP" title="YouTube @artimppublicidad164" class="w-9 h-9 rounded-lg bg-surface-container-low border border-white/5 flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error/40 hover:bg-surface-container-high transition-all" href="https://www.youtube.com/@artimppublicidad164" rel="noopener noreferrer" target="_blank">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
           </a>
-          <a class="social-icon-btn ig" href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener" aria-label="Instagram ARTIMP" title="Instagram @artimp.cali">
+          <a aria-label="Instagram ARTIMP" title="Instagram @artimp.cali" class="w-9 h-9 rounded-lg bg-surface-container-low border border-white/5 flex items-center justify-center text-on-surface-variant hover:text-secondary hover:border-secondary/40 hover:bg-surface-container-high transition-all" href="https://www.instagram.com/artimp.cali/" rel="noopener noreferrer" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a class="social-icon-btn fb" href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener" aria-label="Facebook ARTIMP" title="Facebook @artimp.cali">
+          <a aria-label="Facebook ARTIMP" title="Facebook @artimp.cali" class="w-9 h-9 rounded-lg bg-surface-container-low border border-white/5 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/40 hover:bg-surface-container-high transition-all" href="https://www.facebook.com/artimp.cali" rel="noopener noreferrer" target="_blank">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
         </div>
 
-        <a class="btn btn-whatsapp btn-sm btn-nav-wa" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Vengo%20de%20su%20p%C3%A1gina%20web%20y%20quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Z"/></svg>
-          <span>WhatsApp</span>
+        <a class="relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-[#0E1526] border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-[#050811] shadow-[0_0_20px_rgba(37,211,102,0.28)] transition-all duration-300 font-label-md text-label-md uppercase tracking-wider" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Vengo%20de%20su%20sitio%20web%20y%20quiero%20cotizar%20un%20proyecto." rel="noopener noreferrer" target="_blank">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#25D366]"></span>
+          </span>
+          <span class="font-bold hidden sm:inline">WhatsApp</span>
+          <span class="font-bold sm:hidden">Chat</span>
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
+        <!-- Mobile Menu Button -->
+        <button aria-label="Abrir menú móvil" aria-expanded="false" id="mobile-menu-btn" onclick="toggleMobileDrawer()" class="xl:hidden w-10 h-10 rounded-xl bg-surface-container-low border border-white/10 flex items-center justify-center text-on-surface hover:border-primary-container transition-all">
+          <span class="material-symbols-outlined text-[22px]" id="mobile-menu-icon">menu</span>
         </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden xl:hidden bg-[#060911]/98 backdrop-blur-2xl border-b border-white/10 px-gutter-mobile py-5 space-y-2">
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#tres-lineas">01 · Tres Líneas de Producción</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#soluciones">02 · Soluciones Híbridas</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#demo-qr-section">03 · Demo Menú Digital QR</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#catalogo">04 · Catálogo Integral</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#diseno-web">05 · Diseño de Páginas Web</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-primary" href="#cotizador-section">06 · Cotizador Inteligente</a>
+      <div class="pt-3 flex items-center gap-3 border-t border-white/10">
+        <a class="flex-1 py-2.5 rounded-xl bg-error/15 text-error text-center font-label-md text-label-md uppercase font-bold" href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener">YouTube</a>
+        <a class="flex-1 py-2.5 rounded-xl bg-secondary/15 text-secondary text-center font-label-md text-label-md uppercase font-bold" href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener">Instagram</a>
+        <a class="flex-1 py-2.5 rounded-xl bg-primary/15 text-primary text-center font-label-md text-label-md uppercase font-bold" href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
   </header>
 
-  <!-- MOBILE DRAWER -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <a class="drawer-link" href="#lineas">3 Líneas de Producción</a>
-    <a class="drawer-link" href="#soluciones">Soluciones Estrella</a>
-    <a class="drawer-link" href="#catalogo">Catálogo Completo</a>
-    <a class="drawer-link" href="#demo-qr">Demo Menú Digital QR</a>
-    <a class="drawer-link" href="#diseno-web">Diseño de Páginas Web</a>
-    <a class="drawer-link" href="#cotizador">Cotizador Personalizado</a>
-    <a class="drawer-link" href="#redes">Nuestras Redes Sociales</a>
+  <main class="w-full pt-20 bg-surface min-h-screen">
+    <div class="flex flex-col w-full text-on-surface">
 
-    <div class="drawer-socials">
-      <a class="social-icon-btn yt" href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></a>
-      <a class="social-icon-btn ig" href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-      <a class="social-icon-btn fb" href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-    </div>
+      <!-- ==========================================
+           HERO ASIMÉTRICO DE AGENCIA PREMIADA
+      ========================================== -->
+      <section class="relative w-full overflow-hidden px-gutter-mobile lg:px-gutter py-12 lg:py-20">
+        <!-- Atmospheric Chromatic Blooms -->
+        <div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container/15 blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 -right-24 w-[30rem] h-[30rem] rounded-full bg-secondary-container/15 blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-1/3 w-80 h-80 rounded-full bg-tertiary-container/10 blur-[130px] pointer-events-none"></div>
 
-    <a class="btn btn-whatsapp btn-block" style="margin-top:10px" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20negocio." target="_blank" rel="noopener">
-      Escribir por WhatsApp · 316 728 3557
-    </a>
-  </div>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="hero-brand-row">
-            <img class="hero-logo-emblem" src="assets/artimp-logo-circle.png" alt="Emblema Oficial ARTIMP · El Arte de la Impresión" width="74" height="74" />
-            <div class="pill">
-              <span class="pill-dot"></span>
-              Cali, Valle del Cauca · Cobertura regional y envíos a toda Colombia
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+          <!-- Left Column (7 Cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="flex flex-wrap items-center gap-3">
+              <img
+                src="assets/artimp-logo-circle.png"
+                alt="Emblema Oficial ARTIMP"
+                class="w-16 h-16 rounded-full shadow-[0_0_28px_rgba(0,229,255,0.35)] ring-1 ring-white/15"
+              />
+              <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-high/85 border border-white/10 backdrop-blur-md shadow-sm">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-80"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+                </span>
+                <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">
+                  Cali, Valle del Cauca · Envíos a Toda Colombia
+                </span>
+              </div>
             </div>
-          </div>
 
-          <h1>
-            El Arte de la Impresión + <span class="gradient-text">Tecnología Digital que Vende</span>
-          </h1>
+            <h1 class="font-headline-lg text-[36px] leading-[1.08] sm:text-[46px] lg:text-[56px] lg:leading-[1.06] font-extrabold tracking-tight">
+              El Arte de la <span class="bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container bg-clip-text text-transparent">Impresión</span> + Tecnología Digital que Vende.
+            </h1>
 
-          <p class="hero-lead">
-            Fabricamos <strong>avisos 3D LED, litografía comercial, tarjetas con brillo UV, habladores y empaques</strong>, integrados con <strong>menús digitales QR, Google Maps y páginas web</strong> a la medida de tu marca y tu presupuesto.
-          </p>
-
-          <div class="hero-ctas">
-            <a class="btn btn-gold" href="#cotizador">Cotizar Mi Proyecto</a>
-            <a class="btn btn-outline" href="demo-menu.html">Probar Demo Menú QR →</a>
-          </div>
-
-          <div class="hero-stats">
-            <div>
-              <div class="stat-val">3 <span>Líneas</span></div>
-              <div class="stat-lbl">Materiales adaptados a cada presupuesto</div>
-            </div>
-            <div>
-              <div class="stat-val">&lt;10<span>min</span></div>
-              <div class="stat-lbl">Asesoría y cotización rápida por WhatsApp</div>
-            </div>
-            <div>
-              <div class="stat-val">360<span>°</span></div>
-              <div class="stat-lbl">Diseño, impresión y mundo digital en un solo lugar</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-frame" id="heroFrame">
-            <img class="hero-photo" src="assets/hero-studio.jpg" alt="Ecosistema ARTIMP Cali — Aviso 3D LED, Tarjetas Brillo UV, Hablador QR y Menú Digital" />
-            <div class="hero-caption">
-              <span class="hero-badge">✦ <strong>ARTIMP</strong> · El Arte de la Impresión</span>
-              <span class="hero-badge">📍 Cali · Valle · Colombia</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MARQUEE -->
-    <div class="marquee-wrap" aria-hidden="true">
-      <div class="marquee-track">
-        <span class="marquee-item">Avisos 3D LED &amp; Fachadas</span>
-        <span class="marquee-item">Menús &amp; Catálogos Digitales QR</span>
-        <span class="marquee-item">Habladores QR Nequi &amp; Google</span>
-        <span class="marquee-item">Tarjetas Brillo UV &amp; Volantes</span>
-        <span class="marquee-item">Stickers, Cajas &amp; Empaques</span>
-        <span class="marquee-item">Páginas Web Profesionales</span>
-        <span class="marquee-item">Vinilos &amp; Microperforado</span>
-        <span class="marquee-item">Avisos 3D LED &amp; Fachadas</span>
-        <span class="marquee-item">Menús &amp; Catálogos Digitales QR</span>
-        <span class="marquee-item">Habladores QR Nequi &amp; Google</span>
-        <span class="marquee-item">Tarjetas Brillo UV &amp; Volantes</span>
-        <span class="marquee-item">Stickers, Cajas &amp; Empaques</span>
-        <span class="marquee-item">Páginas Web Profesionales</span>
-        <span class="marquee-item">Vinilos &amp; Microperforado</span>
-      </div>
-    </div>
-
-    <!-- LAS 3 LÍNEAS DE PRODUCCIÓN (SIN PRECIOS FIJOS RIESGOSOS) -->
-    <section id="lineas">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Materiales y acabados a tu medida</span>
-          <h2>Tres Líneas de Producción para Cada Etapa de tu Negocio</h2>
-          <p>En publicidad cada proyecto es único según medidas, calibres, cantidades y acabados. Elige la línea que mejor se ajuste hoy a tu inversión y te cotizamos al instante.</p>
-        </div>
-
-        <div class="lines-grid">
-          <article class="line-card tier-1 reveal">
-            <span class="line-num">Línea 01 · Arranque Ágil</span>
-            <h3>Línea Impulso Emprendedor</h3>
-            <p>Pensada para optimizar al máximo tu presupuesto sin sacrificar buena imagen. Ideal para aperturas rápidas, promociones y reactivación de ventas.</p>
-            <ul class="feature-list">
-              <li>Volantes comerciales, tarjetas QR laminadas y pendones</li>
-              <li>Habladores QR prácticos para pagos Nequi / Daviplata</li>
-              <li>Menú o catálogo digital ágil conectado a WhatsApp</li>
-              <li>Tiempos de producción rápidos y alta rentabilidad</li>
-            </ul>
-            <a class="btn btn-outline btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20en%20la%20*L%C3%ADnea%20Impulso%20Emprendedor*%20para%20mi%20negocio." target="_blank" rel="noopener">
-              Cotizar Línea Impulso →
-            </a>
-          </article>
-
-          <article class="line-card tier-2 reveal">
-            <span class="line-num">★ Línea 02 · Más Solicitada</span>
-            <h3>Línea Comercial Estándar</h3>
-            <p>El balance perfecto entre presencia de marca, materiales de alta durabilidad y herramientas digitales que convierten clientes todos los días.</p>
-            <ul class="feature-list">
-              <li>Tarjetas mate con reserva de brillo UV y papelería completa</li>
-              <li>Habladores rígidos de mostrador + Menú Digital QR con carrito</li>
-              <li>Vinilos adhesivos, microperforado para vidrieras y cajas de luz</li>
-              <li>Kit Negocio Vivo (Google Maps + WhatsApp Business + Reel)</li>
-            </ul>
-            <a class="btn btn-gold btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20en%20la%20*L%C3%ADnea%20Comercial%20Est%C3%A1ndar*%20para%20mi%20negocio." target="_blank" rel="noopener">
-              Cotizar Línea Comercial →
-            </a>
-          </article>
-
-          <article class="line-card tier-3 reveal">
-            <span class="line-num">Línea 03 · Máximo Prestigio</span>
-            <h3>Línea Premium &amp; Corporativa</h3>
-            <p>Acabados arquitectónicos, sustratos especiales y desarrollo digital de alto impacto para marcas que quieren liderar su categoría.</p>
-            <ul class="feature-list">
-              <li>Avisos volumétricos 3D en acrílico con iluminación LED / Neón</li>
-              <li>Habladores en acrílico negro/dorado, cajas y empaques a medida</li>
-              <li>Diseño de identidad corporativa completa desde cero</li>
-              <li>Páginas web profesionales a medida con SEO local</li>
-            </ul>
-            <a class="btn btn-ghost btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20proyecto%20en%20la%20*L%C3%ADnea%20Premium%20%26%20Corporativa*." target="_blank" rel="noopener">
-              Cotizar Línea Premium →
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOLUCIONES ESTRELLA -->
-    <section id="soluciones">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Soluciones que generan ventas reales</span>
-          <h2>Implementaciones Estrella Físicas + Digitales</h2>
-          <p>Combinamos el impacto tangible en tu local con herramientas inteligentes que llevan clientes directo a tu celular.</p>
-        </div>
-
-        <div class="packages-grid">
-          <article class="card reveal">
-            <span class="card-tag">Mostrador Inteligente</span>
-            <h3>Habladores QR «Paga Fácil + Redes»</h3>
-            <p class="card-desc">Reemplaza los papeles improvisados en caja por un soporte elegante que agiliza pagos y multiplica tus reseñas.</p>
-            <div class="scope-badge">
-              <span class="scope-title">A medida en Acrílico o Rígido Laminado</span>
-              <span class="scope-sub">Cotización según tamaño, material y cantidad</span>
-            </div>
-            <ul class="feature-list">
-              <li>Personalizado con el logotipo y colores de tu negocio</li>
-              <li>QR para Nequi, Daviplata o llave Bre-B</li>
-              <li>QR directo a WhatsApp, Instagram o 5 estrellas en Google</li>
-              <li>Resistente a limpieza diaria en restaurantes y comercios</li>
-            </ul>
-            <a class="btn btn-whatsapp btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20Habladores%20QR%20para%20mi%20mostrador%20o%20mesas." target="_blank" rel="noopener">
-              Cotizar Habladores QR
-            </a>
-          </article>
-
-          <article class="card featured reveal">
-            <span class="card-tag">★ Favorito de Restaurantes y Comercios</span>
-            <h3>Menú / Catálogo Digital QR + Habladores</h3>
-            <p class="card-desc">Olvídate de los PDF lentos donde toca hacer zoom. Tus clientes escanean, eligen y te envían el pedido listo a WhatsApp.</p>
-            <div class="scope-badge">
-              <span class="scope-title">Pago Único · Sin Mensualidades Obligatorias</span>
-              <span class="scope-sub">Se cotiza según número de productos y habladores</span>
-            </div>
-            <ul class="feature-list">
-              <li>Plataforma móvil ultrarrápida con categorías y fotos</li>
-              <li>Carrito interactivo que arma el pedido hacia tu WhatsApp</li>
-              <li>Incluye habladores QR o stickers de mesa listos para usar</li>
-              <li>Ideal para restaurantes, cafés, barberías, spas y tiendas</li>
-            </ul>
-            <a class="btn btn-gold btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20Men%C3%BA%20o%20Cat%C3%A1logo%20Digital%20QR%20para%20mi%20negocio." target="_blank" rel="noopener">
-              Cotizar Mi Menú QR
-            </a>
-          </article>
-
-          <article class="card reveal">
-            <span class="card-tag">100% Virtual · Toda Colombia</span>
-            <h3>Kit «Negocio Vivo» Digital</h3>
-            <p class="card-desc">Haz que te encuentren en Google Maps, vean tu catálogo en WhatsApp y sepan que tu negocio está activo hoy.</p>
-            <div class="scope-badge">
-              <span class="scope-title">Implementación Rápida en 48h</span>
-              <span class="scope-sub">Disponible para Cali y cualquier ciudad del país</span>
-            </div>
-            <ul class="feature-list">
-              <li>Creación u optimización profesional en Google Maps</li>
-              <li>Montaje de Catálogo comercial en WhatsApp Business</li>
-              <li>Tarjeta digital interactiva con enlace y código QR</li>
-              <li>1 Video promocional vertical para Reels y Estados</li>
-            </ul>
-            <a class="btn btn-whatsapp btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Me%20interesa%20cotizar%20el%20Kit%20Negocio%20Vivo%20Digital." target="_blank" rel="noopener">
-              Cotizar Kit Digital
-            </a>
-          </article>
-
-          <article class="card reveal">
-            <span class="card-tag">Apertura &amp; Renovación</span>
-            <h3>Kits de Imprenta &amp; Fachada Comercial</h3>
-            <p class="card-desc">Todo lo que un local físico necesita para captar miradas en su cuadra y entregar publicidad memorable.</p>
-            <div class="scope-badge">
-              <span class="scope-title">Combos Personalizados de Imprenta y Avisos</span>
-              <span class="scope-sub">Adaptados a medidas, sustratos y tiraje requerido</span>
-            </div>
-            <ul class="feature-list">
-              <li>Avisos luminosos 3D LED, bastidores y vinilos de vitrina</li>
-              <li>Volantes full color + Tarjetas con Brillo UV y QR incluido</li>
-              <li>Pendones, Roll-Up, stickers troquelados y papelería</li>
-              <li>Diseño profesional con aprobación previa garantizada</li>
-            </ul>
-            <a class="btn btn-whatsapp btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20combo%20de%20imprenta%20o%20aviso%20para%20mi%20local." target="_blank" rel="noopener">
-              Armar Mi Combo
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- DEMO INTERACTIVA MENÚ QR CON CÓDIGO QR REAL ESCANEABLE -->
-    <section id="demo-qr">
-      <div class="container">
-        <div class="demo-banner reveal">
-          <div>
-            <span class="eyebrow">Demostración real en tiempo real</span>
-            <h2 style="font-family:var(--font-display);font-size:clamp(1.65rem,3.3vw,2.4rem);line-height:1.12;margin-bottom:14px;">
-              Prueba o Escanea Ahora Nuestra Demo de Menú Digital QR
-            </h2>
-            <p style="color:var(--text-muted);margin-bottom:20px;">
-              Comprueba la diferencia frente a un PDF tradicional: toca categorías, suma productos al carrito y mira cómo llega el pedido ordenado directo a WhatsApp en segundos.
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Fusionamos la maestría de la publicidad física de alto impacto (avisos 3D LED, litografía de lujo, habladores, vinilos y empaques) con soluciones digitales interactivas: menús QR dinámicos, Google Maps y páginas web comerciales diseñadas para cerrar ventas en WhatsApp.
             </p>
 
-            <div class="hero-ctas" style="margin-bottom:0">
-              <a class="btn btn-gold" href="demo-menu.html">Abrir Demo Interactiva →</a>
-              <a class="btn btn-ghost" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Prob%C3%A9%20su%20demo%20de%20Men%C3%BA%20QR%20y%20quiero%20cotizar%20uno%20con%20mi%20marca." target="_blank" rel="noopener">
-                Pedir Muestra con Mi Marca
+            <!-- CTA Action Cluster -->
+            <div class="flex flex-wrap items-center gap-3 pt-1">
+              <a class="px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider font-extrabold shadow-lg shadow-primary-container/25 hover:brightness-110 transition-all flex items-center gap-2 group" href="#cotizador-section">
+                <span>Cotizar Mi Proyecto</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+              <a class="px-6 py-3.5 rounded-xl bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-surface-bright transition-all flex items-center gap-2" href="#demo-qr-section">
+                <span class="material-symbols-outlined text-secondary text-[20px]">qr_code_scanner</span>
+                <span>Probar Demo Menú QR</span>
               </a>
             </div>
 
-            <div class="qr-scan-box">
-              <img src="assets/qr-demo-menu.svg" alt="Código QR real para abrir la Demo de Menú Digital ARTIMP" width="78" height="78" />
-              <div>
-                <strong>¿Estás en computador? Escanéalo con tu celular</strong>
-                <span>Apunta la cámara de tu teléfono a este código QR y vive la experiencia real como cliente.</span>
+            <!-- Confidence Micro-Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              <div class="p-3.5 rounded-xl bg-surface-container/80 border border-white/5 backdrop-blur-md">
+                <div class="flex items-center gap-2 text-primary pb-1">
+                  <span class="material-symbols-outlined text-[18px]">layers</span>
+                  <span class="font-label-sm text-label-sm font-bold uppercase">3 Líneas a Medida</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Impulso · Comercial · Premium</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface-container/80 border border-white/5 backdrop-blur-md">
+                <div class="flex items-center gap-2 text-secondary pb-1">
+                  <span class="material-symbols-outlined text-[18px]">bolt</span>
+                  <span class="font-label-sm text-label-sm font-bold uppercase">Atención Directa</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Cotización ágil en WhatsApp</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface-container/80 border border-white/5 backdrop-blur-md">
+                <div class="flex items-center gap-2 text-tertiary-container pb-1">
+                  <span class="material-symbols-outlined text-[18px]">all_inclusive</span>
+                  <span class="font-label-sm text-label-sm font-bold uppercase">360° Físico + Web</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Avisos, imprenta, QR y diseño web</p>
               </div>
             </div>
           </div>
 
-          <div class="phone-mock" aria-label="Vista previa móvil del Menú Digital QR">
-            <div class="phone-screen">
-              <div class="phone-notch"></div>
-              <div class="mini-menu-head">
-                <span class="mini-menu-brand">LA BRASA CALI</span>
-                <span class="mini-menu-badge">● Demo Viva</span>
+          <!-- Right Column: Asymmetric Layered Atelier Showcase (5 Cols) -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-2xl bg-surface-container-high/90 border border-white/10 backdrop-blur-xl p-4 shadow-2xl overflow-hidden">
+              <div class="absolute top-0 right-0 w-44 h-44 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+
+              <div class="flex items-center justify-between pb-3 px-1">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Atelier ARTIMP · En Producción</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-primary font-mono">SPEC: LED / UV / QR</span>
               </div>
-              <div class="mini-item">
-                <div><strong>Burger Doble Cheddar</strong><small style="color:var(--text-muted)">Carne angus + tocineta</small></div>
-                <span>+ Carrito</span>
+
+              <div class="relative w-full h-72 sm:h-80 rounded-xl overflow-hidden bg-surface-container-lowest border border-white/5">
+                <img
+                  class="w-full h-full object-cover"
+                  alt="Taller ARTIMP Cali — Rótulo Acrílico 3D LED, Tarjetas Brillo UV y Hablador Escanea y Paga Nequi/Daviplata"
+                  src="assets/atelier-artimp.jpg"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 p-2.5 rounded-lg bg-surface-container/90 border border-white/10 backdrop-blur-md">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+                    <div>
+                      <div class="font-title-md text-[14px] text-on-surface font-bold leading-none">Rótulo Acrílico 3D + Hablador QR</div>
+                      <div class="font-body-sm text-on-surface-variant text-[11px] leading-tight pt-0.5">Fabricación física + activación digital · Cali</div>
+                    </div>
+                  </div>
+                  <span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-[10px] uppercase flex-shrink-0">Alta Precisión</span>
+                </div>
               </div>
-              <div class="mini-item">
-                <div><strong>Costillas BBQ 400g</strong><small style="color:var(--text-muted)">Con papas criollas</small></div>
-                <span>+ Carrito</span>
+
+              <!-- Quick Action Mini-Card -->
+              <button type="button" onclick="prefillCotizador('Hablador Nequi & Google')" class="w-full mt-3 p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 hover:border-tertiary-container/40 flex items-center justify-between shadow-md transition-all text-left group">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container">
+                    <span class="material-symbols-outlined text-[22px]">qr_code_2</span>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-[10px] text-tertiary-container uppercase tracking-widest font-semibold block">Tecnología en Mostrador</span>
+                    <span class="font-title-md text-title-md text-on-surface font-semibold">Habladores Nequi + Reseñas Google</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary-container group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           ANIMATED INFINITE MARQUEE
+      ========================================== -->
+      <section aria-hidden="true" class="w-full py-4 bg-surface-container-lowest border-y border-white/5 overflow-hidden">
+        <div class="animate-marquee items-center gap-8 whitespace-nowrap">
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Acrílico 3D LED</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Menús Digitales QR</span>
+          <span class="text-outline-variant">/</span>
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary-container font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Habladores Nequi &amp; Google</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Tarjetas Reserva Brillo UV</span>
+          <span class="text-outline-variant">/</span>
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Vinilo Microperforado</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Cajas, Bolsas &amp; Stickers</span>
+          <span class="text-outline-variant">/</span>
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Páginas Web Comerciales</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Pendones &amp; Roll-Ups</span>
+          <span class="text-outline-variant pr-8">/</span>
+
+          <!-- Duplicate for seamless loop -->
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Acrílico 3D LED</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Menús Digitales QR</span>
+          <span class="text-outline-variant">/</span>
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary-container font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Habladores Nequi &amp; Google</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Tarjetas Reserva Brillo UV</span>
+          <span class="text-outline-variant">/</span>
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Vinilo Microperforado</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Cajas, Bolsas &amp; Stickers</span>
+          <span class="text-outline-variant">/</span>
+          <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Páginas Web Comerciales</span>
+          <span class="text-outline-variant">/</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Pendones &amp; Roll-Ups</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           01 // TRES LÍNEAS DE PRODUCCIÓN A MEDIDA
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="tres-lineas">
+        <div class="max-w-[1440px] mx-auto space-y-10">
+          <div class="max-w-3xl space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">01 // ESTRATEGIA DE COSTO-VALOR</span>
+              <span class="h-px w-12 bg-primary/40"></span>
+            </div>
+            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">
+              Elige la Dimensión de tu Marca: Tres Líneas Diseñadas para tu Momento Comercial.
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Sin tarifas genéricas que inflen tu presupuesto ni sorpresas. Cada proyecto se cotiza con precisión según el sustrato, calibre, metraje, cantidad y acabado ideal para tu negocio en Cali y Colombia.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Línea 01 -->
+            <div class="group relative rounded-2xl bg-surface-container/80 border border-white/10 border-t-2 border-t-primary-container hover:bg-surface-container transition-all duration-300 p-6 flex flex-col justify-between shadow-xl">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                    Línea 01 · Impulso
+                  </span>
+                  <span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Emprendedor Ágil</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+                    Arranque veloz, imagen pulcra y máxima optimización de presupuesto para abrir puertas, lanzar promociones o reactivar ventas.
+                  </p>
+                </div>
+                <div class="space-y-2.5 pt-2">
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="font-body-sm text-body-sm">Papelería esencial en propalcote full color (Tarjetas QR y Volantes)</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="font-body-sm text-body-sm">Stickers adhesivos troquelados y etiquetas comerciales resistentes</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="font-body-sm text-body-sm">Pendón banner de apertura, araña publicitaria o hablador laminado</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="font-body-sm text-body-sm">Menú o catálogo digital ágil conectado directo a tu WhatsApp</span>
+                  </div>
+                </div>
+                <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 text-on-surface-variant">
+                  <span class="font-label-sm text-label-sm text-primary uppercase font-bold">Ideal para:</span>
+                  <p class="font-body-sm text-body-sm pt-0.5">Emprendimientos, comidas rápidas, barberías, ferias y negocios en reactivación.</p>
+                </div>
               </div>
-              <div class="mini-item">
-                <div><strong>Picada Caleña x2</strong><small style="color:var(--text-muted)">Para compartir</small></div>
-                <span>+ Carrito</span>
+              <div class="pt-6">
+                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary-fixed transition-all text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold flex items-center justify-center gap-2" onclick="prefillCotizador('Emprendedor Ágil')">
+                  <span>Consultar Línea Impulso</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
               </div>
-              <a class="btn btn-whatsapp btn-sm btn-block" style="margin-top:10px" href="demo-menu.html">
-                Interactuar con la Demo →
-              </a>
+            </div>
+
+            <!-- Línea 02 Featured -->
+            <div class="group relative rounded-2xl bg-surface-container-high/95 border border-tertiary-container/50 border-t-2 border-t-tertiary-container p-6 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(247,201,72,0.28)]">
+              <div class="absolute -top-3.5 left-6 px-3.5 py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-sm text-label-sm font-extrabold uppercase tracking-widest shadow-md">
+                ★ Más Solicitada en Cali
+              </div>
+              <div class="space-y-4 pt-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                    Línea 02 · Comercial
+                  </span>
+                  <span class="material-symbols-outlined text-tertiary-container text-[24px]">storefront</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Comercial Estándar</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+                    El equilibrio dorado entre presencia profesional, materiales de alta durabilidad y herramientas digitales que convierten a diario.
+                  </p>
+                </div>
+                <div class="space-y-2.5 pt-2">
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="font-body-sm text-body-sm">Tarjetas con plastificado mate aterciopelado y reserva de Brillo UV</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="font-body-sm text-body-sm">Cajas de luz, vinilos decorativos y microperforado para vidrieras</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="font-body-sm text-body-sm">Habladores rígidos en acrílico para Nequi, Daviplata y Reseñas Google</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="font-body-sm text-body-sm">Menú / Catálogo Digital QR completo + Ficha Google Maps optimizada</span>
+                  </div>
+                </div>
+                <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 text-on-surface-variant">
+                  <span class="font-label-sm text-label-sm text-tertiary-container uppercase font-bold">Ideal para:</span>
+                  <p class="font-body-sm text-body-sm pt-0.5">Restaurantes, cafés, spas, ópticas, consultorios, tiendas de moda y comercios establecidos.</p>
+                </div>
+              </div>
+              <div class="pt-6">
+                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-tertiary-container text-on-tertiary font-label-md text-label-md uppercase tracking-wider font-extrabold flex items-center justify-center gap-2 hover:brightness-105 transition-all shadow-md" onclick="prefillCotizador('Comercial Estándar')">
+                  <span>Cotizar Línea Comercial</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Línea 03 -->
+            <div class="group relative rounded-2xl bg-surface-container/80 border border-white/10 border-t-2 border-t-secondary-container hover:bg-surface-container transition-all duration-300 p-6 flex flex-col justify-between shadow-xl">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                    Línea 03 · Atelier
+                  </span>
+                  <span class="material-symbols-outlined text-secondary text-[24px]">diamond</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Premium Corporativa</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+                    Ingeniería de materiales nobles, iluminación LED arquitectónica, acabados táctiles de lujo y desarrollo web a la medida.
+                  </p>
+                </div>
+                <div class="space-y-2.5 pt-2">
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="font-body-sm text-body-sm">Avisos volumétricos 3D en acrílico, acero cepillado y luz halo LED</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="font-body-sm text-body-sm">Cajas, bolsas y empaques corporativos personalizados a medida</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="font-body-sm text-body-sm">Sitio web comercial de alto impacto con posicionamiento SEO local</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-on-surface">
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="font-body-sm text-body-sm">Diseño de logotipo, manual de identidad y producción de Reels</span>
+                  </div>
+                </div>
+                <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 text-on-surface-variant">
+                  <span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Ideal para:</span>
+                  <p class="font-body-sm text-body-sm pt-0.5">Gastrobares insignia, clínicas especializadas, constructoras y marcas líderes.</p>
+                </div>
+              </div>
+              <div class="pt-6">
+                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-secondary-container hover:text-on-secondary transition-all text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold flex items-center justify-center gap-2" onclick="prefillCotizador('Premium Corporativa')">
+                  <span>Solicitar Asesoría Premium</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CATÁLOGO COMPLETO DE IMPRESIÓN, AVISOS Y DIGITAL -->
-    <section id="catalogo">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Portafolio integral · Todo en un solo aliado</span>
-          <h2>Catálogo Completo de Productos y Servicios</h2>
-          <p>Trabajamos sobre acrílico, vinilo adhesivo, microperforado, lona, poliestireno, madera y papeles finos, además de producción audiovisual y web.</p>
-        </div>
-
-        <div class="catalog-matrix reveal" style="margin-bottom:42px;">
-          <div class="cat-box">
-            <h3><span>01.</span> Litografía &amp; Papelería</h3>
-            <div class="cat-tags">
-              <span class="cat-pill">Tarjetas Brillo UV / Mate</span>
-              <span class="cat-pill">Tarjetas con QR</span>
-              <span class="cat-pill">Volantes Full Color</span>
-              <span class="cat-pill">Brochures &amp; Plegables</span>
-              <span class="cat-pill">Cartas Menú Plastificadas</span>
-              <span class="cat-pill">Carpetas Corporativas</span>
-              <span class="cat-pill">Factureros &amp; Recibos</span>
-              <span class="cat-pill">Bonos &amp; Agendas</span>
-            </div>
-          </div>
-
-          <div class="cat-box">
-            <h3><span>02.</span> Avisos &amp; Gran Formato</h3>
-            <div class="cat-tags">
-              <span class="cat-pill">Letras 3D Acrílico LED</span>
-              <span class="cat-pill">Avisos Neón Flex</span>
-              <span class="cat-pill">Cajas de Luz &amp; Bastidores</span>
-              <span class="cat-pill">Pendones &amp; Arañas</span>
-              <span class="cat-pill">Roll-Up Publicitario</span>
-              <span class="cat-pill">Vinilo Adhesivo</span>
-              <span class="cat-pill">Vinilo Microperforado</span>
-              <span class="cat-pill">Señalización Comercial</span>
-            </div>
-          </div>
-
-          <div class="cat-box">
-            <h3><span>03.</span> Empaques, Stickers &amp; Marca</h3>
-            <div class="cat-tags">
-              <span class="cat-pill">Stickers Troquelados</span>
-              <span class="cat-pill">Etiquetas para Productos</span>
-              <span class="cat-pill">Diseño de Cajas &amp; Empaques</span>
-              <span class="cat-pill">Bolsas Impresas</span>
-              <span class="cat-pill">Diseño de Logotipos</span>
-              <span class="cat-pill">Manual de Marca</span>
-              <span class="cat-pill">Rediseño Vectorial</span>
-            </div>
-          </div>
-
-          <div class="cat-box">
-            <h3><span>04.</span> Digital, QR &amp; Video</h3>
-            <div class="cat-tags">
-              <span class="cat-pill">Menús Digitales QR</span>
-              <span class="cat-pill">Catálogos Web WhatsApp</span>
-              <span class="cat-pill">Habladores QR de Pago</span>
-              <span class="cat-pill">Páginas Web Modernas</span>
-              <span class="cat-pill">Ficha Google Maps</span>
-              <span class="cat-pill">Reels Comerciales</span>
-              <span class="cat-pill">Video Marketing</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- GALERÍA FILTRABLE -->
-        <div class="filter-bar reveal" role="tablist" aria-label="Filtrar muestras visuales">
-          <button class="filter-btn active" data-filter="all">Todas las Líneas</button>
-          <button class="filter-btn" data-filter="qr">Digital &amp; QR</button>
-          <button class="filter-btn" data-filter="print">Impresión &amp; Avisos</button>
-          <button class="filter-btn" data-filter="web">Web &amp; Marca</button>
-        </div>
-
-        <div class="showcase-grid">
-          <article class="showcase-card reveal" data-category="qr">
-            <div class="showcase-media">
-              <img src="assets/hablador-qr.jpg" alt="Hablador QR en acrílico negro mate y dorado para mostrador" loading="lazy" />
-            </div>
-            <div class="showcase-body">
-              <span class="showcase-cat">Digital &amp; Mostrador</span>
-              <h3>Habladores QR Personalizados</h3>
-              <p>Acabados en acrílico, poliestireno o laminado de alta resistencia para pagos rápidos, redes y reseñas.</p>
-              <a class="btn btn-ghost btn-sm" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20Habladores%20QR%20personalizados." target="_blank" rel="noopener">Cotizar a Medida →</a>
-            </div>
-          </article>
-
-          <article class="showcase-card reveal" data-category="print">
-            <div class="showcase-media">
-              <img src="assets/avisos-led.jpg" alt="Aviso comercial en letras volumétricas 3D con iluminación LED" loading="lazy" />
-            </div>
-            <div class="showcase-body">
-              <span class="showcase-cat">Avisos &amp; Fachadas</span>
-              <h3>Avisos Volumétricos 3D LED</h3>
-              <p>Fabricación e instalación en acrílico, acero, lona traslúcida y estructuras luminosas según las medidas de tu fachada.</p>
-              <a class="btn btn-ghost btn-sm" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20Aviso%20Comercial%20o%20fachada." target="_blank" rel="noopener">Cotizar Aviso →</a>
-            </div>
-          </article>
-
-          <article class="showcase-card reveal" data-category="print">
-            <div class="showcase-media">
-              <img src="assets/tarjetas-qr.jpg" alt="Tarjetas de presentación inteligentes con Código QR y brillo UV" loading="lazy" />
-            </div>
-            <div class="showcase-body">
-              <span class="showcase-cat">Litografía &amp; Acabados UV</span>
-              <h3>Tarjetas Inteligentes QR &amp; Litografía</h3>
-              <p>Reserva de brillo UV, plastificado mate, volantes, stickers, empaques y papelería comercial impecable.</p>
-              <a class="btn btn-ghost btn-sm" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20Tarjetas%20con%20QR%20o%20Litograf%C3%ADa." target="_blank" rel="noopener">Cotizar Impresión →</a>
-            </div>
-          </article>
-
-          <article class="showcase-card reveal" data-category="web">
-            <div class="showcase-media">
-              <img src="assets/hero-studio.jpg" alt="Diseño de Páginas Web, Branding y Soluciones QR ARTIMP" loading="lazy" />
-            </div>
-            <div class="showcase-body">
-              <span class="showcase-cat">Web &amp; Identidad</span>
-              <h3>Páginas Web &amp; Diseño de Marca</h3>
-              <p>Desarrollamos sitios web veloces y de alto impacto visual como este mismo para negocios y profesionales.</p>
-              <a class="btn btn-ghost btn-sm" href="#diseno-web">Ver Opciones Web →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- DISEÑO DE PÁGINAS WEB COMO ESTA -->
-    <section id="diseno-web">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">¿Te impactó nuestra página web?</span>
-          <h2>Diseñamos una Página Web de Este Nivel para Tu Empresa</h2>
-          <p>Sitios ultrarrápidos, modernos, adaptados a celular, sin mensualidades obligatorias de hosting y enfocados 100% en generar clientes por WhatsApp.</p>
-        </div>
-
-        <div class="packages-grid">
-          <article class="card reveal">
-            <span class="card-tag">Modalidad 01 · Ágil</span>
-            <h3>Landing Catálogo o Menú QR</h3>
-            <p class="card-desc">Una página directa y veloz para mostrar tus productos o servicios y recibir pedidos listos en tu celular.</p>
-            <div class="scope-badge">
-              <span class="scope-title">Pago Único · Cero Mensualidad de Hosting</span>
-              <span class="scope-sub">Entrega rápida personalizada con tu marca</span>
-            </div>
-            <ul class="feature-list">
-              <li>Diseño 100% móvil con tus colores y logotipo</li>
-              <li>Catálogo o menú interactivo conectado a WhatsApp</li>
-              <li>Candado de seguridad HTTPS incluido</li>
-              <li>Código QR listo para imprimir en tu negocio</li>
-            </ul>
-            <a class="btn btn-outline btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20una%20Landing%20Cat%C3%A1logo%20o%20Men%C3%BA%20Web." target="_blank" rel="noopener">
-              Cotizar Modalidad 01
-            </a>
-          </article>
-
-          <article class="card featured reveal">
-            <span class="card-tag">★ Modalidad 02 · Como Esta Web</span>
-            <h3>Sitio Web Comercial de Alto Impacto</h3>
-            <p class="card-desc">Presencia digital de agencia con diseño exclusivo, portafolio filtrable, cotizador interactivo y posicionamiento en Google.</p>
-            <div class="scope-badge">
-              <span class="scope-title">Diseño Exclusivo a Medida</span>
-              <span class="scope-sub">Compatible con dominio propio (.com / .com.co)</span>
-            </div>
-            <ul class="feature-list">
-              <li>Arquitectura visual premium en computador y celular</li>
-              <li>Secciones de servicios, galería, preguntas y cotizador</li>
-              <li>SEO local estructurado para aparecer en Google</li>
-              <li>Integración directa con tus redes y WhatsApp Business</li>
-            </ul>
-            <a class="btn btn-gold btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Me%20encant%C3%B3%20su%20p%C3%A1gina%20web%20y%20quiero%20cotizar%20un%20*Sitio%20Web%20Comercial%20de%20Alto%20Impacto*%20para%20mi%20empresa." target="_blank" rel="noopener">
-              Quiero una Web Así
-            </a>
-          </article>
-
-          <article class="card reveal">
-            <span class="card-tag">Modalidad 03 · 360°</span>
-            <h3>Ecosistema Web + Marca + Impresión</h3>
-            <p class="card-desc">Transformación completa para negocios que quieren estrenar imagen digital y material físico coordinado.</p>
-            <div class="scope-badge">
-              <span class="scope-title">Proyecto Integral Llave en Mano</span>
-              <span class="scope-sub">Físico + Digital con una sola dirección creativa</span>
-            </div>
-            <ul class="feature-list">
-              <li>Sitio Web Comercial Pro + Ficha Google Maps</li>
-              <li>Creación o modernización de logotipo profesional</li>
-              <li>Tarjetas con QR, habladores de mostrador o papelería</li>
-              <li>Video Reel comercial de lanzamiento para redes</li>
-            </ul>
-            <a class="btn btn-outline btn-block" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20el%20*Ecosistema%20360%20Web%20%2B%20Marca%20%2B%20Impresi%C3%B3n*." target="_blank" rel="noopener">
-              Cotizar Proyecto 360°
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- COTIZADOR PERSONALIZADO V2 -->
-    <section id="cotizador">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Respuesta rápida y sin compromiso</span>
-          <h2>Arma tu Solicitud de Cotización en 15 Segundos</h2>
-          <p>Elige la línea de acabado, marca lo que necesitas y cuéntanos medidas o cantidades aproximadas para darte un valor exacto.</p>
-        </div>
-
-        <div class="quote-box reveal">
-          <div>
-            <div class="quote-step-lbl">1. ¿Qué línea de acabado buscas?</div>
-            <div class="line-selector">
-              <button type="button" class="line-pill-btn" data-line="Línea Impulso Emprendedor (Económica)">
-                <strong>Línea Impulso</strong>
-                <span>Económica para arrancar rápido</span>
-              </button>
-              <button type="button" class="line-pill-btn active" data-line="Línea Comercial Estándar">
-                <strong>Línea Comercial Estándar</strong>
-                <span>Mejor relación calidad / durabilidad</span>
-              </button>
-              <button type="button" class="line-pill-btn" data-line="Línea Premium & Corporativa">
-                <strong>Línea Premium &amp; Lujo</strong>
-                <span>Acrílico, 3D LED, Brillo UV, Web Pro</span>
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <div class="quote-step-lbl">2. Selecciona uno o varios productos / servicios</div>
-            <div class="quote-options">
-              <button type="button" class="quote-chip selected" data-name="Habladores QR de Mostrador (Pagos / Redes / Google)">
-                <strong>Habladores QR Mostrador</strong>
-                <span>Nequi, Daviplata, Redes, Google</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Menú o Catálogo Digital QR con pedidos a WhatsApp">
-                <strong>Menú / Catálogo Digital QR</strong>
-                <span>Interactivo + pedidos al celular</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Tarjetas de Presentación / Volantes / Litografía">
-                <strong>Tarjetas, Volantes o Papelería</strong>
-                <span>Brillo UV, mate, factureros, cartas</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Stickers Troquelados / Etiquetas / Empaques">
-                <strong>Stickers, Etiquetas o Empaques</strong>
-                <span>Para productos, bolsas y cajas</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Aviso Comercial 3D LED / Pendones / Vinilos">
-                <strong>Avisos 3D LED, Pendones o Vinilos</strong>
-                <span>Fachadas, cajas de luz, microperforado</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Diseño de Página Web Profesional">
-                <strong>Página Web Profesional</strong>
-                <span>Landing o sitio completo como este</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Kit Negocio Vivo (Google Maps + WhatsApp + Video Reel)">
-                <strong>Kit Google Maps + Video Reel</strong>
-                <span>Visibilidad digital inmediata</span>
-              </button>
-              <button type="button" class="quote-chip" data-name="Diseño o Rediseño de Logotipo e Identidad">
-                <strong>Diseño de Logotipo / Marca</strong>
-                <span>Creación o vectorización profesional</span>
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <div class="quote-step-lbl">3. Datos básicos para cotizarte con precisión</div>
-            <div class="quote-form-row">
-              <input type="text" id="bizName" class="input" placeholder="Nombre de tu negocio o marca" />
-              <input type="text" id="bizCity" class="input" placeholder="Ciudad / Barrio (ej. Cali - Sur)" />
-              <input type="text" id="bizSpecs" class="input" placeholder="Medidas o cantidad aprox. (opcional)" />
-            </div>
-          </div>
-
-          <div class="quote-summary">
+      <!-- ==========================================
+           02 // BENTO GRID: IMPLEMENTACIONES ESTRELLA
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl bg-surface-container-lowest/60 border-y border-white/5" id="soluciones">
+        <div class="max-w-[1440px] mx-auto space-y-10">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div class="quote-total-label">Resumen de tu solicitud</div>
-              <div class="quote-total-val" id="quoteSummaryText">1 servicio seleccionado · Línea Comercial Estándar</div>
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">02 // INGENIERÍA APLICADA</span>
+              <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold pt-1">
+                Soluciones Híbridas: Lo Físico Atrae, Lo Digital Convierte.
+              </h2>
             </div>
-            <button type="button" id="sendQuoteBtn" class="btn btn-whatsapp">
-              Solicitar Cotización por WhatsApp →
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+              Implementaciones diseñadas en Cali para agilizar tus cobros en mostrador y convertir visitantes en clientes recurrentes por WhatsApp.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Bento 1 (7 Cols) -->
+            <div class="md:col-span-7 rounded-2xl bg-surface-container/85 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden group">
+              <div class="absolute -right-8 -top-8 w-40 h-40 bg-primary-container/10 rounded-full blur-2xl"></div>
+              <div>
+                <div class="flex items-center justify-between pb-4">
+                  <span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase font-bold">
+                    Mostrador Inteligente
+                  </span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Acrílico o Rígido Laminado</span>
+                </div>
+                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                  Habladores de Mostrador con QR Dual
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant pt-2 max-w-xl">
+                  Reemplaza los papeles pegados con cinta en caja por una pieza elegante con tu marca que une el pago rápido (Nequi, Daviplata, Bre-B) con tu catálogo o enlace de Reseñas 5★ en Google Maps.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6">
+                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[26px]">qr_code_2</span>
+                    <div>
+                      <div class="font-title-md text-title-md font-bold text-on-surface leading-tight">Cobro en 1 Segundo</div>
+                      <div class="font-body-sm text-on-surface-variant text-[12px]">Cero errores digitando números</div>
+                    </div>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-tertiary-container text-[26px]">reviews</span>
+                    <div>
+                      <div class="font-title-md text-title-md font-bold text-on-surface leading-tight">+ Reseñas y Seguidores</div>
+                      <div class="font-body-sm text-on-surface-variant text-[12px]">Impulsa tu reputación en Google</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-white/5 mt-6">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Producción desde 1 unidad</span>
+                <button type="button" class="text-primary font-label-md text-label-md uppercase font-bold flex items-center gap-1 group-hover:gap-2 transition-all" onclick="prefillCotizador('Hablador Nequi & Google')">
+                  <span>Personalizar Hablador</span>
+                  <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Bento 2 (5 Cols) -->
+            <div class="md:col-span-5 rounded-2xl bg-surface-container-high/90 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm uppercase font-bold">
+                    Cero Mensualidades
+                  </span>
+                  <span class="material-symbols-outlined text-secondary text-[24px]">restaurant_menu</span>
+                </div>
+                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                  Menú / Catálogo Digital QR
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Tu carta o catálogo interactivo con categorías, precios claros y carrito que envía el pedido estructurado directo a tu WhatsApp.
+                </p>
+                <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface pt-1">
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                    <span>Pago único de implementación, sin comisiones por venta</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                    <span>Abre al instante sin obligar a descargar aplicaciones</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                    <span>Incluye habladores QR o stickers listos para tus mesas</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="pt-6">
+                <a class="w-full py-3.5 rounded-xl bg-surface-container border border-white/10 text-on-surface hover:bg-surface-bright transition-all font-label-md text-label-md uppercase tracking-wider font-bold text-center block" href="#demo-qr-section">
+                  Probar Demo en Vivo →
+                </a>
+              </div>
+            </div>
+
+            <!-- Bento 3 (5 Cols) -->
+            <div class="md:col-span-5 rounded-2xl bg-surface-container/85 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm uppercase font-bold">
+                    Fachadas &amp; Vitrinas
+                  </span>
+                  <span class="material-symbols-outlined text-tertiary-container text-[24px]">lightbulb</span>
+                </div>
+                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                  Avisos 3D LED &amp; Gran Formato
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Fabricación sobre acrílico, poliestireno, lona y estructuras metálicas con iluminación LED de alta eficiencia preparada para el clima del Valle.
+                </p>
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
+                  <div class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase">Asesoría &amp; Montaje Visual</div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-0.5">Revisas propuesta digital previa sobre tu fachada antes de fabricar.</p>
+                </div>
+              </div>
+              <div class="pt-6">
+                <button type="button" class="text-tertiary-container font-label-md text-label-md uppercase font-bold flex items-center gap-1 hover:gap-2 transition-all" onclick="prefillCotizador('Avisos 3D / Fachada')">
+                  <span>Cotizar Aviso o Vitrina</span>
+                  <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Bento 4 (7 Cols) -->
+            <div class="md:col-span-7 rounded-2xl bg-surface-container-high/90 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden">
+              <div class="absolute -left-12 -bottom-12 w-48 h-48 bg-secondary-container/10 rounded-full blur-2xl"></div>
+              <div>
+                <div class="flex items-center justify-between pb-3">
+                  <span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm uppercase font-bold">
+                    100% Virtual o Híbrido
+                  </span>
+                  <span class="font-label-sm text-label-sm text-primary font-mono">FÍSICO + DIGITAL</span>
+                </div>
+                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                  Kit «Negocio Vivo» 360°
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant pt-2 max-w-xl">
+                  Para negocios que necesitan reactivar su visibilidad rápido: conectamos tu punto físico con Google Maps, catálogo de WhatsApp Business, códigos QR y video promocional.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-5">
+                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
+                    <span class="material-symbols-outlined text-primary text-[22px]">pin_drop</span>
+                    <div class="font-title-md text-title-md font-bold text-on-surface pt-1">Google Maps</div>
+                    <div class="font-body-sm text-on-surface-variant text-[12px]">Ficha optimizada para búsquedas</div>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">store</span>
+                    <div class="font-title-md text-title-md font-bold text-on-surface pt-1">Catálogo WhatsApp</div>
+                    <div class="font-body-sm text-on-surface-variant text-[12px]">Tus productos listos en el chat</div>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
+                    <span class="material-symbols-outlined text-tertiary-container text-[22px]">movie</span>
+                    <div class="font-title-md text-title-md font-bold text-on-surface pt-1">Reel Comercial</div>
+                    <div class="font-body-sm text-on-surface-variant text-[12px]">Video vertical para redes y estados</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 flex flex-wrap items-center justify-between gap-3 border-t border-white/5 mt-6">
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Disponible en Cali y cualquier ciudad de Colombia</span>
+                <button type="button" class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-extrabold hover:brightness-110 transition-all" onclick="prefillCotizador('Híbrida Físico + Web')">
+                  Cotizar Kit 360°
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           DEMO INTERACTIVA: MENÚ DIGITAL QR + QR REAL ESCANEABLE
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="demo-qr-section">
+        <div class="max-w-[1440px] mx-auto rounded-3xl bg-surface-container/75 border border-primary-container/25 p-6 sm:p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+          <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+            <!-- Left Column: Context & Real Scannable QR (6 Cols) -->
+            <div class="lg:col-span-6 space-y-5">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm uppercase font-bold">
+                <span class="material-symbols-outlined text-[16px]">smartphone</span> Experiencia Interactiva Real
+              </div>
+
+              <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold leading-tight">
+                Prueba o Escanea Ahora Nuestra Demo de Menú Digital QR.
+              </h2>
+
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Comprueba en segundos por qué nuestros clientes dejan atrás los PDF lentos: filtra categorías en el teléfono interactivo, suma platos con el botón <strong>+</strong> y mira cómo viaja la orden lista a WhatsApp.
+              </p>
+
+              <div class="space-y-3 pt-1">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">flash_on</span>
+                  </div>
+                  <span class="font-body-md text-body-md text-on-surface">Carga instantánea en cualquier teléfono sin instalar nada</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">shopping_cart_checkout</span>
+                  </div>
+                  <span class="font-body-md text-body-md text-on-surface">Pedido calculado automáticamente directo a tu WhatsApp</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container flex-shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">savings</span>
+                  </div>
+                  <span class="font-body-md text-body-md text-on-surface">Pago único · Cero comisiones ni mensualidades obligatorias</span>
+                </div>
+              </div>
+
+              <!-- Real Scannable QR Box -->
+              <div class="p-4 rounded-2xl bg-surface-container-lowest border border-white/10 flex items-center gap-4 shadow-inner max-w-lg">
+                <img
+                  src="assets/qr-demo-menu.svg"
+                  alt="Código QR real escaneable para abrir la Demo de Menú Digital ARTIMP"
+                  class="w-20 h-20 rounded-xl bg-white p-1.5 flex-shrink-0"
+                />
+                <div class="space-y-1">
+                  <div class="font-label-sm text-label-sm text-primary uppercase font-bold">¿Estás en computador? Escanéalo en vivo</div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Apunta la cámara de tu celular a este código QR real para abrir la demo completa en tu teléfono, o pruébala aquí al lado.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-3 pt-2">
+                <button type="button" class="px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-extrabold tracking-wider hover:brightness-110 transition-all flex items-center gap-2" onclick="prefillCotizador('Menú Digital QR')">
+                  <span>Cotizar Menú QR Para Mi Negocio</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </button>
+                <a class="px-5 py-3.5 rounded-xl bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md uppercase font-bold tracking-wider hover:bg-surface-bright transition-all flex items-center gap-2" href="demo-menu.html">
+                  <span>Abrir Pantalla Completa</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Live Smartphone Simulator (6 Cols) -->
+            <div class="lg:col-span-6 flex justify-center">
+              <div class="w-full max-w-[350px] rounded-[42px] bg-surface-container-lowest border-2 border-white/15 p-3 shadow-2xl relative">
+                <div class="w-full rounded-[32px] bg-surface-container-high overflow-hidden flex flex-col h-[540px] relative border border-white/5">
+                  <div class="h-6 w-full bg-surface-container-highest flex items-center justify-center">
+                    <div class="w-20 h-2.5 rounded-full bg-surface-container-lowest"></div>
+                  </div>
+
+                  <div class="p-3.5 bg-surface-container-highest flex items-center justify-between border-b border-white/5">
+                    <div>
+                      <div class="font-headline-sm text-[16px] leading-tight font-bold text-on-surface">La Brasa Bistro · Cali</div>
+                      <div class="font-label-sm text-[10px] text-primary uppercase">Mesa 04 · Tecnología ARTIMP</div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-[#25D366]/20 text-[#25D366] font-label-sm text-[9px] uppercase font-bold">● Abierto</span>
+                  </div>
+
+                  <div class="flex items-center gap-1.5 px-3 py-2.5 bg-surface-container overflow-x-auto no-scrollbar text-[11px]">
+                    <button type="button" class="menu-tab px-3 py-1 rounded-full bg-primary-container text-on-primary-fixed font-bold font-label-sm" id="tab-todos" onclick="filterDemoMenu('todos')">Todos</button>
+                    <button type="button" class="menu-tab px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm" id="tab-parrilla" onclick="filterDemoMenu('parrilla')">Parrilla</button>
+                    <button type="button" class="menu-tab px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm" id="tab-bebidas" onclick="filterDemoMenu('bebidas')">Bebidas</button>
+                  </div>
+
+                  <div class="flex-1 overflow-y-auto p-3 space-y-2.5 no-scrollbar" id="menu-items-feed">
+                    <div class="menu-card parrilla p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2 shadow-sm">
+                      <div class="flex-1">
+                        <div class="font-title-md text-[13px] font-bold text-on-surface">Corte Punta de Anca 350g</div>
+                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Maduración 21 días, papa rústica y chimichurri</div>
+                        <div class="font-mono text-tertiary-container font-bold text-[12px] pt-1">$38.000</div>
+                      </div>
+                      <button type="button" aria-label="Agregar Punta de Anca" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary hover:brightness-110 flex items-center justify-center transition-all font-bold" onclick="addDemoItem('Punta de Anca 350g', 38000)">
+                        <span class="material-symbols-outlined text-[18px]">add</span>
+                      </button>
+                    </div>
+
+                    <div class="menu-card parrilla p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2 shadow-sm">
+                      <div class="flex-1">
+                        <div class="font-title-md text-[13px] font-bold text-on-surface">Costillas San Luis Glaseadas</div>
+                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Ahumadas al barril + papas criollas</div>
+                        <div class="font-mono text-tertiary-container font-bold text-[12px] pt-1">$34.500</div>
+                      </div>
+                      <button type="button" aria-label="Agregar Costillas San Luis" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary hover:brightness-110 flex items-center justify-center transition-all font-bold" onclick="addDemoItem('Costillas San Luis', 34500)">
+                        <span class="material-symbols-outlined text-[18px]">add</span>
+                      </button>
+                    </div>
+
+                    <div class="menu-card bebidas p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2 shadow-sm">
+                      <div class="flex-1">
+                        <div class="font-title-md text-[13px] font-bold text-on-surface">Lulada Tradicional Valluna</div>
+                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Lulo fresco macerado, leche condensada y hielo</div>
+                        <div class="font-mono text-tertiary-container font-bold text-[12px] pt-1">$12.000</div>
+                      </div>
+                      <button type="button" aria-label="Agregar Lulada Valluna" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary hover:brightness-110 flex items-center justify-center transition-all font-bold" onclick="addDemoItem('Lulada Valluna', 12000)">
+                        <span class="material-symbols-outlined text-[18px]">add</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Bottom Cart Bar inside Phone -->
+                  <div class="p-3 bg-surface-container-lowest border-t border-white/10 shadow-lg flex items-center justify-between" id="demo-cart-bar">
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-primary text-[20px]">shopping_bag</span>
+                      <div>
+                        <span class="font-label-sm text-[9px] text-on-surface-variant uppercase block">Mi Orden (Toca + arriba)</span>
+                        <div class="font-title-md text-[12px] font-bold text-on-surface" id="demo-cart-counter">0 platos seleccionados</div>
+                      </div>
+                    </div>
+                    <button type="button" class="px-3.5 py-2 rounded-lg bg-[#25D366] text-[#050811] font-label-sm text-[11px] uppercase font-extrabold flex items-center gap-1 shadow-sm hover:brightness-105" onclick="sendDemoWhatsApp()">
+                      <span>Pedir</span>
+                      <span class="material-symbols-outlined text-[14px]">send</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           03 // CATÁLOGO INTEGRAL EN 4 PILARES + VITRINA VISUAL
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="catalogo">
+        <div class="max-w-[1440px] mx-auto space-y-10">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">03 // ESPECIFICACIONES INDUSTRIALES</span>
+              <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold pt-1">
+                Catálogo Integral ARTIMP
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Desde micro-tirajes rápidos hasta proyectos completos de fachada, litografía corporativa y plataformas digitales.
+            </p>
+          </div>
+
+          <!-- Interactive Pillar Tabs -->
+          <div class="flex flex-wrap gap-2">
+            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-extrabold transition-all flex items-center gap-2" id="pillar-btn-litografia" onclick="switchPillar('litografia')">
+              <span class="material-symbols-outlined text-[18px]">print</span>
+              <span>01. Litografía &amp; Papelería</span>
+            </button>
+            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center gap-2" id="pillar-btn-avisos" onclick="switchPillar('avisos')">
+              <span class="material-symbols-outlined text-[18px]">wb_incandescent</span>
+              <span>02. Avisos &amp; Gran Formato</span>
+            </button>
+            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center gap-2" id="pillar-btn-empaques" onclick="switchPillar('empaques')">
+              <span class="material-symbols-outlined text-[18px]">inventory_2</span>
+              <span>03. Empaques, Stickers &amp; Marca</span>
+            </button>
+            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center gap-2" id="pillar-btn-digital" onclick="switchPillar('digital')">
+              <span class="material-symbols-outlined text-[18px]">devices</span>
+              <span>04. Digital, QR &amp; Video</span>
             </button>
           </div>
+
+          <!-- Tab Content Panels -->
+          <div>
+            <!-- Pillar 01 -->
+            <div class="pillar-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-litografia">
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">style</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Tarjetas de Presentación &amp; QR</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Propalcote 300g, plastificado mate suave, reserva de Brillo UV sectorizado o brillo total con Código QR integrado.</p>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Acabado Ejecutivo</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">description</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Volantes, Brochures &amp; Cartas</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Volantes full color alta definición, folletos plegables, cartas menú plastificadas de alta resistencia y afiches.</p>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Media Carta · Cuarto · Oficio</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">folder</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Carpetas, Factureros &amp; Bonos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Carpetas corporativas con bolsillo, recibos de caja, factureros, talonarios, agendas, bonos regalo y papelería comercial.</p>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Papelería Institucional</span>
+              </div>
+            </div>
+
+            <!-- Pillar 02 -->
+            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-avisos">
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined">wb_incandescent</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Letras 3D, Neón Flex &amp; Cajas LED</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Avisos volumétricos en acrílico, poliestireno, madera o lámina con retroiluminación LED directa o halo perimetral.</p>
+                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-2">Fabricación e Instalación</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined">window</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Vinilos &amp; Microperforado</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Vinilo microperforado para vidrieras comerciales, vinilo adhesivo laminado, esmerilado para oficinas y señalización.</p>
+                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-2">Alta Durabilidad Exterior</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined">ad_units</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Pendones, Arañas &amp; Roll-Ups</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Banners en lona de alta tenacidad con tubos u ojaletes, porta-pendones tipo araña y estructuras retráctiles Roll-Up.</p>
+                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-2">Puntos de Venta y Eventos</span>
+              </div>
+            </div>
+
+            <!-- Pillar 03 -->
+            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-empaques">
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container"><span class="material-symbols-outlined">loyalty</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Stickers &amp; Etiquetas Troqueladas</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Stickers en vinilo resistente al agua y refrigeración con corte silueteado exacto para envases, frascos y domicilios.</p>
+                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-2">Resistencia al Agua</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container"><span class="material-symbols-outlined">shopping_bag</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Cajas &amp; Bolsas para Productos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Diseño y producción de cajas plegadizas, empaques comerciales y bolsas impresas en kraft o propalcote para boutiques y alimentos.</p>
+                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-2">Empaque con Identidad</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container"><span class="material-symbols-outlined">palette</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Diseño de Marca &amp; Logotipos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Creación de logotipos profesionales desde cero, rediseño vectorial de logos pixelados y línea gráfica comercial.</p>
+                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-2">Entrega en Formatos Editables</span>
+              </div>
+            </div>
+
+            <!-- Pillar 04 -->
+            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-digital">
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">qr_code</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Menús QR &amp; Catálogos Dinámicos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Catálogo web interactivo con envío automático del pedido a WhatsApp y cero cobros de comisión por venta.</p>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Pago Único</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">web</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Páginas Web de Alta Conversión</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Sitios web ultrarrápidos como este mismo, adaptados a celular, con SEO local para Cali y contacto directo.</p>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Hosting Gratuito HTTPS</span>
+              </div>
+              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">smart_display</span></div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Video Marketing &amp; Google Maps</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Reels comerciales verticales de alto impacto para redes sociales y posicionamiento de tu ficha en Google Maps.</p>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Tráfico Local Calificado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Product Gallery (4 Real Showcase Cards) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-4">
+            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
+              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
+                <img src="assets/hablador-qr.jpg" alt="Hablador QR en acrílico negro mate y dorado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="p-4">
+                <span class="font-label-sm text-[10px] text-tertiary-container uppercase font-bold">Mostrador QR</span>
+                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Habladores Acrílico &amp; Oro</h4>
+              </div>
+            </article>
+
+            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
+              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
+                <img src="assets/avisos-led.jpg" alt="Aviso comercial en letras volumétricas 3D LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="p-4">
+                <span class="font-label-sm text-[10px] text-primary uppercase font-bold">Fachadas Comerciales</span>
+                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Letras Volumétricas 3D LED</h4>
+              </div>
+            </article>
+
+            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
+              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
+                <img src="assets/tarjetas-qr.jpg" alt="Tarjetas de presentación inteligentes con Código QR y brillo UV" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="p-4">
+                <span class="font-label-sm text-[10px] text-secondary uppercase font-bold">Litografía de Lujo</span>
+                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Tarjetas QR + Brillo UV</h4>
+              </div>
+            </article>
+
+            <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
+              <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
+                <img src="assets/hero-studio.jpg" alt="Ecosistema visual ARTIMP Físico + Digital" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="p-4">
+                <span class="font-label-sm text-[10px] text-primary uppercase font-bold">Ecosistema 360°</span>
+                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Identidad + Web + Imprenta</h4>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <!-- TRUST & COVERAGE BAND -->
-        <div class="trust-strip reveal">
-          <span>📍 <strong>Cobertura:</strong> Cali, Jamundí, Palmira, Yumbo y envíos nacionales</span>
-          <span>🎨 <strong>Garantía:</strong> Revisas y apruebas el diseño antes de producir</span>
-          <span>💳 <strong>Pagos fáciles:</strong> Nequi, Daviplata, Bre-B y Bancolombia</span>
+      <!-- ==========================================
+           SECCIÓN DE ALTO VALOR: DISEÑO WEB COMERCIAL
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl bg-surface-container-lowest border-y border-white/5" id="diseno-web">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-widest font-mono">
+              CONVERSIÓN DIGITAL SIN FRICCIONES
+            </span>
+            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">
+              Diseñamos una Página Web de Este Mismo Nivel para Tu Empresa.
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Hoy la mayoría de decisiones de compra en Cali inician en Google o desde un enlace en Instagram y WhatsApp. Tener una página web tan impecable como tu aviso físico inspira confianza inmediata y multiplica tus cotizaciones.
+            </p>
+
+            <div class="space-y-3 pt-1">
+              <div class="p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
+                <div class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-[12px] flex-shrink-0 mt-0.5">1</div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">Landing Page &amp; Catálogo Ágil</div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Página única de carga instantánea enfocada en mostrar tu oferta y llevar clientes directo a tu WhatsApp.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
+                <div class="w-7 h-7 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold text-[12px] flex-shrink-0 mt-0.5">2</div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">Sitio Web Comercial de Alto Impacto</div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Arquitectura completa como esta web: catálogo por categorías, cotizador interactivo, FAQ y SEO local en Google.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
+                <div class="w-7 h-7 rounded-full bg-tertiary-container/20 text-tertiary-container flex items-center justify-center font-bold text-[12px] flex-shrink-0 mt-0.5">3</div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">Ecosistema 360° Físico + Web</div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Desarrollamos tu página web y producimos tus tarjetas QR, habladores y avisos bajo una sola dirección creativa.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <button type="button" class="px-6 py-3.5 rounded-xl bg-tertiary-container text-on-tertiary font-label-md text-label-md uppercase font-extrabold tracking-wider hover:brightness-105 transition-all" onclick="prefillCotizador('Página Web Comercial')">
+                Consultar Proyecto Web →
+              </button>
+            </div>
+          </div>
+
+          <!-- Browser Performance Card -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-3xl bg-surface-container border border-white/10 p-6 lg:p-8 shadow-2xl">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container-lowest border border-white/5 space-y-5">
+                <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-error"></span>
+                    <span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#25D366]"></span>
+                  </div>
+                  <span class="font-mono text-label-sm text-label-sm text-on-surface-variant">https://tu-marca-comercial.com</span>
+                </div>
+
+                <div class="grid grid-cols-3 gap-3 text-center py-3">
+                  <div class="p-3.5 rounded-xl bg-surface-container border border-white/5">
+                    <div class="font-headline-sm text-headline-sm font-extrabold text-primary">100%</div>
+                    <div class="font-label-sm text-[10px] text-on-surface-variant uppercase pt-1">Móvil Responsivo</div>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-surface-container border border-white/5">
+                    <div class="font-headline-sm text-headline-sm font-extrabold text-[#25D366]">&lt;1s</div>
+                    <div class="font-label-sm text-[10px] text-on-surface-variant uppercase pt-1">Carga Ultrarrápida</div>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-surface-container border border-white/5">
+                    <div class="font-headline-sm text-headline-sm font-extrabold text-tertiary-container">$0</div>
+                    <div class="font-label-sm text-[10px] text-on-surface-variant uppercase pt-1">Mensualidad Hosting</div>
+                  </div>
+                </div>
+
+                <p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+                  Código limpio de última generación sin plantillas lentas ni cobros ocultos. Compatible con dominio propio (<code>.com</code> / <code>.com.co</code>) y certificado de seguridad HTTPS.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- REDES SOCIALES OFICIALES -->
-    <section id="redes">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Conecta con ARTIMP en todas partes</span>
-          <h2>Síguenos en Nuestras Redes Oficiales</h2>
-          <p>Mira videos de nuestros proyectos, ideas para hacer crecer tu negocio, promociones y nuevos lanzamientos.</p>
+      <!-- ==========================================
+           04 // COTIZADOR INTELIGENTE PERSONALIZADO EN 3 PASOS
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="cotizador-section">
+        <div id="cotizador-card" class="max-w-[1120px] mx-auto rounded-3xl bg-surface-container-high/90 border border-white/10 p-6 sm:p-8 lg:p-12 shadow-2xl relative transition-all duration-500">
+          <div class="text-center max-w-2xl mx-auto space-y-2 pb-8">
+            <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">04 // CONFIGURADOR DIRECTO</span>
+            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">
+              Cotizador Inteligente ARTIMP
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Configura tu requerimiento en 3 pasos rápidos. Recibirás atención directa y cotización ajustada exactamente a tus materiales y cantidades en WhatsApp.
+            </p>
+          </div>
+
+          <div class="space-y-8">
+            <!-- PASO 1 -->
+            <div class="space-y-3">
+              <div class="flex items-center gap-2.5">
+                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px]">1</span>
+                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">Selecciona la Línea de Producción</h3>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                <label class="cursor-pointer">
+                  <input class="peer sr-only" name="cotiz-linea" type="radio" value="Emprendedor Ágil" />
+                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-primary-container peer-checked:text-on-primary-fixed peer-checked:border-primary-container transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-title-md font-bold block">Impulso Ágil</span>
+                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Arranque económico y veloz</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input checked class="peer sr-only" name="cotiz-linea" type="radio" value="Comercial Estándar" />
+                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-tertiary-container peer-checked:text-on-tertiary peer-checked:border-tertiary-container transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-title-md font-bold block">Comercial Estándar</span>
+                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Durabilidad y alto impacto</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="peer sr-only" name="cotiz-linea" type="radio" value="Premium Corporativa" />
+                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-secondary-container peer-checked:text-on-secondary peer-checked:border-secondary-container transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-title-md font-bold block">Premium Atelier</span>
+                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Materiales nobles, 3D y lujo</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="peer sr-only" name="cotiz-linea" type="radio" value="Híbrida Físico + Web" />
+                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-surface-bright peer-checked:text-primary peer-checked:border-primary transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-title-md font-bold block">Híbrida 360°</span>
+                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Impresión + QR + Web</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- PASO 2 -->
+            <div class="space-y-3">
+              <div class="flex items-center gap-2.5">
+                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px]">2</span>
+                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">Selecciona los Productos que Necesitas</h3>
+              </div>
+              <div class="flex flex-wrap gap-2.5" id="chips-container">
+                <button data-prod="Avisos 3D / Fachada" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Avisos 3D / Fachada')" type="button">
+                  + Avisos 3D LED / Fachada
+                </button>
+                <button data-prod="Menú Digital QR" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Menú Digital QR')" type="button">
+                  + Menú / Catálogo Digital QR
+                </button>
+                <button data-prod="Hablador Nequi & Google" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Hablador Nequi & Google')" type="button">
+                  + Hablador Nequi &amp; Google
+                </button>
+                <button data-prod="Tarjetas Brillo UV / QR" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Tarjetas Brillo UV / QR')" type="button">
+                  + Tarjetas Brillo UV / QR
+                </button>
+                <button data-prod="Volantes y Papelería" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Volantes y Papelería')" type="button">
+                  + Volantes &amp; Papelería
+                </button>
+                <button data-prod="Vinilos y Pendones" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Vinilos y Pendones')" type="button">
+                  + Vinilos, Microperforado &amp; Pendones
+                </button>
+                <button data-prod="Stickers, Empaques y Bolsas" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Stickers, Empaques y Bolsas')" type="button">
+                  + Stickers, Cajas &amp; Bolsas
+                </button>
+                <button data-prod="Página Web Comercial" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Página Web Comercial')" type="button">
+                  + Diseño Página Web
+                </button>
+                <button data-prod="Diseño de Logotipo / Marca" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Diseño de Logotipo / Marca')" type="button">
+                  + Diseño de Logotipo
+                </button>
+              </div>
+            </div>
+
+            <!-- PASO 3 -->
+            <div class="space-y-3">
+              <div class="flex items-center gap-2.5">
+                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px]">3</span>
+                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">Tus Datos para Cotizarte con Precisión</h3>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div>
+                  <label for="cotiz-nombre" class="block font-label-sm text-label-sm text-on-surface-variant uppercase pb-1">Nombre o Negocio</label>
+                  <input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary-container" id="cotiz-nombre" placeholder="Ej: Café San Antonio" type="text" />
+                </div>
+                <div>
+                  <label for="cotiz-ciudad" class="block font-label-sm text-label-sm text-on-surface-variant uppercase pb-1">Ciudad / Barrio</label>
+                  <input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary-container" id="cotiz-ciudad" placeholder="Ej: Cali (Sur) / Jamundí" type="text" />
+                </div>
+                <div>
+                  <label for="cotiz-detalles" class="block font-label-sm text-label-sm text-on-surface-variant uppercase pb-1">Medidas o Cantidad Aprox.</label>
+                  <input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary-container" id="cotiz-detalles" placeholder="Ej: Aviso 2x1m o 1.000 tarjetas" type="text" />
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <button type="button" class="w-full py-4 rounded-2xl bg-[#25D366] text-[#050811] hover:brightness-105 transition-all font-headline-sm text-[17px] sm:text-[18px] font-extrabold uppercase tracking-wider flex items-center justify-center gap-3 shadow-xl" onclick="enviarCotizacionWhatsApp()">
+                <span class="material-symbols-outlined text-[24px]">chat</span>
+                <span>Enviar Solicitud a WhatsApp ARTIMP</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Trust & Guarantees Strip -->
+          <div class="mt-8 pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-5 text-on-surface-variant">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary text-[22px]">local_shipping</span>
+              <div>
+                <div class="font-title-md text-title-md font-bold text-on-surface">Cobertura Regional y Nacional</div>
+                <p class="font-body-sm text-body-sm pt-0.5">Sede en Cali con entregas en Jamundí, Palmira, Yumbo y despachos a toda Colombia.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary text-[22px]">brush</span>
+              <div>
+                <div class="font-title-md text-title-md font-bold text-on-surface">Aprobación Visual Previa</div>
+                <p class="font-body-sm text-body-sm pt-0.5">Revisas y apruebas tu propuesta gráfica digital antes de pasar a impresión o montaje.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary-container text-[22px]">account_balance_wallet</span>
+              <div>
+                <div class="font-title-md text-title-md font-bold text-on-surface">Medios de Pago Fáciles</div>
+                <p class="font-body-sm text-body-sm pt-0.5">Nequi, Daviplata, llave Bre-B, transferencia Bancolombia y efectivo (50% inicio / 50% entrega).</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="socials-grid reveal">
-          <a class="social-card yt" href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener">
-            <div class="social-badge">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
-            </div>
-            <div>
-              <strong>YouTube Oficial</strong>
-              <span>@artimppublicidad164 · Videos y muestras</span>
-            </div>
-          </a>
+      <!-- ==========================================
+           HUB DE REDES SOCIALES OFICIALES & COMUNIDAD
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl bg-surface-container-lowest border-t border-white/5" id="comunidad">
+        <div class="max-w-[1440px] mx-auto space-y-8">
+          <div class="text-center max-w-xl mx-auto space-y-1">
+            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">CONOCE NUESTRO TRABAJO EN VIVO</span>
+            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">Comunidad &amp; Redes Oficiales ARTIMP</h2>
+          </div>
 
-          <a class="social-card ig" href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener">
-            <div class="social-badge">
-              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </div>
-            <div>
-              <strong>Instagram</strong>
-              <span>@artimp.cali · Reels y portafolio</span>
-            </div>
-          </a>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- YouTube -->
+            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-error/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://www.youtube.com/@artimppublicidad164" rel="noopener noreferrer" target="_blank">
+              <div class="space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-error/20 text-error flex items-center justify-center">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+                </div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">YouTube Oficial</div>
+                  <div class="font-label-sm text-label-sm text-on-surface-variant">@artimppublicidad164</div>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Videos de acabados reales, muestras de tarjetas QR, avisos luminosos e ideas publicitarias.
+                </p>
+              </div>
+              <div class="pt-4 flex items-center gap-1 text-error font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+                <span>Suscribirse y Ver Videos</span>
+                <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+              </div>
+            </a>
 
-          <a class="social-card fb" href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener">
-            <div class="social-badge">
-              <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </div>
-            <div>
-              <strong>Facebook Fan Page</strong>
-              <span>facebook.com/artimp.cali</span>
-            </div>
-          </a>
+            <!-- Instagram -->
+            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-secondary/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://www.instagram.com/artimp.cali/" rel="noopener noreferrer" target="_blank">
+              <div class="space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center">
+                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">Instagram</div>
+                  <div class="font-label-sm text-label-sm text-on-surface-variant">@artimp.cali</div>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Reels comerciales, portafolio visual, antes y después de marcas e inspiración para tu local.
+                </p>
+              </div>
+              <div class="pt-4 flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+                <span>Seguir @artimp.cali</span>
+                <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+              </div>
+            </a>
 
-          <a class="social-card wa" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Los%20visito%20desde%20su%20sitio%20web%20y%20quiero%20asesor%C3%ADa." target="_blank" rel="noopener">
-            <div class="social-badge">
-              <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Z"/></svg>
-            </div>
-            <div>
-              <strong>WhatsApp Directo</strong>
-              <span>+57 316 728 3557 · Atención inmediata</span>
-            </div>
-          </a>
+            <!-- Facebook -->
+            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-primary/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://www.facebook.com/artimp.cali" rel="noopener noreferrer" target="_blank">
+              <div class="space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
+                  <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">Facebook Fan Page</div>
+                  <div class="font-label-sm text-label-sm text-on-surface-variant">facebook.com/artimp.cali</div>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Promociones para emprendedores en Cali, lanzamientos de combos y atención por mensaje.
+                </p>
+              </div>
+              <div class="pt-4 flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+                <span>Visitar Fan Page</span>
+                <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-[#25D366]/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Los%20visito%20desde%20su%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa." rel="noopener noreferrer" target="_blank">
+              <div class="space-y-3">
+                <div class="w-11 h-11 rounded-xl bg-[#25D366]/20 text-[#25D366] flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[24px]">chat</span>
+                </div>
+                <div>
+                  <div class="font-title-md text-title-md font-bold text-on-surface">WhatsApp Directo</div>
+                  <div class="font-label-sm text-label-sm text-on-surface-variant">+57 316 728 3557</div>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Asesoría directa sin intermediarios de lunes a sábado para cotizar impresión, avisos o web.
+                </p>
+              </div>
+              <div class="pt-4 flex items-center gap-1 text-[#25D366] font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+                <span>Chatear Ahora</span>
+                <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Preguntas frecuentes</span>
-          <h2>Todo Claro Antes de Iniciar</h2>
-        </div>
+      <!-- ==========================================
+           PREGUNTAS FRECUENTES (FAQ)
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl">
+        <div class="max-w-[900px] mx-auto space-y-8">
+          <div class="text-center space-y-2">
+            <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">RESOLVIENDO DUDAS</span>
+            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">Preguntas Frecuentes</h2>
+          </div>
 
-        <div class="faq-list reveal">
-          <details class="faq-item" open>
-            <summary>¿Por qué cotizan a medida en lugar de manejar precios únicos?</summary>
-            <p>En publicidad e impresión el valor depende directamente del material, calibre, tamaño, cantidad y tipo de acabado. Cotizar a tu medida nos permite ofrecerte siempre el precio más justo del día y recomendarte opciones económicas, estándar o premium sin cobrarte de más.</p>
-          </details>
-          <details class="faq-item">
-            <summary>¿Los Menús Digitales QR y Páginas Web tienen cobro mensual obligatorio?</summary>
-            <p>No. Entregamos tu plataforma funcionando con pago único y alojamiento seguro HTTPS incluido. Solo si deseas que nuestro equipo administre cambios periódicos por ti ofrecemos planes opcionales muy accesibles, sin cláusulas de permanencia.</p>
-          </details>
-          <details class="faq-item">
-            <summary>¿Cómo es el proceso de pago, diseño y entrega?</summary>
-            <p>Iniciamos con el 50% de anticipo, diseñamos tu propuesta visual para tu revisión y aprobación, y el 50% restante se cancela al entregar. Hacemos entregas rápidas en Cali y despachos a todo el Valle del Cauca y Colombia.</p>
-          </details>
+          <div class="space-y-3">
+            <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
+              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-1')">
+                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Por qué cotizan a medida en lugar de manejar precios únicos cerrados?</span>
+                <span class="material-symbols-outlined text-primary text-[24px] transition-transform rotate-180" id="icon-faq-1">expand_more</span>
+              </button>
+              <div class="px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-1">
+                En publicidad e impresión el costo depende del material exacto (acrílico, vinilo, propalcote, lona), calibre, medidas, cantidad y tipo de acabado. Cotizar tu requerimiento puntual nos permite darte siempre el valor más justo del día y ofrecerte opciones en Línea Impulso, Comercial o Premium según tu presupuesto.
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
+              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-2')">
+                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Cómo funciona el pago único del Menú Digital QR y las Páginas Web?</span>
+                <span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="icon-faq-2">expand_more</span>
+              </button>
+              <div class="hidden px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-2">
+                A diferencia de plataformas que cobran comisiones por pedido o mensualidades obligatorias altas, en ARTIMP entregamos tu menú digital o sitio web con un único pago de diseño y configuración sobre alojamiento seguro HTTPS gratuito. Tus pedidos llegan sin intermediarios directo a tu WhatsApp.
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
+              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-3')">
+                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Atienden solo en Cali o despachan a otras ciudades?</span>
+                <span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="icon-faq-3">expand_more</span>
+              </button>
+              <div class="hidden px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-3">
+                Nuestra sede operativa está en Santiago de Cali con cobertura rápida en Jamundí, Palmira, Yumbo y todo el Valle del Cauca. Además, realizamos envíos seguros de material impreso y habladores QR a toda Colombia, y nuestros servicios digitales (Menús QR, Diseño Web, Logos, Video) se entregan 100% en línea a cualquier ciudad.
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
+              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-4')">
+                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Qué pasa si todavía no tengo logotipo o diseño listo?</span>
+                <span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="icon-faq-4">expand_more</span>
+              </button>
+              <div class="hidden px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-4">
+                Nosotros te acompañamos desde cero. Diseñamos o vectorizamos tu logotipo y preparamos la propuesta visual completa para que la revises y apruebes antes de producir cualquier pieza física o digital.
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- ==========================================
+           CALL TO ACTION FINAL DE ATELIER
+      ========================================== -->
+      <section class="w-full px-gutter-mobile lg:px-gutter pb-16 pt-4">
+        <div class="max-w-[1440px] mx-auto rounded-3xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container border border-white/10 p-8 lg:p-14 text-center space-y-5 shadow-2xl relative overflow-hidden">
+          <div class="max-w-2xl mx-auto space-y-3">
+            <h2 class="font-headline-lg text-[28px] sm:text-headline-lg font-extrabold">
+              ¿Listo para transformar la presencia física y digital de tu negocio?
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              Escríbenos directamente a nuestro WhatsApp en Cali. Creamos piezas que transmiten categoría, diferencian tu marca y generan ventas reales.
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center items-center gap-4 pt-2">
+            <a class="px-8 py-4 rounded-xl bg-[#25D366] text-[#050811] font-label-md text-label-md uppercase font-extrabold tracking-wider hover:brightness-105 transition-all flex items-center gap-2 shadow-lg" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20proyecto%20para%20mi%20marca." rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[20px]">chat</span>
+              <span>Hablar con ARTIMP (+57 316 728 3557)</span>
+            </a>
+            <a class="px-8 py-4 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-label-md text-label-md uppercase font-bold hover:bg-surface-bright transition-all" href="#cotizador-section">
+              Configurar Cotización
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <img class="footer-logo-full" src="assets/artimp-logo-circle.png" alt="ARTIMP · El Arte de la Impresión" width="118" height="118" loading="lazy" />
-          <p style="font-size:0.88rem;color:var(--text-muted);max-width:310px;">
-            <strong>ARTIMP · El Arte de la Impresión.</strong> Agencia de diseño, imprenta comercial, avisos 3D LED, soluciones QR y páginas web en Cali, Colombia.
+  <!-- ==========================================
+       FOOTER EJECUTIVO COMPLETO
+  ========================================== -->
+  <footer class="w-full bg-surface-container-lowest border-t border-white/10 pb-24 lg:pb-12">
+    <div class="max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10">
+        <div class="lg:col-span-4 space-y-3">
+          <div class="flex items-center gap-3">
+            <img alt="Logotipo Oficial ARTIMP" class="h-14 w-14 rounded-full object-cover ring-1 ring-white/15" src="assets/artimp-logo-circle.png" loading="lazy" />
+            <div>
+              <span class="font-headline-sm text-headline-sm font-extrabold text-on-surface block leading-none">ARTIMP</span>
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-primary">El Arte de la Impresión</span>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed">
+            Agencia y taller de publicidad física + tecnología digital en Santiago de Cali. Litografía, avisos 3D LED, habladores QR, empaques, menús interactivos y páginas web comerciales.
           </p>
+          <div class="flex items-center gap-2 pt-1">
+            <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Atención Lun–Sáb · 8:00 a.m. – 6:30 p.m.</span>
+          </div>
         </div>
 
-        <div>
-          <div class="footer-title">Secciones</div>
-          <ul class="footer-links">
-            <li><a href="#lineas">3 Líneas de Producción</a></li>
-            <li><a href="#soluciones">Soluciones Estrella</a></li>
-            <li><a href="#catalogo">Catálogo Completo</a></li>
-            <li><a href="demo-menu.html">Demo Menú Digital QR</a></li>
-            <li><a href="#diseno-web">Diseño de Páginas Web</a></li>
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Navegación</h4>
+          <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-primary transition-colors" href="#tres-lineas">3 Líneas de Producción</a></li>
+            <li><a class="hover:text-secondary transition-colors" href="#soluciones">Soluciones Híbridas</a></li>
+            <li><a class="hover:text-tertiary-container transition-colors" href="demo-menu.html">Demo Menú Digital QR</a></li>
+            <li><a class="hover:text-on-surface transition-colors" href="#catalogo">Catálogo Integral</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#diseno-web">Diseño de Páginas Web</a></li>
           </ul>
         </div>
 
-        <div>
-          <div class="footer-title">Contacto Directo</div>
-          <ul class="footer-links">
-            <li><a href="https://wa.me/573167283557" target="_blank" rel="noopener">WhatsApp Principal: +57 316 728 3557</a></li>
-            <li><a href="tel:+573152009581">Línea Alterna: 315 200 9581</a></li>
-            <li><a href="mailto:artimp.cali@gmail.com">artimp.cali@gmail.com</a></li>
-            <li>Cali, Valle del Cauca · Lun–Sáb 8:00 a.m. – 6:30 p.m.</li>
-          </ul>
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Cobertura &amp; Despacho</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sede operativa en Santiago de Cali, Valle del Cauca, con atención directa y envíos seguros en:
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Cali</span>
+            <span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Jamundí</span>
+            <span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Palmira</span>
+            <span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Yumbo</span>
+            <span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm border border-primary/25">Envíos Nacionales</span>
+          </div>
         </div>
 
-        <div>
-          <div class="footer-title">Síguenos</div>
-          <ul class="footer-links">
-            <li><a href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener">YouTube · @artimppublicidad164</a></li>
-            <li><a href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener">Instagram · @artimp.cali</a></li>
-            <li><a href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener">Facebook · @artimp.cali</a></li>
-            <li><a href="https://linktr.ee/ARTIMP" target="_blank" rel="noopener">Linktree · ARTIMP</a></li>
-          </ul>
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Contacto &amp; Redes</h4>
+          <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+            <a class="flex items-center gap-2 hover:text-[#25D366] transition-colors" href="https://wa.me/573167283557" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined text-[#25D366] text-[17px]">chat</span>
+              <span>WhatsApp: +57 316 728 3557</span>
+            </a>
+            <a class="flex items-center gap-2 hover:text-on-surface transition-colors" href="tel:+573152009581">
+              <span class="material-symbols-outlined text-primary text-[17px]">call</span>
+              <span>Línea Alterna: 315 200 9581</span>
+            </a>
+            <a class="flex items-center gap-2 hover:text-on-surface transition-colors" href="mailto:artimp.cali@gmail.com">
+              <span class="material-symbols-outlined text-primary text-[17px]">mail</span>
+              <span>artimp.cali@gmail.com</span>
+            </a>
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a class="text-on-surface-variant hover:text-error transition-colors font-label-sm text-label-sm uppercase font-bold" href="https://www.youtube.com/@artimppublicidad164" rel="noopener noreferrer" target="_blank">YouTube</a>
+              <span class="text-outline-variant">·</span>
+              <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-sm text-label-sm uppercase font-bold" href="https://www.instagram.com/artimp.cali/" rel="noopener noreferrer" target="_blank">Instagram</a>
+              <span class="text-outline-variant">·</span>
+              <a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm uppercase font-bold" href="https://www.facebook.com/artimp.cali" rel="noopener noreferrer" target="_blank">Facebook</a>
+              <span class="text-outline-variant">·</span>
+              <a class="text-on-surface-variant hover:text-tertiary-container transition-colors font-label-sm text-label-sm uppercase font-bold" href="https://linktr.ee/ARTIMP" rel="noopener noreferrer" target="_blank">Linktree</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <span>© 2026 ARTIMP · El Arte de la Impresión (Cali, Colombia). Todos los derechos reservados.</span>
-        <span>Diseño &amp; Desarrollo Web por ARTIMP Studio.</span>
+      <div class="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm">
+        <p>© 2026 ARTIMP · El Arte de la Impresión (Cali, Colombia). Todos los derechos reservados.</p>
+        <div class="flex items-center gap-4">
+          <span>Publicidad Física &amp; Digital</span>
+          <span>·</span>
+          <span>Diseño Web por ARTIMP Studio</span>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP -->
-  <a class="wa-float" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20proyecto%20para%20mi%20negocio." target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Zm-8.46 18.33h-.01a9.89 9.89 0 0 1-5.04-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.87 9.87 0 0 1-1.52-5.27c0-5.46 4.44-9.9 9.91-9.9 2.65 0 5.13 1.03 7 2.9a9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.89-9.91 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
-    </svg>
-    Cotizar Ahora
+  <!-- Floating WhatsApp Quick Action -->
+  <a
+    href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20negocio."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Cotizar por WhatsApp"
+    class="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-[#25D366] text-[#050811] font-label-md text-label-md uppercase font-extrabold shadow-[0_12px_32px_rgba(37,211,102,0.5)] hover:scale-105 transition-transform"
+  >
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Z"/></svg>
+    <span>Cotizar Ahora</span>
   </a>
 
-  <script src="app.js" defer></script>
+  <!-- Interactive Scripts -->
+  <script>
+    let demoCart = [];
+    let selectedProducts = [];
+
+    function toggleMobileDrawer(force) {
+      const drawer = document.getElementById('mobile-drawer');
+      const btn = document.getElementById('mobile-menu-btn');
+      const icon = document.getElementById('mobile-menu-icon');
+      if (!drawer) return;
+      const shouldOpen = typeof force === 'boolean' ? force : drawer.classList.contains('hidden');
+      drawer.classList.toggle('hidden', !shouldOpen);
+      if (btn) btn.setAttribute('aria-expanded', String(shouldOpen));
+      if (icon) icon.textContent = shouldOpen ? 'close' : 'menu';
+    }
+
+    function filterDemoMenu(category) {
+      const cards = document.querySelectorAll('.menu-card');
+      const tabs = document.querySelectorAll('.menu-tab');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-primary-container', 'text-on-primary-fixed');
+        tab.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+
+      const activeTab = document.getElementById('tab-' + category);
+      if (activeTab) {
+        activeTab.classList.add('bg-primary-container', 'text-on-primary-fixed');
+        activeTab.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      }
+
+      cards.forEach(card => {
+        card.style.display = (category === 'todos' || card.classList.contains(category)) ? 'flex' : 'none';
+      });
+    }
+
+    function addDemoItem(name, price) {
+      demoCart.push({ name, price });
+      const counter = document.getElementById('demo-cart-counter');
+      if (counter) {
+        const total = demoCart.reduce((acc, curr) => acc + curr.price, 0);
+        counter.innerText = `${demoCart.length} plato(s) · $${total.toLocaleString('es-CO')}`;
+        counter.classList.add('text-primary');
+      }
+    }
+
+    function sendDemoWhatsApp() {
+      if (demoCart.length === 0) {
+        addDemoItem('Punta de Anca 350g', 38000);
+      }
+      const itemsList = demoCart.map(item => `• ${item.name} ($${item.price.toLocaleString('es-CO')})`).join('\n');
+      const total = demoCart.reduce((acc, curr) => acc + curr.price, 0);
+      const msg =
+        `¡Hola ARTIMP! Acabo de probar la Demo de Menú Digital QR en su página web y quiero cotizar uno para mi negocio.\n\n` +
+        `*Orden de prueba realizada:*\n${itemsList}\n*Total muestra:* $${total.toLocaleString('es-CO')} COP\n\n` +
+        `¿Me regalan información para implementarlo en mi local?`;
+      window.open(`https://wa.me/573167283557?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    }
+
+    function switchPillar(pillarId) {
+      const allContents = document.querySelectorAll('.pillar-content');
+      const allButtons = document.querySelectorAll('.pillar-tab');
+
+      allContents.forEach(c => c.classList.add('hidden'));
+      allButtons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-fixed', 'font-extrabold');
+        b.classList.add('bg-surface-container-high', 'text-on-surface-variant', 'font-semibold');
+      });
+
+      const targetContent = document.getElementById('pillar-' + pillarId);
+      const targetBtn = document.getElementById('pillar-btn-' + pillarId);
+
+      if (targetContent) targetContent.classList.remove('hidden');
+      if (targetBtn) {
+        targetBtn.classList.add('bg-primary-container', 'text-on-primary-fixed', 'font-extrabold');
+        targetBtn.classList.remove('bg-surface-container-high', 'text-on-surface-variant', 'font-semibold');
+      }
+    }
+
+    function toggleProductChip(btn, productName) {
+      if (selectedProducts.includes(productName)) {
+        selectedProducts = selectedProducts.filter(p => p !== productName);
+        btn.classList.remove('bg-primary-container', 'text-on-primary-fixed', 'font-bold', 'border-primary-container');
+        btn.classList.add('bg-surface-container', 'text-on-surface', 'border-white/10');
+      } else {
+        selectedProducts.push(productName);
+        btn.classList.add('bg-primary-container', 'text-on-primary-fixed', 'font-bold', 'border-primary-container');
+        btn.classList.remove('bg-surface-container', 'text-on-surface', 'border-white/10');
+      }
+    }
+
+    function prefillCotizador(selection) {
+      const radio = document.querySelector(`input[name="cotiz-linea"][value="${selection}"]`);
+      if (radio) {
+        radio.checked = true;
+      }
+      const chip = document.querySelector(`.product-chip[data-prod="${selection}"]`);
+      if (chip && !selectedProducts.includes(selection)) {
+        toggleProductChip(chip, selection);
+      }
+      const section = document.getElementById('cotizador-section');
+      const card = document.getElementById('cotizador-card');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+      if (card) {
+        card.classList.add('ring-2', 'ring-primary-container');
+        setTimeout(() => card.classList.remove('ring-2', 'ring-primary-container'), 1600);
+      }
+    }
+
+    function enviarCotizacionWhatsApp() {
+      const selectedRadio = document.querySelector('input[name="cotiz-linea"]:checked');
+      const linea = selectedRadio ? selectedRadio.value : 'Comercial Estándar';
+      const nombre = document.getElementById('cotiz-nombre').value.trim() || 'Por confirmar';
+      const ciudad = document.getElementById('cotiz-ciudad').value.trim() || 'Cali';
+      const detalles = document.getElementById('cotiz-detalles').value.trim() || 'Por definir con asesor';
+
+      const productosStr = selectedProducts.length > 0
+        ? selectedProducts.map(p => `  • ${p}`).join('\n')
+        : '  • Asesoría integral de portafolio';
+
+      const textoWhatsApp =
+        `*SOLICITUD DE COTIZACIÓN · ARTIMP CALI*\n` +
+        `-----------------------------------------\n` +
+        `*Negocio / Cliente:* ${nombre}\n` +
+        `*Ubicación:* ${ciudad}\n` +
+        `*Línea Seleccionada:* ${linea}\n\n` +
+        `*Productos de Interés:*\n${productosStr}\n\n` +
+        `*Detalles / Medidas:* ${detalles}\n` +
+        `-----------------------------------------\n` +
+        `Hola equipo de ARTIMP, configuré estos requerimientos en su sitio web. Deseo recibir cotización formal y asesoría.`;
+
+      window.open(`https://wa.me/573167283557?text=${encodeURIComponent(textoWhatsApp)}`, '_blank', 'noopener');
+    }
+
+    function toggleFaq(id) {
+      const element = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      if (element) {
+        const isHidden = element.classList.contains('hidden');
+        element.classList.toggle('hidden');
+        if (icon) {
+          icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+      }
+    }
+  </script>
 </body>
 </html>
