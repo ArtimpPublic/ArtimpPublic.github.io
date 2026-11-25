@@ -6,7 +6,7 @@
   <title>ARTIMP · El Arte de la Impresión | Publicidad Física + Digital en Cali</title>
   <meta name="description" content="ARTIMP · El Arte de la Impresión en Cali, Valle del Cauca. Avisos 3D LED, litografía de lujo, tarjetas con brillo UV, habladores QR Nequi/Google, menús digitales QR sin mensualidades, empaques y diseño de páginas web de alta conversión." />
   <meta name="keywords" content="Artimp, publicidad Cali, imprenta Cali, avisos 3D LED Cali, menús digitales QR Cali, habladores QR Nequi, litografía Cali, tarjetas brillo UV, stickers Cali, diseño web Cali" />
-  <meta name="theme-color" content="#0f131d" />
+  <meta name="theme-color" content="#0b0f19" />
 
   <!-- Open Graph / WhatsApp Preview -->
   <meta property="og:type" content="website" />
@@ -29,24 +29,17 @@
         extend: {
           colors: {
             "outline-variant": "#3b494c",
-            "on-secondary-container": "#580031",
             "error": "#ff5454",
             "surface-container-high": "#232834",
-            "inverse-primary": "#006875",
-            "on-tertiary": "#322400",
+            "on-tertiary": "#2b1f00",
             "on-primary": "#00363d",
-            "tertiary-fixed": "#ffdf92",
             "surface-container-low": "#151924",
             "surface": "#0b0f19",
             "on-primary-fixed": "#001f24",
-            "primary-fixed-dim": "#00daf3",
-            "surface-tint": "#00daf3",
             "surface-bright": "#313644",
             "surface-container": "#181d29",
-            "tertiary": "#ffebc0",
             "secondary-container": "#ff2e9b",
             "primary-container": "#00e5ff",
-            "surface-dim": "#0b0f19",
             "surface-container-lowest": "#060911",
             "primary": "#9cf0ff",
             "secondary": "#ff8ac5",
@@ -55,10 +48,7 @@
             "on-surface": "#ecf0fa",
             "tertiary-container": "#f7c948",
             "on-secondary": "#ffffff",
-            "surface-variant": "#2e3340",
-            "surface-container-highest": "#2c3140",
-            "background": "#0b0f19",
-            "on-background": "#ecf0fa"
+            "surface-container-highest": "#2c3140"
           },
           spacing: {
             "space-xs": "0.25rem",
@@ -67,13 +57,13 @@
             "space-lg": "1.5rem",
             "space-xl": "2.75rem",
             "gutter": "2rem",
-            "gutter-mobile": "1.15rem"
+            "gutter-mobile": "1rem"
           },
           fontFamily: {
             "display": ["Syne", "sans-serif"],
             "headline-lg": ["Syne", "sans-serif"],
-            "headline-md": ["Syne", "sans-serif"],
-            "headline-sm": ["Syne", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
             "label-lg": ["Space Grotesk", "sans-serif"],
             "label-md": ["Space Grotesk", "sans-serif"],
             "label-sm": ["Space Grotesk", "sans-serif"],
@@ -84,17 +74,17 @@
             "body-sm": ["Plus Jakarta Sans", "sans-serif"]
           },
           fontSize: {
-            "label-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.08em", "fontWeight": "600" }],
-            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "15px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
             "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
-            "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
-            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "headline-lg": ["38px", { "lineHeight": "45px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-            "title-md": ["15px", { "lineHeight": "22px", "fontWeight": "600" }],
-            "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "700" }],
+            "headline-md": ["26px", { "lineHeight": "33px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["36px", { "lineHeight": "43px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "title-md": ["15px", { "lineHeight": "21px", "fontWeight": "600" }],
+            "title-lg": ["17px", { "lineHeight": "24px", "fontWeight": "700" }],
             "body-sm": ["13px", { "lineHeight": "19px", "fontWeight": "400" }],
-            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
-            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }]
+            "body-md": ["15px", { "lineHeight": "23px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }]
           }
         }
       }
@@ -102,7 +92,13 @@
   </script>
 
   <style>
-    html { scroll-padding-top: 88px; }
+    html, body {
+      max-width: 100%;
+      width: 100%;
+      overflow-x: clip;
+    }
+    html { scroll-padding-top: 76px; }
+    h1, h2, h3, h4 { overflow-wrap: break-word; word-break: normal; }
     ::-webkit-scrollbar { width: 8px; height: 8px; }
     ::-webkit-scrollbar-track { background: #060911; }
     ::-webkit-scrollbar-thumb { background: #232834; border-radius: 999px; }
@@ -149,25 +145,29 @@
   </script>
 </head>
 
-<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed overflow-x-hidden">
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed">
 
   <!-- ==========================================
-       HEADER / NAVBAR GLASSMORPHISM (Google Stitch System)
+       HEADER / NAVBAR (Mobile-First, Zero Clipping)
   ========================================== -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-[#060911]/85 backdrop-blur-xl border-b border-white/10">
-    <div class="h-20 max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-3">
+  <header class="fixed top-0 left-0 right-0 w-full z-50 bg-[#060911]/90 backdrop-blur-xl border-b border-white/10">
+    <div class="h-16 sm:h-20 max-w-[1440px] mx-auto px-3.5 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
       <!-- Official ARTIMP Brand Lockup -->
-      <a class="flex items-center gap-3 group min-w-0" href="#">
+      <a class="flex items-center gap-2.5 sm:gap-3 group min-w-0 shrink" href="#">
         <img
-          alt="Logotipo Oficial ARTIMP · El Arte de la Impresión"
-          class="h-11 w-11 rounded-full object-cover ring-1 ring-primary-container/40 shadow-[0_0_18px_rgba(0,229,255,0.3)] transition-transform duration-300 group-hover:scale-105 flex-shrink-0"
+          alt="Logotipo Oficial ARTIMP"
+          class="h-9 w-9 sm:h-11 sm:w-11 rounded-full object-cover ring-1 ring-primary-container/40 shadow-[0_0_14px_rgba(0,229,255,0.28)] shrink-0"
           src="assets/artimp-logo-circle.png"
         />
         <div class="flex flex-col min-w-0">
-          <span class="font-headline-sm text-[19px] sm:text-headline-sm font-extrabold tracking-tight text-on-surface flex items-center gap-1.5 leading-none">
-            ARTIMP <span class="text-primary text-[10px] font-label-sm font-semibold tracking-widest hidden sm:inline">· ATELIER</span>
+          <div class="flex items-center gap-1.5 leading-none">
+            <span class="font-headline-sm text-[17px] sm:text-[21px] font-bold tracking-tight text-on-surface">ARTIMP</span>
+            <span class="text-primary text-[10px] font-label-sm font-semibold tracking-widest hidden sm:inline">· ATELIER</span>
+          </div>
+          <span class="font-label-sm text-[9px] uppercase tracking-wider text-primary font-bold sm:hidden pt-0.5">
+            Publicidad · Cali
           </span>
-          <span class="font-label-sm text-[9.5px] sm:text-label-sm uppercase tracking-wider bg-gradient-to-r from-primary-container via-secondary to-tertiary-container bg-clip-text text-transparent font-bold truncate pt-0.5">
+          <span class="font-label-sm text-[10.5px] uppercase tracking-wider bg-gradient-to-r from-primary-container via-secondary to-tertiary-container bg-clip-text text-transparent font-bold hidden sm:block pt-0.5">
             El Arte de la Impresión · Cali
           </span>
         </div>
@@ -185,7 +185,7 @@
       </nav>
 
       <!-- Socials + WhatsApp + Mobile Hamburger -->
-      <div class="flex items-center gap-2 flex-shrink-0">
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
         <div class="hidden md:flex items-center gap-1.5 pr-2 border-r border-white/10">
           <a aria-label="YouTube ARTIMP" title="YouTube @artimppublicidad164" class="w-9 h-9 rounded-lg bg-surface-container-low border border-white/5 flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error/40 hover:bg-surface-container-high transition-all" href="https://www.youtube.com/@artimppublicidad164" rel="noopener noreferrer" target="_blank">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
@@ -198,137 +198,134 @@
           </a>
         </div>
 
-        <a class="relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-[#0E1526] border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-[#050811] shadow-[0_0_20px_rgba(37,211,102,0.28)] transition-all duration-300 font-label-md text-label-md uppercase tracking-wider" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Vengo%20de%20su%20sitio%20web%20y%20quiero%20cotizar%20un%20proyecto." rel="noopener noreferrer" target="_blank">
-          <span class="relative flex h-2.5 w-2.5">
+        <a class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-[#0E1526] border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-[#050811] shadow-[0_0_16px_rgba(37,211,102,0.25)] transition-all font-label-md text-[11px] sm:text-label-md uppercase font-bold" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Vengo%20de%20su%20sitio%20web%20y%20quiero%20cotizar%20un%20proyecto." rel="noopener noreferrer" target="_blank">
+          <span class="relative flex h-2 w-2 shrink-0">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#25D366]"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span>
           </span>
-          <span class="font-bold hidden sm:inline">WhatsApp</span>
-          <span class="font-bold sm:hidden">Chat</span>
+          <span>WhatsApp</span>
         </a>
 
         <!-- Mobile Menu Button -->
-        <button aria-label="Abrir menú móvil" aria-expanded="false" id="mobile-menu-btn" onclick="toggleMobileDrawer()" class="xl:hidden w-10 h-10 rounded-xl bg-surface-container-low border border-white/10 flex items-center justify-center text-on-surface hover:border-primary-container transition-all">
-          <span class="material-symbols-outlined text-[22px]" id="mobile-menu-icon">menu</span>
+        <button aria-label="Abrir menú móvil" aria-expanded="false" id="mobile-menu-btn" onclick="toggleMobileDrawer()" class="xl:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-surface-container-low border border-white/10 flex items-center justify-center text-on-surface hover:border-primary-container transition-all shrink-0">
+          <span class="material-symbols-outlined text-[21px]" id="mobile-menu-icon">menu</span>
         </button>
       </div>
     </div>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobile-drawer" class="hidden xl:hidden bg-[#060911]/98 backdrop-blur-2xl border-b border-white/10 px-gutter-mobile py-5 space-y-2">
-      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#tres-lineas">01 · Tres Líneas de Producción</a>
-      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#soluciones">02 · Soluciones Híbridas</a>
-      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#demo-qr-section">03 · Demo Menú Digital QR</a>
-      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#catalogo">04 · Catálogo Integral</a>
-      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-on-surface hover:bg-surface-container-high" href="#diseno-web">05 · Diseño de Páginas Web</a>
-      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-headline-sm text-[17px] text-primary" href="#cotizador-section">06 · Cotizador Inteligente</a>
-      <div class="pt-3 flex items-center gap-3 border-t border-white/10">
-        <a class="flex-1 py-2.5 rounded-xl bg-error/15 text-error text-center font-label-md text-label-md uppercase font-bold" href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener">YouTube</a>
-        <a class="flex-1 py-2.5 rounded-xl bg-secondary/15 text-secondary text-center font-label-md text-label-md uppercase font-bold" href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener">Instagram</a>
-        <a class="flex-1 py-2.5 rounded-xl bg-primary/15 text-primary text-center font-label-md text-label-md uppercase font-bold" href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener">Facebook</a>
+    <div id="mobile-drawer" class="hidden xl:hidden bg-[#060911]/98 backdrop-blur-2xl border-b border-white/10 px-4 py-4 space-y-1.5 max-h-[calc(100vh-64px)] overflow-y-auto">
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-title-md text-[15px] font-bold text-on-surface hover:bg-surface-container-high" href="#tres-lineas">01 · Tres Líneas de Producción</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-title-md text-[15px] font-bold text-on-surface hover:bg-surface-container-high" href="#soluciones">02 · Soluciones Híbridas</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-title-md text-[15px] font-bold text-on-surface hover:bg-surface-container-high" href="#demo-qr-section">03 · Demo Menú Digital QR</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-title-md text-[15px] font-bold text-on-surface hover:bg-surface-container-high" href="#catalogo">04 · Catálogo Integral</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-title-md text-[15px] font-bold text-on-surface hover:bg-surface-container-high" href="#diseno-web">05 · Diseño de Páginas Web</a>
+      <a onclick="toggleMobileDrawer(false)" class="block py-2.5 px-3 rounded-xl font-title-md text-[15px] font-bold text-primary" href="#cotizador-section">06 · Cotizador Inteligente</a>
+      <div class="pt-3 flex items-center gap-2 border-t border-white/10">
+        <a class="flex-1 py-2.5 rounded-xl bg-error/15 text-error text-center font-label-sm text-[11px] uppercase font-bold" href="https://www.youtube.com/@artimppublicidad164" target="_blank" rel="noopener">YouTube</a>
+        <a class="flex-1 py-2.5 rounded-xl bg-secondary/15 text-secondary text-center font-label-sm text-[11px] uppercase font-bold" href="https://www.instagram.com/artimp.cali/" target="_blank" rel="noopener">Instagram</a>
+        <a class="flex-1 py-2.5 rounded-xl bg-primary/15 text-primary text-center font-label-sm text-[11px] uppercase font-bold" href="https://www.facebook.com/artimp.cali" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
   </header>
 
-  <main class="w-full pt-20 bg-surface min-h-screen">
+  <main class="w-full pt-16 sm:pt-20 bg-surface min-h-screen">
     <div class="flex flex-col w-full text-on-surface">
 
       <!-- ==========================================
-           HERO ASIMÉTRICO DE AGENCIA PREMIADA
+           HERO ASIMÉTRICO DE AGENCIA (100% Adaptado Móvil + Escritorio)
       ========================================== -->
-      <section class="relative w-full overflow-hidden px-gutter-mobile lg:px-gutter py-12 lg:py-20">
+      <section class="relative w-full overflow-hidden px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
         <!-- Atmospheric Chromatic Blooms -->
-        <div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container/15 blur-[120px] pointer-events-none"></div>
-        <div class="absolute top-1/3 -right-24 w-[30rem] h-[30rem] rounded-full bg-secondary-container/15 blur-[140px] pointer-events-none"></div>
-        <div class="absolute bottom-10 left-1/3 w-80 h-80 rounded-full bg-tertiary-container/10 blur-[130px] pointer-events-none"></div>
+        <div class="absolute -top-32 -left-20 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-primary-container/15 blur-[110px] pointer-events-none"></div>
+        <div class="absolute top-1/3 -right-24 w-72 sm:w-[28rem] h-72 sm:h-[28rem] rounded-full bg-secondary-container/15 blur-[120px] pointer-events-none"></div>
 
-        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-center relative z-10">
           <!-- Left Column (7 Cols) -->
-          <div class="lg:col-span-7 space-y-6">
-            <div class="flex flex-wrap items-center gap-3">
+          <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+            <div class="flex items-center gap-3">
               <img
                 src="assets/artimp-logo-circle.png"
                 alt="Emblema Oficial ARTIMP"
-                class="w-16 h-16 rounded-full shadow-[0_0_28px_rgba(0,229,255,0.35)] ring-1 ring-white/15"
+                class="w-12 h-12 sm:w-16 sm:h-16 rounded-full shadow-[0_0_24px_rgba(0,229,255,0.35)] ring-1 ring-white/15 shrink-0"
               />
-              <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-high/85 border border-white/10 backdrop-blur-md shadow-sm">
-                <span class="relative flex h-2 w-2">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-surface-container-high/85 border border-white/10 backdrop-blur-md">
+                <span class="relative flex h-2 w-2 shrink-0">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-80"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
                 </span>
-                <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">
-                  Cali, Valle del Cauca · Envíos a Toda Colombia
+                <span class="font-label-sm text-[10px] sm:text-label-sm text-primary uppercase tracking-wider leading-tight">
+                  Cali, Valle · Envíos a Toda Colombia
                 </span>
               </div>
             </div>
 
-            <h1 class="font-headline-lg text-[36px] leading-[1.08] sm:text-[46px] lg:text-[56px] lg:leading-[1.06] font-extrabold tracking-tight">
+            <h1 class="font-headline-lg text-[27px] leading-[1.13] sm:text-[42px] lg:text-[54px] lg:leading-[1.06] font-extrabold tracking-tight">
               El Arte de la <span class="bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container bg-clip-text text-transparent">Impresión</span> + Tecnología Digital que Vende.
             </h1>
 
-            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-              Fusionamos la maestría de la publicidad física de alto impacto (avisos 3D LED, litografía de lujo, habladores, vinilos y empaques) con soluciones digitales interactivas: menús QR dinámicos, Google Maps y páginas web comerciales diseñadas para cerrar ventas en WhatsApp.
+            <p class="font-body-md sm:font-body-lg text-[14.5px] sm:text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Fusionamos publicidad física de alto impacto (avisos 3D LED, litografía de lujo, habladores, vinilos y empaques) con soluciones digitales interactivas: menús QR dinámicos, Google Maps y páginas web diseñadas para cerrar ventas en WhatsApp.
             </p>
 
-            <!-- CTA Action Cluster -->
-            <div class="flex flex-wrap items-center gap-3 pt-1">
-              <a class="px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider font-extrabold shadow-lg shadow-primary-container/25 hover:brightness-110 transition-all flex items-center gap-2 group" href="#cotizador-section">
+            <!-- CTA Action Cluster (Full width on mobile, inline on sm+) -->
+            <div class="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 pt-1">
+              <a class="px-5 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider font-extrabold shadow-lg shadow-primary-container/25 hover:brightness-110 transition-all flex items-center justify-center gap-2 group" href="#cotizador-section">
                 <span>Cotizar Mi Proyecto</span>
                 <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
-              <a class="px-6 py-3.5 rounded-xl bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-surface-bright transition-all flex items-center gap-2" href="#demo-qr-section">
+              <a class="px-5 py-3.5 rounded-xl bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-surface-bright transition-all flex items-center justify-center gap-2" href="#demo-qr-section">
                 <span class="material-symbols-outlined text-secondary text-[20px]">qr_code_scanner</span>
                 <span>Probar Demo Menú QR</span>
               </a>
             </div>
 
             <!-- Confidence Micro-Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              <div class="p-3.5 rounded-xl bg-surface-container/80 border border-white/5 backdrop-blur-md">
-                <div class="flex items-center gap-2 text-primary pb-1">
-                  <span class="material-symbols-outlined text-[18px]">layers</span>
-                  <span class="font-label-sm text-label-sm font-bold uppercase">3 Líneas a Medida</span>
+            <div class="grid grid-cols-3 gap-2 sm:gap-3 pt-2">
+              <div class="p-2.5 sm:p-3.5 rounded-xl bg-surface-container/80 border border-white/5">
+                <div class="flex items-center gap-1.5 text-primary pb-0.5">
+                  <span class="material-symbols-outlined text-[16px] sm:text-[18px]">layers</span>
+                  <span class="font-label-sm text-[10px] sm:text-label-sm font-bold uppercase">3 Líneas</span>
                 </div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant">Impulso · Comercial · Premium</p>
+                <p class="font-body-sm text-[11px] sm:text-body-sm text-on-surface-variant leading-tight">A tu presupuesto</p>
               </div>
-              <div class="p-3.5 rounded-xl bg-surface-container/80 border border-white/5 backdrop-blur-md">
-                <div class="flex items-center gap-2 text-secondary pb-1">
-                  <span class="material-symbols-outlined text-[18px]">bolt</span>
-                  <span class="font-label-sm text-label-sm font-bold uppercase">Atención Directa</span>
+              <div class="p-2.5 sm:p-3.5 rounded-xl bg-surface-container/80 border border-white/5">
+                <div class="flex items-center gap-1.5 text-secondary pb-0.5">
+                  <span class="material-symbols-outlined text-[16px] sm:text-[18px]">bolt</span>
+                  <span class="font-label-sm text-[10px] sm:text-label-sm font-bold uppercase">Ágil</span>
                 </div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant">Cotización ágil en WhatsApp</p>
+                <p class="font-body-sm text-[11px] sm:text-body-sm text-on-surface-variant leading-tight">Directo en WhatsApp</p>
               </div>
-              <div class="p-3.5 rounded-xl bg-surface-container/80 border border-white/5 backdrop-blur-md">
-                <div class="flex items-center gap-2 text-tertiary-container pb-1">
-                  <span class="material-symbols-outlined text-[18px]">all_inclusive</span>
-                  <span class="font-label-sm text-label-sm font-bold uppercase">360° Físico + Web</span>
+              <div class="p-2.5 sm:p-3.5 rounded-xl bg-surface-container/80 border border-white/5">
+                <div class="flex items-center gap-1.5 text-tertiary-container pb-0.5">
+                  <span class="material-symbols-outlined text-[16px] sm:text-[18px]">all_inclusive</span>
+                  <span class="font-label-sm text-[10px] sm:text-label-sm font-bold uppercase">360°</span>
                 </div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant">Avisos, imprenta, QR y diseño web</p>
+                <p class="font-body-sm text-[11px] sm:text-body-sm text-on-surface-variant leading-tight">Físico + QR + Web</p>
               </div>
             </div>
           </div>
 
-          <!-- Right Column: Asymmetric Layered Atelier Showcase (5 Cols) -->
+          <!-- Right Column: Uncropped 16:10 Showcase Card -->
           <div class="lg:col-span-5 relative">
-            <div class="relative rounded-2xl bg-surface-container-high/90 border border-white/10 backdrop-blur-xl p-4 shadow-2xl overflow-hidden">
-              <div class="absolute top-0 right-0 w-44 h-44 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
-
-              <div class="flex items-center justify-between pb-3 px-1">
-                <div class="flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
-                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Atelier ARTIMP · En Producción</span>
+            <div class="relative rounded-2xl bg-surface-container-high/90 border border-white/10 backdrop-blur-xl p-3 sm:p-4 shadow-2xl overflow-hidden">
+              <div class="flex items-center justify-between pb-2.5 px-1 gap-2">
+                <div class="flex items-center gap-2 min-w-0">
+                  <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse shrink-0"></span>
+                  <span class="font-label-sm text-[10px] sm:text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Atelier ARTIMP · Producción</span>
                 </div>
-                <span class="font-label-sm text-label-sm text-primary font-mono">SPEC: LED / UV / QR</span>
+                <span class="font-label-sm text-[10px] text-primary font-mono shrink-0">LED · UV · QR</span>
               </div>
 
-              <div class="relative w-full h-72 sm:h-80 rounded-xl overflow-hidden bg-surface-container-lowest border border-white/5">
+              <!-- 16:10 Full-bleed Photo (Never crops horizontally on mobile!) -->
+              <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-surface-container-lowest border border-white/5">
                 <img
                   class="w-full h-full object-cover"
                   alt="Taller ARTIMP Cali — Rótulo Acrílico 3D LED, Tarjetas Brillo UV y Hablador Escanea y Paga Nequi/Daviplata"
                   src="assets/atelier-artimp.jpg"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
-                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 p-2.5 rounded-lg bg-surface-container/90 border border-white/10 backdrop-blur-md">
+                <div class="hidden sm:block absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+                <div class="hidden sm:flex absolute bottom-3 left-3 right-3 items-center justify-between gap-2 p-2.5 rounded-lg bg-surface-container/90 border border-white/10 backdrop-blur-md">
                   <div class="flex items-center gap-2">
                     <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
                     <div>
@@ -336,22 +333,31 @@
                       <div class="font-body-sm text-on-surface-variant text-[11px] leading-tight pt-0.5">Fabricación física + activación digital · Cali</div>
                     </div>
                   </div>
-                  <span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-[10px] uppercase flex-shrink-0">Alta Precisión</span>
+                  <span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-[10px] uppercase shrink-0">Alta Precisión</span>
                 </div>
               </div>
 
+              <!-- Mobile Caption Bar (Below image on phones so photo stays 100% clean!) -->
+              <div class="sm:hidden mt-2.5 px-3 py-2 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 min-w-0">
+                  <span class="material-symbols-outlined text-primary text-[18px] shrink-0">verified</span>
+                  <span class="font-title-md text-[13px] text-on-surface font-bold truncate">Rótulo 3D LED + Hablador QR</span>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary font-label-sm text-[9.5px] uppercase shrink-0">Cali</span>
+              </div>
+
               <!-- Quick Action Mini-Card -->
-              <button type="button" onclick="prefillCotizador('Hablador Nequi & Google')" class="w-full mt-3 p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 hover:border-tertiary-container/40 flex items-center justify-between shadow-md transition-all text-left group">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container">
-                    <span class="material-symbols-outlined text-[22px]">qr_code_2</span>
+              <button type="button" onclick="prefillCotizador('Hablador Nequi & Google')" class="w-full mt-2.5 sm:mt-3 p-3 sm:p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 hover:border-tertiary-container/40 flex items-center justify-between gap-2 shadow-md transition-all text-left group">
+                <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                  <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container shrink-0">
+                    <span class="material-symbols-outlined text-[20px] sm:text-[22px]">qr_code_2</span>
                   </div>
-                  <div>
-                    <span class="font-label-sm text-[10px] text-tertiary-container uppercase tracking-widest font-semibold block">Tecnología en Mostrador</span>
-                    <span class="font-title-md text-title-md text-on-surface font-semibold">Habladores Nequi + Reseñas Google</span>
+                  <div class="min-w-0">
+                    <span class="font-label-sm text-[9.5px] sm:text-[10px] text-tertiary-container uppercase tracking-wider font-semibold block">Tecnología en Mostrador</span>
+                    <span class="font-title-md text-[13.5px] sm:text-title-md text-on-surface font-bold block leading-snug">Habladores Nequi + Reseñas Google</span>
                   </div>
                 </div>
-                <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary-container group-hover:translate-x-1 transition-all text-[20px]">arrow_forward</span>
+                <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary-container transition-all text-[19px] shrink-0">arrow_forward</span>
               </button>
             </div>
           </div>
@@ -361,93 +367,88 @@
       <!-- ==========================================
            ANIMATED INFINITE MARQUEE
       ========================================== -->
-      <section aria-hidden="true" class="w-full py-4 bg-surface-container-lowest border-y border-white/5 overflow-hidden">
-        <div class="animate-marquee items-center gap-8 whitespace-nowrap">
+      <section aria-hidden="true" class="w-full py-3.5 bg-surface-container-lowest border-y border-white/5 overflow-hidden">
+        <div class="animate-marquee items-center gap-6 sm:gap-8 whitespace-nowrap">
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Acrílico 3D LED</span>
           <span class="text-outline-variant">/</span>
           <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Menús Digitales QR</span>
           <span class="text-outline-variant">/</span>
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary-container font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Habladores Nequi &amp; Google</span>
           <span class="text-outline-variant">/</span>
-          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Tarjetas Reserva Brillo UV</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Tarjetas Brillo UV</span>
           <span class="text-outline-variant">/</span>
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Vinilo Microperforado</span>
           <span class="text-outline-variant">/</span>
           <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Cajas, Bolsas &amp; Stickers</span>
           <span class="text-outline-variant">/</span>
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Páginas Web Comerciales</span>
-          <span class="text-outline-variant">/</span>
-          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Pendones &amp; Roll-Ups</span>
-          <span class="text-outline-variant pr-8">/</span>
+          <span class="text-outline-variant pr-6">/</span>
 
-          <!-- Duplicate for seamless loop -->
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Acrílico 3D LED</span>
           <span class="text-outline-variant">/</span>
           <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Menús Digitales QR</span>
           <span class="text-outline-variant">/</span>
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary-container font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Habladores Nequi &amp; Google</span>
           <span class="text-outline-variant">/</span>
-          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Tarjetas Reserva Brillo UV</span>
+          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Tarjetas Brillo UV</span>
           <span class="text-outline-variant">/</span>
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Vinilo Microperforado</span>
           <span class="text-outline-variant">/</span>
           <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Cajas, Bolsas &amp; Stickers</span>
           <span class="text-outline-variant">/</span>
           <span class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[14px]">star</span> Páginas Web Comerciales</span>
-          <span class="text-outline-variant">/</span>
-          <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Pendones &amp; Roll-Ups</span>
         </div>
       </section>
 
       <!-- ==========================================
            01 // TRES LÍNEAS DE PRODUCCIÓN A MEDIDA
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="tres-lineas">
-        <div class="max-w-[1440px] mx-auto space-y-10">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16" id="tres-lineas">
+        <div class="max-w-[1440px] mx-auto space-y-8 sm:space-y-10">
           <div class="max-w-3xl space-y-2">
             <div class="flex items-center gap-2">
               <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">01 // ESTRATEGIA DE COSTO-VALOR</span>
-              <span class="h-px w-12 bg-primary/40"></span>
+              <span class="h-px w-10 bg-primary/40"></span>
             </div>
-            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">
-              Elige la Dimensión de tu Marca: Tres Líneas Diseñadas para tu Momento Comercial.
+            <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">
+              Tres Líneas Diseñadas para el Momento de tu Negocio.
             </h2>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Sin tarifas genéricas que inflen tu presupuesto ni sorpresas. Cada proyecto se cotiza con precisión según el sustrato, calibre, metraje, cantidad y acabado ideal para tu negocio en Cali y Colombia.
+            <p class="font-body-md text-[14.5px] sm:text-body-md text-on-surface-variant">
+              Sin tarifas fijas genéricas ni sorpresas. Cotizamos cada proyecto con exactitud según el material, calibre, medidas y cantidad que mejor rentabilice tu inversión.
             </p>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <!-- Línea 01 -->
-            <div class="group relative rounded-2xl bg-surface-container/80 border border-white/10 border-t-2 border-t-primary-container hover:bg-surface-container transition-all duration-300 p-6 flex flex-col justify-between shadow-xl">
+            <div class="rounded-2xl bg-surface-container/80 border border-white/10 border-t-2 border-t-primary-container p-5 sm:p-6 flex flex-col justify-between shadow-xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                  <span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-bold uppercase">
                     Línea 01 · Impulso
                   </span>
-                  <span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
+                  <span class="material-symbols-outlined text-primary text-[22px]">rocket_launch</span>
                 </div>
                 <div>
                   <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Emprendedor Ágil</h3>
                   <p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
-                    Arranque veloz, imagen pulcra y máxima optimización de presupuesto para abrir puertas, lanzar promociones o reactivar ventas.
+                    Arranque veloz, imagen pulcra y máxima optimización de presupuesto para aperturas, promociones o reactivación comercial.
                   </p>
                 </div>
-                <div class="space-y-2.5 pt-2">
+                <div class="space-y-2.5 pt-1">
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">check_circle</span>
                     <span class="font-body-sm text-body-sm">Papelería esencial en propalcote full color (Tarjetas QR y Volantes)</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">check_circle</span>
                     <span class="font-body-sm text-body-sm">Stickers adhesivos troquelados y etiquetas comerciales resistentes</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">check_circle</span>
                     <span class="font-body-sm text-body-sm">Pendón banner de apertura, araña publicitaria o hablador laminado</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">check_circle</span>
                     <span class="font-body-sm text-body-sm">Menú o catálogo digital ágil conectado directo a tu WhatsApp</span>
                   </div>
                 </div>
@@ -456,8 +457,8 @@
                   <p class="font-body-sm text-body-sm pt-0.5">Emprendimientos, comidas rápidas, barberías, ferias y negocios en reactivación.</p>
                 </div>
               </div>
-              <div class="pt-6">
-                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary-fixed transition-all text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold flex items-center justify-center gap-2" onclick="prefillCotizador('Emprendedor Ágil')">
+              <div class="pt-5">
+                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary-fixed transition-all text-on-surface font-title-md text-[14px] font-bold flex items-center justify-center gap-2" onclick="prefillCotizador('Emprendedor Ágil')">
                   <span>Consultar Línea Impulso</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </button>
@@ -465,13 +466,13 @@
             </div>
 
             <!-- Línea 02 Featured -->
-            <div class="group relative rounded-2xl bg-surface-container-high/95 border border-tertiary-container/50 border-t-2 border-t-tertiary-container p-6 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(247,201,72,0.28)]">
-              <div class="absolute -top-3.5 left-6 px-3.5 py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-sm text-label-sm font-extrabold uppercase tracking-widest shadow-md">
+            <div class="relative rounded-2xl bg-surface-container-high/95 border border-tertiary-container/50 border-t-2 border-t-tertiary-container p-5 sm:p-6 flex flex-col justify-between shadow-[0_20px_60px_-20px_rgba(247,201,72,0.28)] mt-2 lg:mt-0">
+              <div class="absolute -top-3.5 left-5 px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-sm text-[10px] sm:text-label-sm font-extrabold uppercase tracking-wider shadow-md">
                 ★ Más Solicitada en Cali
               </div>
               <div class="space-y-4 pt-2">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                  <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm font-bold uppercase">
                     Línea 02 · Comercial
                   </span>
                   <span class="material-symbols-outlined text-tertiary-container text-[24px]">storefront</span>
@@ -482,31 +483,31 @@
                     El equilibrio dorado entre presencia profesional, materiales de alta durabilidad y herramientas digitales que convierten a diario.
                   </p>
                 </div>
-                <div class="space-y-2.5 pt-2">
+                <div class="space-y-2.5 pt-1">
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5 shrink-0">verified</span>
                     <span class="font-body-sm text-body-sm">Tarjetas con plastificado mate aterciopelado y reserva de Brillo UV</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5 shrink-0">verified</span>
                     <span class="font-body-sm text-body-sm">Cajas de luz, vinilos decorativos y microperforado para vidrieras</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5 shrink-0">verified</span>
                     <span class="font-body-sm text-body-sm">Habladores rígidos en acrílico para Nequi, Daviplata y Reseñas Google</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5">verified</span>
+                    <span class="material-symbols-outlined text-tertiary-container text-[18px] mt-0.5 shrink-0">verified</span>
                     <span class="font-body-sm text-body-sm">Menú / Catálogo Digital QR completo + Ficha Google Maps optimizada</span>
                   </div>
                 </div>
                 <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 text-on-surface-variant">
                   <span class="font-label-sm text-label-sm text-tertiary-container uppercase font-bold">Ideal para:</span>
-                  <p class="font-body-sm text-body-sm pt-0.5">Restaurantes, cafés, spas, ópticas, consultorios, tiendas de moda y comercios establecidos.</p>
+                  <p class="font-body-sm text-body-sm pt-0.5">Restaurantes, cafés, spas, ópticas, consultorios, tiendas de moda y comercios.</p>
                 </div>
               </div>
-              <div class="pt-6">
-                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-tertiary-container text-on-tertiary font-label-md text-label-md uppercase tracking-wider font-extrabold flex items-center justify-center gap-2 hover:brightness-105 transition-all shadow-md" onclick="prefillCotizador('Comercial Estándar')">
+              <div class="pt-5">
+                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-tertiary-container text-on-tertiary font-title-md text-[14px] font-extrabold flex items-center justify-center gap-2 hover:brightness-105 transition-all shadow-md" onclick="prefillCotizador('Comercial Estándar')">
                   <span>Cotizar Línea Comercial</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </button>
@@ -514,13 +515,13 @@
             </div>
 
             <!-- Línea 03 -->
-            <div class="group relative rounded-2xl bg-surface-container/80 border border-white/10 border-t-2 border-t-secondary-container hover:bg-surface-container transition-all duration-300 p-6 flex flex-col justify-between shadow-xl">
+            <div class="rounded-2xl bg-surface-container/80 border border-white/10 border-t-2 border-t-secondary-container p-5 sm:p-6 flex flex-col justify-between shadow-xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                  <span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-bold uppercase">
                     Línea 03 · Atelier
                   </span>
-                  <span class="material-symbols-outlined text-secondary text-[24px]">diamond</span>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">diamond</span>
                 </div>
                 <div>
                   <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Premium Corporativa</h3>
@@ -528,21 +529,21 @@
                     Ingeniería de materiales nobles, iluminación LED arquitectónica, acabados táctiles de lujo y desarrollo web a la medida.
                   </p>
                 </div>
-                <div class="space-y-2.5 pt-2">
+                <div class="space-y-2.5 pt-1">
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">star</span>
                     <span class="font-body-sm text-body-sm">Avisos volumétricos 3D en acrílico, acero cepillado y luz halo LED</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">star</span>
                     <span class="font-body-sm text-body-sm">Cajas, bolsas y empaques corporativos personalizados a medida</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">star</span>
                     <span class="font-body-sm text-body-sm">Sitio web comercial de alto impacto con posicionamiento SEO local</span>
                   </div>
                   <div class="flex items-start gap-2.5 text-on-surface">
-                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">star</span>
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">star</span>
                     <span class="font-body-sm text-body-sm">Diseño de logotipo, manual de identidad y producción de Reels</span>
                   </div>
                 </div>
@@ -551,8 +552,8 @@
                   <p class="font-body-sm text-body-sm pt-0.5">Gastrobares insignia, clínicas especializadas, constructoras y marcas líderes.</p>
                 </div>
               </div>
-              <div class="pt-6">
-                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-secondary-container hover:text-on-secondary transition-all text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold flex items-center justify-center gap-2" onclick="prefillCotizador('Premium Corporativa')">
+              <div class="pt-5">
+                <button type="button" class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-secondary-container hover:text-on-secondary transition-all text-on-surface font-title-md text-[14px] font-bold flex items-center justify-center gap-2" onclick="prefillCotizador('Premium Corporativa')">
                   <span>Solicitar Asesoría Premium</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </button>
@@ -565,57 +566,56 @@
       <!-- ==========================================
            02 // BENTO GRID: IMPLEMENTACIONES ESTRELLA
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl bg-surface-container-lowest/60 border-y border-white/5" id="soluciones">
-        <div class="max-w-[1440px] mx-auto space-y-10">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-surface-container-lowest/60 border-y border-white/5" id="soluciones">
+        <div class="max-w-[1440px] mx-auto space-y-8 sm:space-y-10">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
             <div>
               <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">02 // INGENIERÍA APLICADA</span>
-              <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold pt-1">
+              <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold pt-1">
                 Soluciones Híbridas: Lo Físico Atrae, Lo Digital Convierte.
               </h2>
             </div>
             <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
-              Implementaciones diseñadas en Cali para agilizar tus cobros en mostrador y convertir visitantes en clientes recurrentes por WhatsApp.
+              Implementaciones diseñadas en Cali para agilizar tus cobros en mostrador y convertir visitantes en clientes por WhatsApp.
             </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6">
             <!-- Bento 1 (7 Cols) -->
-            <div class="md:col-span-7 rounded-2xl bg-surface-container/85 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden group">
-              <div class="absolute -right-8 -top-8 w-40 h-40 bg-primary-container/10 rounded-full blur-2xl"></div>
+            <div class="md:col-span-7 rounded-2xl bg-surface-container/85 border border-white/10 p-5 sm:p-7 flex flex-col justify-between shadow-xl relative overflow-hidden">
               <div>
-                <div class="flex items-center justify-between pb-4">
-                  <span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase font-bold">
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-3">
+                  <span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[10px] sm:text-label-sm uppercase font-bold">
                     Mostrador Inteligente
                   </span>
-                  <span class="font-label-sm text-label-sm text-on-surface-variant">Acrílico o Rígido Laminado</span>
+                  <span class="font-label-sm text-[10px] sm:text-label-sm text-on-surface-variant">Acrílico o Rígido Laminado</span>
                 </div>
-                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                <h3 class="font-headline-sm text-[20px] sm:text-[23px] font-bold text-on-surface">
                   Habladores de Mostrador con QR Dual
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant pt-2 max-w-xl">
-                  Reemplaza los papeles pegados con cinta en caja por una pieza elegante con tu marca que une el pago rápido (Nequi, Daviplata, Bre-B) con tu catálogo o enlace de Reseñas 5★ en Google Maps.
+                <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant pt-2 max-w-xl">
+                  Reemplaza los papeles pegados con cinta en caja por una pieza elegante con tu marca que une el pago rápido (Nequi, Daviplata, Bre-B) con tu catálogo o Reseñas 5★ en Google Maps.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6">
-                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-center gap-3">
-                    <span class="material-symbols-outlined text-primary text-[26px]">qr_code_2</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-5">
+                  <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[24px] shrink-0">qr_code_2</span>
                     <div>
-                      <div class="font-title-md text-title-md font-bold text-on-surface leading-tight">Cobro en 1 Segundo</div>
+                      <div class="font-title-md text-[14px] font-bold text-on-surface leading-tight">Cobro en 1 Segundo</div>
                       <div class="font-body-sm text-on-surface-variant text-[12px]">Cero errores digitando números</div>
                     </div>
                   </div>
-                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-center gap-3">
-                    <span class="material-symbols-outlined text-tertiary-container text-[26px]">reviews</span>
+                  <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-tertiary-container text-[24px] shrink-0">reviews</span>
                     <div>
-                      <div class="font-title-md text-title-md font-bold text-on-surface leading-tight">+ Reseñas y Seguidores</div>
+                      <div class="font-title-md text-[14px] font-bold text-on-surface leading-tight">+ Reseñas y Seguidores</div>
                       <div class="font-body-sm text-on-surface-variant text-[12px]">Impulsa tu reputación en Google</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="pt-6 flex items-center justify-between border-t border-white/5 mt-6">
-                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Producción desde 1 unidad</span>
-                <button type="button" class="text-primary font-label-md text-label-md uppercase font-bold flex items-center gap-1 group-hover:gap-2 transition-all" onclick="prefillCotizador('Hablador Nequi & Google')">
+              <div class="pt-4 mt-5 border-t border-white/5 flex flex-wrap items-center justify-between gap-2">
+                <span class="font-label-sm text-[10px] sm:text-label-sm text-on-surface-variant uppercase">Desde 1 unidad</span>
+                <button type="button" class="text-primary font-label-md text-label-md uppercase font-bold flex items-center gap-1" onclick="prefillCotizador('Hablador Nequi & Google')">
                   <span>Personalizar Hablador</span>
                   <span class="material-symbols-outlined text-[16px]">chevron_right</span>
                 </button>
@@ -623,64 +623,64 @@
             </div>
 
             <!-- Bento 2 (5 Cols) -->
-            <div class="md:col-span-5 rounded-2xl bg-surface-container-high/90 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden">
-              <div class="space-y-4">
+            <div class="md:col-span-5 rounded-2xl bg-surface-container-high/90 border border-white/10 p-5 sm:p-7 flex flex-col justify-between shadow-xl">
+              <div class="space-y-3.5">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm uppercase font-bold">
+                  <span class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-[10px] sm:text-label-sm uppercase font-bold">
                     Cero Mensualidades
                   </span>
-                  <span class="material-symbols-outlined text-secondary text-[24px]">restaurant_menu</span>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">restaurant_menu</span>
                 </div>
-                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                <h3 class="font-headline-sm text-[20px] sm:text-[23px] font-bold text-on-surface">
                   Menú / Catálogo Digital QR
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">
+                <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant">
                   Tu carta o catálogo interactivo con categorías, precios claros y carrito que envía el pedido estructurado directo a tu WhatsApp.
                 </p>
-                <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface pt-1">
-                  <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                <ul class="space-y-2 font-body-sm text-body-sm text-on-surface pt-1">
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[17px] mt-0.5 shrink-0">check_circle</span>
                     <span>Pago único de implementación, sin comisiones por venta</span>
                   </li>
-                  <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[17px] mt-0.5 shrink-0">check_circle</span>
                     <span>Abre al instante sin obligar a descargar aplicaciones</span>
                   </li>
-                  <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[17px] mt-0.5 shrink-0">check_circle</span>
                     <span>Incluye habladores QR o stickers listos para tus mesas</span>
                   </li>
                 </ul>
               </div>
-              <div class="pt-6">
-                <a class="w-full py-3.5 rounded-xl bg-surface-container border border-white/10 text-on-surface hover:bg-surface-bright transition-all font-label-md text-label-md uppercase tracking-wider font-bold text-center block" href="#demo-qr-section">
+              <div class="pt-5">
+                <a class="w-full py-3 rounded-xl bg-surface-container border border-white/10 text-on-surface hover:bg-surface-bright transition-all font-title-md text-[14px] font-bold text-center block" href="#demo-qr-section">
                   Probar Demo en Vivo →
                 </a>
               </div>
             </div>
 
             <!-- Bento 3 (5 Cols) -->
-            <div class="md:col-span-5 rounded-2xl bg-surface-container/85 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl">
-              <div class="space-y-4">
+            <div class="md:col-span-5 rounded-2xl bg-surface-container/85 border border-white/10 p-5 sm:p-7 flex flex-col justify-between shadow-xl">
+              <div class="space-y-3.5">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm uppercase font-bold">
+                  <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container font-label-sm text-[10px] sm:text-label-sm uppercase font-bold">
                     Fachadas &amp; Vitrinas
                   </span>
-                  <span class="material-symbols-outlined text-tertiary-container text-[24px]">lightbulb</span>
+                  <span class="material-symbols-outlined text-tertiary-container text-[22px]">lightbulb</span>
                 </div>
-                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                <h3 class="font-headline-sm text-[20px] sm:text-[23px] font-bold text-on-surface">
                   Avisos 3D LED &amp; Gran Formato
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">
+                <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant">
                   Fabricación sobre acrílico, poliestireno, lona y estructuras metálicas con iluminación LED de alta eficiencia preparada para el clima del Valle.
                 </p>
-                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
-                  <div class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase">Asesoría &amp; Montaje Visual</div>
+                <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5">
+                  <div class="font-label-sm text-[10px] sm:text-label-sm text-tertiary-container font-mono uppercase">Asesoría &amp; Montaje Visual</div>
                   <p class="font-body-sm text-body-sm text-on-surface-variant pt-0.5">Revisas propuesta digital previa sobre tu fachada antes de fabricar.</p>
                 </div>
               </div>
-              <div class="pt-6">
-                <button type="button" class="text-tertiary-container font-label-md text-label-md uppercase font-bold flex items-center gap-1 hover:gap-2 transition-all" onclick="prefillCotizador('Avisos 3D / Fachada')">
+              <div class="pt-5">
+                <button type="button" class="text-tertiary-container font-label-md text-label-md uppercase font-bold flex items-center gap-1" onclick="prefillCotizador('Avisos 3D / Fachada')">
                   <span>Cotizar Aviso o Vitrina</span>
                   <span class="material-symbols-outlined text-[16px]">chevron_right</span>
                 </button>
@@ -688,42 +688,47 @@
             </div>
 
             <!-- Bento 4 (7 Cols) -->
-            <div class="md:col-span-7 rounded-2xl bg-surface-container-high/90 border border-white/10 p-6 lg:p-8 flex flex-col justify-between shadow-xl relative overflow-hidden">
-              <div class="absolute -left-12 -bottom-12 w-48 h-48 bg-secondary-container/10 rounded-full blur-2xl"></div>
+            <div class="md:col-span-7 rounded-2xl bg-surface-container-high/90 border border-white/10 p-5 sm:p-7 flex flex-col justify-between shadow-xl">
               <div>
-                <div class="flex items-center justify-between pb-3">
-                  <span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm uppercase font-bold">
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-3">
+                  <span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-sm text-[10px] sm:text-label-sm uppercase font-bold">
                     100% Virtual o Híbrido
                   </span>
-                  <span class="font-label-sm text-label-sm text-primary font-mono">FÍSICO + DIGITAL</span>
+                  <span class="font-label-sm text-[10px] sm:text-label-sm text-primary font-mono">FÍSICO + DIGITAL</span>
                 </div>
-                <h3 class="font-headline-sm text-[24px] font-bold text-on-surface">
+                <h3 class="font-headline-sm text-[20px] sm:text-[23px] font-bold text-on-surface">
                   Kit «Negocio Vivo» 360°
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant pt-2 max-w-xl">
+                <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant pt-2 max-w-xl">
                   Para negocios que necesitan reactivar su visibilidad rápido: conectamos tu punto físico con Google Maps, catálogo de WhatsApp Business, códigos QR y video promocional.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-5">
-                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
-                    <span class="material-symbols-outlined text-primary text-[22px]">pin_drop</span>
-                    <div class="font-title-md text-title-md font-bold text-on-surface pt-1">Google Maps</div>
-                    <div class="font-body-sm text-on-surface-variant text-[12px]">Ficha optimizada para búsquedas</div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-4">
+                  <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 flex sm:block items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[22px] shrink-0">pin_drop</span>
+                    <div>
+                      <div class="font-title-md text-[14px] font-bold text-on-surface sm:pt-1">Google Maps</div>
+                      <div class="font-body-sm text-on-surface-variant text-[12px]">Ficha optimizada local</div>
+                    </div>
                   </div>
-                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
-                    <span class="material-symbols-outlined text-secondary text-[22px]">store</span>
-                    <div class="font-title-md text-title-md font-bold text-on-surface pt-1">Catálogo WhatsApp</div>
-                    <div class="font-body-sm text-on-surface-variant text-[12px]">Tus productos listos en el chat</div>
+                  <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 flex sm:block items-center gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[22px] shrink-0">store</span>
+                    <div>
+                      <div class="font-title-md text-[14px] font-bold text-on-surface sm:pt-1">Catálogo WhatsApp</div>
+                      <div class="font-body-sm text-on-surface-variant text-[12px]">Productos en tu chat</div>
+                    </div>
                   </div>
-                  <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5">
-                    <span class="material-symbols-outlined text-tertiary-container text-[22px]">movie</span>
-                    <div class="font-title-md text-title-md font-bold text-on-surface pt-1">Reel Comercial</div>
-                    <div class="font-body-sm text-on-surface-variant text-[12px]">Video vertical para redes y estados</div>
+                  <div class="p-3 rounded-xl bg-surface-container-lowest border border-white/5 flex sm:block items-center gap-3">
+                    <span class="material-symbols-outlined text-tertiary-container text-[22px] shrink-0">movie</span>
+                    <div>
+                      <div class="font-title-md text-[14px] font-bold text-on-surface sm:pt-1">Reel Comercial</div>
+                      <div class="font-body-sm text-on-surface-variant text-[12px]">Video para redes y estados</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="pt-6 flex flex-wrap items-center justify-between gap-3 border-t border-white/5 mt-6">
-                <span class="font-body-sm text-body-sm text-on-surface-variant">Disponible en Cali y cualquier ciudad de Colombia</span>
-                <button type="button" class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-extrabold hover:brightness-110 transition-all" onclick="prefillCotizador('Híbrida Físico + Web')">
+              <div class="pt-4 mt-5 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                <span class="font-body-sm text-[12.5px] text-on-surface-variant">Disponible en Cali y toda Colombia</span>
+                <button type="button" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-fixed font-title-md text-[13.5px] font-extrabold hover:brightness-110 transition-all" onclick="prefillCotizador('Híbrida Físico + Web')">
                   Cotizar Kit 360°
                 </button>
               </div>
@@ -733,144 +738,141 @@
       </section>
 
       <!-- ==========================================
-           DEMO INTERACTIVA: MENÚ DIGITAL QR + QR REAL ESCANEABLE
+           DEMO INTERACTIVA: MENÚ DIGITAL QR
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="demo-qr-section">
-        <div class="max-w-[1440px] mx-auto rounded-3xl bg-surface-container/75 border border-primary-container/25 p-6 sm:p-8 lg:p-12 shadow-2xl relative overflow-hidden">
-          <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
-            <!-- Left Column: Context & Real Scannable QR (6 Cols) -->
-            <div class="lg:col-span-6 space-y-5">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm uppercase font-bold">
-                <span class="material-symbols-outlined text-[16px]">smartphone</span> Experiencia Interactiva Real
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16" id="demo-qr-section">
+        <div class="max-w-[1440px] mx-auto rounded-2xl sm:rounded-3xl bg-surface-container/75 border border-primary-container/25 p-4 sm:p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-12 items-center relative z-10">
+            <!-- Left Column (6 Cols) -->
+            <div class="lg:col-span-6 space-y-4 sm:space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-[10px] sm:text-label-sm uppercase font-bold">
+                <span class="material-symbols-outlined text-[15px]">smartphone</span> Experiencia Interactiva Real
               </div>
 
-              <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold leading-tight">
-                Prueba o Escanea Ahora Nuestra Demo de Menú Digital QR.
+              <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">
+                Prueba Ahora Nuestra Demo de Menú Digital QR.
               </h2>
 
-              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Comprueba en segundos por qué nuestros clientes dejan atrás los PDF lentos: filtra categorías en el teléfono interactivo, suma platos con el botón <strong>+</strong> y mira cómo viaja la orden lista a WhatsApp.
+              <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant leading-relaxed">
+                Comprueba por qué nuestros clientes dejan atrás los PDF lentos: filtra categorías en el simulador, suma platos con el botón <strong>+</strong> y mira cómo viaja la orden lista a WhatsApp.
               </p>
 
-              <div class="space-y-3 pt-1">
-                <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
-                    <span class="material-symbols-outlined text-[18px]">flash_on</span>
+              <div class="space-y-2.5 pt-1">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+                    <span class="material-symbols-outlined text-[17px]">flash_on</span>
                   </div>
-                  <span class="font-body-md text-body-md text-on-surface">Carga instantánea en cualquier teléfono sin instalar nada</span>
+                  <span class="font-body-sm sm:font-body-md text-[13.5px] sm:text-body-md text-on-surface">Carga instantánea sin instalar aplicaciones</span>
                 </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
-                    <span class="material-symbols-outlined text-[18px]">shopping_cart_checkout</span>
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+                    <span class="material-symbols-outlined text-[17px]">shopping_cart_checkout</span>
                   </div>
-                  <span class="font-body-md text-body-md text-on-surface">Pedido calculado automáticamente directo a tu WhatsApp</span>
+                  <span class="font-body-sm sm:font-body-md text-[13.5px] sm:text-body-md text-on-surface">Pedido calculado automáticamente a tu WhatsApp</span>
                 </div>
-                <div class="flex items-center gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container flex-shrink-0">
-                    <span class="material-symbols-outlined text-[18px]">savings</span>
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container shrink-0">
+                    <span class="material-symbols-outlined text-[17px]">savings</span>
                   </div>
-                  <span class="font-body-md text-body-md text-on-surface">Pago único · Cero comisiones ni mensualidades obligatorias</span>
+                  <span class="font-body-sm sm:font-body-md text-[13.5px] sm:text-body-md text-on-surface">Pago único · Cero comisiones ni mensualidades</span>
                 </div>
               </div>
 
-              <!-- Real Scannable QR Box -->
-              <div class="p-4 rounded-2xl bg-surface-container-lowest border border-white/10 flex items-center gap-4 shadow-inner max-w-lg">
+              <!-- Real Scannable QR Box (Desktop & Tablet only, since mobile users are already on their phone!) -->
+              <div class="hidden md:flex p-4 rounded-2xl bg-surface-container-lowest border border-white/10 items-center gap-4 max-w-lg">
                 <img
                   src="assets/qr-demo-menu.svg"
                   alt="Código QR real escaneable para abrir la Demo de Menú Digital ARTIMP"
-                  class="w-20 h-20 rounded-xl bg-white p-1.5 flex-shrink-0"
+                  class="w-20 h-20 rounded-xl bg-white p-1.5 shrink-0"
                 />
                 <div class="space-y-1">
                   <div class="font-label-sm text-label-sm text-primary uppercase font-bold">¿Estás en computador? Escanéalo en vivo</div>
                   <p class="font-body-sm text-body-sm text-on-surface-variant">
-                    Apunta la cámara de tu celular a este código QR real para abrir la demo completa en tu teléfono, o pruébala aquí al lado.
+                    Apunta la cámara de tu celular a este código QR real para abrir la demo completa en tu teléfono.
                   </p>
                 </div>
               </div>
 
-              <div class="flex flex-wrap gap-3 pt-2">
-                <button type="button" class="px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-extrabold tracking-wider hover:brightness-110 transition-all flex items-center gap-2" onclick="prefillCotizador('Menú Digital QR')">
+              <div class="flex flex-col sm:flex-row sm:flex-wrap gap-2.5 sm:gap-3 pt-1">
+                <button type="button" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-primary-container text-on-primary-fixed font-title-md text-[14px] font-extrabold hover:brightness-110 transition-all flex items-center justify-center gap-2" onclick="prefillCotizador('Menú Digital QR')">
                   <span>Cotizar Menú QR Para Mi Negocio</span>
                   <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                 </button>
-                <a class="px-5 py-3.5 rounded-xl bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md uppercase font-bold tracking-wider hover:bg-surface-bright transition-all flex items-center gap-2" href="demo-menu.html">
-                  <span>Abrir Pantalla Completa</span>
-                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                <a class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-surface-container-high border border-white/10 text-on-surface font-title-md text-[14px] font-bold hover:bg-surface-bright transition-all flex items-center justify-center gap-2" href="demo-menu.html">
+                  <span>Abrir Demo en Pantalla Completa</span>
+                  <span class="material-symbols-outlined text-[17px]">open_in_new</span>
                 </a>
               </div>
             </div>
 
-            <!-- Right Column: Interactive Live Smartphone Simulator (6 Cols) -->
+            <!-- Right Column: Interactive Smartphone Simulator -->
             <div class="lg:col-span-6 flex justify-center">
-              <div class="w-full max-w-[350px] rounded-[42px] bg-surface-container-lowest border-2 border-white/15 p-3 shadow-2xl relative">
-                <div class="w-full rounded-[32px] bg-surface-container-high overflow-hidden flex flex-col h-[540px] relative border border-white/5">
-                  <div class="h-6 w-full bg-surface-container-highest flex items-center justify-center">
-                    <div class="w-20 h-2.5 rounded-full bg-surface-container-lowest"></div>
+              <div class="w-full max-w-[340px] rounded-[34px] sm:rounded-[42px] bg-surface-container-lowest border-2 border-white/15 p-2 sm:p-3 shadow-2xl">
+                <div class="w-full rounded-[26px] sm:rounded-[32px] bg-surface-container-high overflow-hidden flex flex-col h-[480px] sm:h-[530px] border border-white/5">
+                  <div class="h-5 w-full bg-surface-container-highest flex items-center justify-center">
+                    <div class="w-16 h-2 rounded-full bg-surface-container-lowest"></div>
                   </div>
 
-                  <div class="p-3.5 bg-surface-container-highest flex items-center justify-between border-b border-white/5">
-                    <div>
-                      <div class="font-headline-sm text-[16px] leading-tight font-bold text-on-surface">La Brasa Bistro · Cali</div>
-                      <div class="font-label-sm text-[10px] text-primary uppercase">Mesa 04 · Tecnología ARTIMP</div>
+                  <div class="p-3 bg-surface-container-highest flex items-center justify-between border-b border-white/5 gap-2">
+                    <div class="min-w-0">
+                      <div class="font-headline-sm text-[15px] leading-tight font-bold text-on-surface truncate">La Brasa Bistro · Cali</div>
+                      <div class="font-label-sm text-[9.5px] text-primary uppercase">Menú Digital ARTIMP</div>
                     </div>
-                    <span class="px-2 py-0.5 rounded-full bg-[#25D366]/20 text-[#25D366] font-label-sm text-[9px] uppercase font-bold">● Abierto</span>
+                    <span class="px-2 py-0.5 rounded-full bg-[#25D366]/20 text-[#25D366] font-label-sm text-[9px] uppercase font-bold shrink-0">● Abierto</span>
                   </div>
 
-                  <div class="flex items-center gap-1.5 px-3 py-2.5 bg-surface-container overflow-x-auto no-scrollbar text-[11px]">
+                  <div class="flex items-center gap-1.5 px-3 py-2 bg-surface-container overflow-x-auto no-scrollbar text-[11px]">
                     <button type="button" class="menu-tab px-3 py-1 rounded-full bg-primary-container text-on-primary-fixed font-bold font-label-sm" id="tab-todos" onclick="filterDemoMenu('todos')">Todos</button>
                     <button type="button" class="menu-tab px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm" id="tab-parrilla" onclick="filterDemoMenu('parrilla')">Parrilla</button>
                     <button type="button" class="menu-tab px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm" id="tab-bebidas" onclick="filterDemoMenu('bebidas')">Bebidas</button>
                   </div>
 
-                  <div class="flex-1 overflow-y-auto p-3 space-y-2.5 no-scrollbar" id="menu-items-feed">
-                    <div class="menu-card parrilla p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2 shadow-sm">
-                      <div class="flex-1">
+                  <div class="flex-1 overflow-y-auto p-2.5 sm:p-3 space-y-2.5 no-scrollbar" id="menu-items-feed">
+                    <div class="menu-card parrilla p-2.5 sm:p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2">
+                      <div class="flex-1 min-w-0">
                         <div class="font-title-md text-[13px] font-bold text-on-surface">Corte Punta de Anca 350g</div>
-                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Maduración 21 días, papa rústica y chimichurri</div>
+                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Papa rústica y chimichurri</div>
                         <div class="font-mono text-tertiary-container font-bold text-[12px] pt-1">$38.000</div>
                       </div>
-                      <button type="button" aria-label="Agregar Punta de Anca" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary hover:brightness-110 flex items-center justify-center transition-all font-bold" onclick="addDemoItem('Punta de Anca 350g', 38000)">
+                      <button type="button" aria-label="Agregar Punta de Anca" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold shrink-0" onclick="addDemoItem('Punta de Anca 350g', 38000)">
                         <span class="material-symbols-outlined text-[18px]">add</span>
                       </button>
                     </div>
 
-                    <div class="menu-card parrilla p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2 shadow-sm">
-                      <div class="flex-1">
-                        <div class="font-title-md text-[13px] font-bold text-on-surface">Costillas San Luis Glaseadas</div>
-                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Ahumadas al barril + papas criollas</div>
+                    <div class="menu-card parrilla p-2.5 sm:p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2">
+                      <div class="flex-1 min-w-0">
+                        <div class="font-title-md text-[13px] font-bold text-on-surface">Costillas San Luis BBQ</div>
+                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Ahumadas al barril + criollas</div>
                         <div class="font-mono text-tertiary-container font-bold text-[12px] pt-1">$34.500</div>
                       </div>
-                      <button type="button" aria-label="Agregar Costillas San Luis" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary hover:brightness-110 flex items-center justify-center transition-all font-bold" onclick="addDemoItem('Costillas San Luis', 34500)">
+                      <button type="button" aria-label="Agregar Costillas San Luis" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold shrink-0" onclick="addDemoItem('Costillas San Luis', 34500)">
                         <span class="material-symbols-outlined text-[18px]">add</span>
                       </button>
                     </div>
 
-                    <div class="menu-card bebidas p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2 shadow-sm">
-                      <div class="flex-1">
+                    <div class="menu-card bebidas p-2.5 sm:p-3 rounded-xl bg-surface-container border border-white/5 flex items-center justify-between gap-2">
+                      <div class="flex-1 min-w-0">
                         <div class="font-title-md text-[13px] font-bold text-on-surface">Lulada Tradicional Valluna</div>
-                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Lulo fresco macerado, leche condensada y hielo</div>
+                        <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Lulo fresco macerado y hielo</div>
                         <div class="font-mono text-tertiary-container font-bold text-[12px] pt-1">$12.000</div>
                       </div>
-                      <button type="button" aria-label="Agregar Lulada Valluna" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary hover:brightness-110 flex items-center justify-center transition-all font-bold" onclick="addDemoItem('Lulada Valluna', 12000)">
+                      <button type="button" aria-label="Agregar Lulada Valluna" class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold shrink-0" onclick="addDemoItem('Lulada Valluna', 12000)">
                         <span class="material-symbols-outlined text-[18px]">add</span>
                       </button>
                     </div>
                   </div>
 
-                  <!-- Bottom Cart Bar inside Phone -->
-                  <div class="p-3 bg-surface-container-lowest border-t border-white/10 shadow-lg flex items-center justify-between" id="demo-cart-bar">
-                    <div class="flex items-center gap-2">
-                      <span class="material-symbols-outlined text-primary text-[20px]">shopping_bag</span>
-                      <div>
-                        <span class="font-label-sm text-[9px] text-on-surface-variant uppercase block">Mi Orden (Toca + arriba)</span>
-                        <div class="font-title-md text-[12px] font-bold text-on-surface" id="demo-cart-counter">0 platos seleccionados</div>
+                  <div class="p-2.5 sm:p-3 bg-surface-container-lowest border-t border-white/10 flex items-center justify-between gap-2" id="demo-cart-bar">
+                    <div class="flex items-center gap-2 min-w-0">
+                      <span class="material-symbols-outlined text-primary text-[19px] shrink-0">shopping_bag</span>
+                      <div class="min-w-0">
+                        <span class="font-label-sm text-[8.5px] text-on-surface-variant uppercase block">Toca + arriba</span>
+                        <div class="font-title-md text-[11.5px] font-bold text-on-surface truncate" id="demo-cart-counter">0 platos seleccionados</div>
                       </div>
                     </div>
-                    <button type="button" class="px-3.5 py-2 rounded-lg bg-[#25D366] text-[#050811] font-label-sm text-[11px] uppercase font-extrabold flex items-center gap-1 shadow-sm hover:brightness-105" onclick="sendDemoWhatsApp()">
+                    <button type="button" class="px-3 py-2 rounded-lg bg-[#25D366] text-[#050811] font-label-sm text-[10.5px] uppercase font-extrabold flex items-center gap-1 shrink-0" onclick="sendDemoWhatsApp()">
                       <span>Pedir</span>
-                      <span class="material-symbols-outlined text-[14px]">send</span>
+                      <span class="material-symbols-outlined text-[13px]">send</span>
                     </button>
                   </div>
                 </div>
@@ -883,140 +885,140 @@
       <!-- ==========================================
            03 // CATÁLOGO INTEGRAL EN 4 PILARES + VITRINA VISUAL
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="catalogo">
-        <div class="max-w-[1440px] mx-auto space-y-10">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16" id="catalogo">
+        <div class="max-w-[1440px] mx-auto space-y-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
             <div>
               <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">03 // ESPECIFICACIONES INDUSTRIALES</span>
-              <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold pt-1">
+              <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold pt-1">
                 Catálogo Integral ARTIMP
               </h2>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            <p class="font-body-sm sm:font-body-md text-on-surface-variant max-w-md">
               Desde micro-tirajes rápidos hasta proyectos completos de fachada, litografía corporativa y plataformas digitales.
             </p>
           </div>
 
-          <!-- Interactive Pillar Tabs -->
-          <div class="flex flex-wrap gap-2">
-            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-extrabold transition-all flex items-center gap-2" id="pillar-btn-litografia" onclick="switchPillar('litografia')">
-              <span class="material-symbols-outlined text-[18px]">print</span>
-              <span>01. Litografía &amp; Papelería</span>
+          <!-- 2x2 Thumb-Friendly Grid on Mobile, Inline Row on sm+ -->
+          <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-2">
+            <button type="button" class="pillar-tab px-3 sm:px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-fixed font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase font-extrabold transition-all flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2" id="pillar-btn-litografia" onclick="switchPillar('litografia')">
+              <span class="material-symbols-outlined text-[16px] sm:text-[18px]">print</span>
+              <span class="sm:hidden">01. Litografía</span>
+              <span class="hidden sm:inline">01. Litografía &amp; Papelería</span>
             </button>
-            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center gap-2" id="pillar-btn-avisos" onclick="switchPillar('avisos')">
-              <span class="material-symbols-outlined text-[18px]">wb_incandescent</span>
-              <span>02. Avisos &amp; Gran Formato</span>
+            <button type="button" class="pillar-tab px-3 sm:px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2" id="pillar-btn-avisos" onclick="switchPillar('avisos')">
+              <span class="material-symbols-outlined text-[16px] sm:text-[18px]">wb_incandescent</span>
+              <span class="sm:hidden">02. Avisos LED</span>
+              <span class="hidden sm:inline">02. Avisos &amp; Gran Formato</span>
             </button>
-            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center gap-2" id="pillar-btn-empaques" onclick="switchPillar('empaques')">
-              <span class="material-symbols-outlined text-[18px]">inventory_2</span>
-              <span>03. Empaques, Stickers &amp; Marca</span>
+            <button type="button" class="pillar-tab px-3 sm:px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2" id="pillar-btn-empaques" onclick="switchPillar('empaques')">
+              <span class="material-symbols-outlined text-[16px] sm:text-[18px]">inventory_2</span>
+              <span class="sm:hidden">03. Empaques</span>
+              <span class="hidden sm:inline">03. Empaques, Stickers &amp; Marca</span>
             </button>
-            <button type="button" class="pillar-tab px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-md text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center gap-2" id="pillar-btn-digital" onclick="switchPillar('digital')">
-              <span class="material-symbols-outlined text-[18px]">devices</span>
-              <span>04. Digital, QR &amp; Video</span>
+            <button type="button" class="pillar-tab px-3 sm:px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface-variant font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase font-semibold transition-all hover:bg-surface-bright flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2" id="pillar-btn-digital" onclick="switchPillar('digital')">
+              <span class="material-symbols-outlined text-[16px] sm:text-[18px]">devices</span>
+              <span class="sm:hidden">04. Digital &amp; QR</span>
+              <span class="hidden sm:inline">04. Digital, QR &amp; Video</span>
             </button>
           </div>
 
           <!-- Tab Content Panels -->
           <div>
-            <!-- Pillar 01 -->
-            <div class="pillar-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-litografia">
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+            <div class="pillar-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5" id="pillar-litografia">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">style</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Tarjetas de Presentación &amp; QR</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Tarjetas de Presentación &amp; QR</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Propalcote 300g, plastificado mate suave, reserva de Brillo UV sectorizado o brillo total con Código QR integrado.</p>
-                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Acabado Ejecutivo</span>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-1">Acabado Ejecutivo</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">description</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Volantes, Brochures &amp; Cartas</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Volantes, Brochures &amp; Cartas</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Volantes full color alta definición, folletos plegables, cartas menú plastificadas de alta resistencia y afiches.</p>
-                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Media Carta · Cuarto · Oficio</span>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-1">Media Carta · Cuarto · Oficio</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">folder</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Carpetas, Factureros &amp; Bonos</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Carpetas, Factureros &amp; Bonos</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Carpetas corporativas con bolsillo, recibos de caja, factureros, talonarios, agendas, bonos regalo y papelería comercial.</p>
-                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Papelería Institucional</span>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-1">Papelería Institucional</span>
               </div>
             </div>
 
-            <!-- Pillar 02 -->
-            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-avisos">
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5" id="pillar-avisos">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined">wb_incandescent</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Letras 3D, Neón Flex &amp; Cajas LED</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Letras 3D, Neón Flex &amp; Cajas LED</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Avisos volumétricos en acrílico, poliestireno, madera o lámina con retroiluminación LED directa o halo perimetral.</p>
-                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-2">Fabricación e Instalación</span>
+                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-1">Fabricación e Instalación</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined">window</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Vinilos &amp; Microperforado</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Vinilos &amp; Microperforado</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Vinilo microperforado para vidrieras comerciales, vinilo adhesivo laminado, esmerilado para oficinas y señalización.</p>
-                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-2">Alta Durabilidad Exterior</span>
+                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-1">Alta Durabilidad Exterior</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary"><span class="material-symbols-outlined">ad_units</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Pendones, Arañas &amp; Roll-Ups</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Pendones, Arañas &amp; Roll-Ups</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Banners en lona de alta tenacidad con tubos u ojaletes, porta-pendones tipo araña y estructuras retráctiles Roll-Up.</p>
-                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-2">Puntos de Venta y Eventos</span>
+                <span class="font-label-sm text-label-sm text-secondary font-mono uppercase block pt-1">Puntos de Venta y Eventos</span>
               </div>
             </div>
 
-            <!-- Pillar 03 -->
-            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-empaques">
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5" id="pillar-empaques">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container"><span class="material-symbols-outlined">loyalty</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Stickers &amp; Etiquetas Troqueladas</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Stickers &amp; Etiquetas Troqueladas</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Stickers en vinilo resistente al agua y refrigeración con corte silueteado exacto para envases, frascos y domicilios.</p>
-                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-2">Resistencia al Agua</span>
+                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-1">Resistencia al Agua</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container"><span class="material-symbols-outlined">shopping_bag</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Cajas &amp; Bolsas para Productos</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Cajas &amp; Bolsas para Productos</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Diseño y producción de cajas plegadizas, empaques comerciales y bolsas impresas en kraft o propalcote para boutiques y alimentos.</p>
-                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-2">Empaque con Identidad</span>
+                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-1">Empaque con Identidad</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-container"><span class="material-symbols-outlined">palette</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Diseño de Marca &amp; Logotipos</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Diseño de Marca &amp; Logotipos</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Creación de logotipos profesionales desde cero, rediseño vectorial de logos pixelados y línea gráfica comercial.</p>
-                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-2">Entrega en Formatos Editables</span>
+                <span class="font-label-sm text-label-sm text-tertiary-container font-mono uppercase block pt-1">Formatos Editables</span>
               </div>
             </div>
 
-            <!-- Pillar 04 -->
-            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="pillar-digital">
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+            <div class="pillar-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5" id="pillar-digital">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">qr_code</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Menús QR &amp; Catálogos Dinámicos</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Menús QR &amp; Catálogos Dinámicos</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Catálogo web interactivo con envío automático del pedido a WhatsApp y cero cobros de comisión por venta.</p>
-                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Pago Único</span>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-1">Pago Único</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">web</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Páginas Web de Alta Conversión</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Páginas Web de Alta Conversión</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Sitios web ultrarrápidos como este mismo, adaptados a celular, con SEO local para Cali y contacto directo.</p>
-                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Hosting Gratuito HTTPS</span>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-1">Hosting Gratuito HTTPS</span>
               </div>
-              <div class="p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
+              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container/80 border border-white/10 shadow-lg space-y-2">
                 <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined">smart_display</span></div>
-                <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Video Marketing &amp; Google Maps</h3>
+                <h3 class="font-headline-sm text-[18px] sm:text-headline-sm font-bold text-on-surface">Video Marketing &amp; Google Maps</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">Reels comerciales verticales de alto impacto para redes sociales y posicionamiento de tu ficha en Google Maps.</p>
-                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-2">Tráfico Local Calificado</span>
+                <span class="font-label-sm text-label-sm text-primary font-mono uppercase block pt-1">Tráfico Local Calificado</span>
               </div>
             </div>
           </div>
 
-          <!-- Visual Product Gallery (4 Real Showcase Cards) -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-4">
+          <!-- Visual Product Gallery (2x2 Grid on Mobile, 4 Columns on Desktop!) -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 pt-2">
             <article class="rounded-2xl overflow-hidden bg-surface-container border border-white/10 group">
               <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
                 <img src="assets/hablador-qr.jpg" alt="Hablador QR en acrílico negro mate y dorado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div class="p-4">
-                <span class="font-label-sm text-[10px] text-tertiary-container uppercase font-bold">Mostrador QR</span>
-                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Habladores Acrílico &amp; Oro</h4>
+              <div class="p-3 sm:p-4">
+                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-tertiary-container uppercase font-bold block">Mostrador QR</span>
+                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Habladores Acrílico</h4>
               </div>
             </article>
 
@@ -1024,9 +1026,9 @@
               <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
                 <img src="assets/avisos-led.jpg" alt="Aviso comercial en letras volumétricas 3D LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div class="p-4">
-                <span class="font-label-sm text-[10px] text-primary uppercase font-bold">Fachadas Comerciales</span>
-                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Letras Volumétricas 3D LED</h4>
+              <div class="p-3 sm:p-4">
+                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-primary uppercase font-bold block">Fachadas</span>
+                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Letras 3D LED</h4>
               </div>
             </article>
 
@@ -1034,9 +1036,9 @@
               <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
                 <img src="assets/tarjetas-qr.jpg" alt="Tarjetas de presentación inteligentes con Código QR y brillo UV" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div class="p-4">
-                <span class="font-label-sm text-[10px] text-secondary uppercase font-bold">Litografía de Lujo</span>
-                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Tarjetas QR + Brillo UV</h4>
+              <div class="p-3 sm:p-4">
+                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-secondary uppercase font-bold block">Litografía</span>
+                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Tarjetas QR + UV</h4>
               </div>
             </article>
 
@@ -1044,9 +1046,9 @@
               <div class="aspect-[4/3] overflow-hidden bg-surface-container-lowest">
                 <img src="assets/hero-studio.jpg" alt="Ecosistema visual ARTIMP Físico + Digital" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div class="p-4">
-                <span class="font-label-sm text-[10px] text-primary uppercase font-bold">Ecosistema 360°</span>
-                <h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Identidad + Web + Imprenta</h4>
+              <div class="p-3 sm:p-4">
+                <span class="font-label-sm text-[9.5px] sm:text-[10px] text-primary uppercase font-bold block">Proyecto 360°</span>
+                <h4 class="font-title-md text-[13.5px] sm:text-[16px] text-on-surface font-bold leading-snug">Marca + Web + Print</h4>
               </div>
             </article>
           </div>
@@ -1056,45 +1058,45 @@
       <!-- ==========================================
            SECCIÓN DE ALTO VALOR: DISEÑO WEB COMERCIAL
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl bg-surface-container-lowest border-y border-white/5" id="diseno-web">
-        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          <div class="lg:col-span-6 space-y-5">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-surface-container-lowest border-y border-white/5" id="diseno-web">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-12 items-center">
+          <div class="lg:col-span-6 space-y-4 sm:space-y-5">
             <span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-widest font-mono">
               CONVERSIÓN DIGITAL SIN FRICCIONES
             </span>
-            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">
-              Diseñamos una Página Web de Este Mismo Nivel para Tu Empresa.
+            <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">
+              Diseñamos una Página Web de Este Nivel para Tu Empresa.
             </h2>
-            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant leading-relaxed">
               Hoy la mayoría de decisiones de compra en Cali inician en Google o desde un enlace en Instagram y WhatsApp. Tener una página web tan impecable como tu aviso físico inspira confianza inmediata y multiplica tus cotizaciones.
             </p>
 
-            <div class="space-y-3 pt-1">
-              <div class="p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
-                <div class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-[12px] flex-shrink-0 mt-0.5">1</div>
+            <div class="space-y-2.5 sm:space-y-3 pt-1">
+              <div class="p-3.5 sm:p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
+                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">1</div>
                 <div>
-                  <div class="font-title-md text-title-md font-bold text-on-surface">Landing Page &amp; Catálogo Ágil</div>
+                  <div class="font-title-md text-[14.5px] sm:text-title-md font-bold text-on-surface">Landing Page &amp; Catálogo Ágil</div>
                   <p class="font-body-sm text-body-sm text-on-surface-variant">Página única de carga instantánea enfocada en mostrar tu oferta y llevar clientes directo a tu WhatsApp.</p>
                 </div>
               </div>
-              <div class="p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
-                <div class="w-7 h-7 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold text-[12px] flex-shrink-0 mt-0.5">2</div>
+              <div class="p-3.5 sm:p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
+                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">2</div>
                 <div>
-                  <div class="font-title-md text-title-md font-bold text-on-surface">Sitio Web Comercial de Alto Impacto</div>
+                  <div class="font-title-md text-[14.5px] sm:text-title-md font-bold text-on-surface">Sitio Web Comercial de Alto Impacto</div>
                   <p class="font-body-sm text-body-sm text-on-surface-variant">Arquitectura completa como esta web: catálogo por categorías, cotizador interactivo, FAQ y SEO local en Google.</p>
                 </div>
               </div>
-              <div class="p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
-                <div class="w-7 h-7 rounded-full bg-tertiary-container/20 text-tertiary-container flex items-center justify-center font-bold text-[12px] flex-shrink-0 mt-0.5">3</div>
+              <div class="p-3.5 sm:p-4 rounded-xl bg-surface-container border border-white/5 flex items-start gap-3">
+                <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-tertiary-container/20 text-tertiary-container flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">3</div>
                 <div>
-                  <div class="font-title-md text-title-md font-bold text-on-surface">Ecosistema 360° Físico + Web</div>
+                  <div class="font-title-md text-[14.5px] sm:text-title-md font-bold text-on-surface">Ecosistema 360° Físico + Web</div>
                   <p class="font-body-sm text-body-sm text-on-surface-variant">Desarrollamos tu página web y producimos tus tarjetas QR, habladores y avisos bajo una sola dirección creativa.</p>
                 </div>
               </div>
             </div>
 
-            <div class="pt-2">
-              <button type="button" class="px-6 py-3.5 rounded-xl bg-tertiary-container text-on-tertiary font-label-md text-label-md uppercase font-extrabold tracking-wider hover:brightness-105 transition-all" onclick="prefillCotizador('Página Web Comercial')">
+            <div class="pt-1">
+              <button type="button" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-tertiary-container text-on-tertiary font-title-md text-[14px] font-extrabold hover:brightness-105 transition-all" onclick="prefillCotizador('Página Web Comercial')">
                 Consultar Proyecto Web →
               </button>
             </div>
@@ -1102,34 +1104,34 @@
 
           <!-- Browser Performance Card -->
           <div class="lg:col-span-6">
-            <div class="relative rounded-3xl bg-surface-container border border-white/10 p-6 lg:p-8 shadow-2xl">
-              <div class="p-5 sm:p-6 rounded-2xl bg-surface-container-lowest border border-white/5 space-y-5">
-                <div class="flex items-center justify-between pb-3 border-b border-white/5">
-                  <div class="flex items-center gap-2">
-                    <span class="w-3 h-3 rounded-full bg-error"></span>
-                    <span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
-                    <span class="w-3 h-3 rounded-full bg-[#25D366]"></span>
+            <div class="rounded-2xl sm:rounded-3xl bg-surface-container border border-white/10 p-4 sm:p-7 shadow-2xl">
+              <div class="p-4 sm:p-6 rounded-2xl bg-surface-container-lowest border border-white/5 space-y-4">
+                <div class="flex items-center justify-between pb-2.5 border-b border-white/5 gap-2">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#25D366]"></span>
                   </div>
-                  <span class="font-mono text-label-sm text-label-sm text-on-surface-variant">https://tu-marca-comercial.com</span>
+                  <span class="font-mono text-[10px] sm:text-label-sm text-on-surface-variant truncate">https://tu-marca.com</span>
                 </div>
 
-                <div class="grid grid-cols-3 gap-3 text-center py-3">
-                  <div class="p-3.5 rounded-xl bg-surface-container border border-white/5">
-                    <div class="font-headline-sm text-headline-sm font-extrabold text-primary">100%</div>
-                    <div class="font-label-sm text-[10px] text-on-surface-variant uppercase pt-1">Móvil Responsivo</div>
+                <div class="grid grid-cols-3 gap-2 sm:gap-3 text-center py-2">
+                  <div class="p-2.5 sm:p-3.5 rounded-xl bg-surface-container border border-white/5">
+                    <div class="font-headline-sm text-[17px] sm:text-headline-sm font-extrabold text-primary">100%</div>
+                    <div class="font-label-sm text-[9px] sm:text-[10px] text-on-surface-variant uppercase pt-0.5">Adaptable</div>
                   </div>
-                  <div class="p-3.5 rounded-xl bg-surface-container border border-white/5">
-                    <div class="font-headline-sm text-headline-sm font-extrabold text-[#25D366]">&lt;1s</div>
-                    <div class="font-label-sm text-[10px] text-on-surface-variant uppercase pt-1">Carga Ultrarrápida</div>
+                  <div class="p-2.5 sm:p-3.5 rounded-xl bg-surface-container border border-white/5">
+                    <div class="font-headline-sm text-[17px] sm:text-headline-sm font-extrabold text-[#25D366]">&lt;1s</div>
+                    <div class="font-label-sm text-[9px] sm:text-[10px] text-on-surface-variant uppercase pt-0.5">Velocidad</div>
                   </div>
-                  <div class="p-3.5 rounded-xl bg-surface-container border border-white/5">
-                    <div class="font-headline-sm text-headline-sm font-extrabold text-tertiary-container">$0</div>
-                    <div class="font-label-sm text-[10px] text-on-surface-variant uppercase pt-1">Mensualidad Hosting</div>
+                  <div class="p-2.5 sm:p-3.5 rounded-xl bg-surface-container border border-white/5">
+                    <div class="font-headline-sm text-[17px] sm:text-headline-sm font-extrabold text-tertiary-container">$0</div>
+                    <div class="font-label-sm text-[9px] sm:text-[10px] text-on-surface-variant uppercase pt-0.5">Mensualidad</div>
                   </div>
                 </div>
 
-                <p class="font-body-sm text-body-sm text-on-surface-variant text-center">
-                  Código limpio de última generación sin plantillas lentas ni cobros ocultos. Compatible con dominio propio (<code>.com</code> / <code>.com.co</code>) y certificado de seguridad HTTPS.
+                <p class="font-body-sm text-[12.5px] sm:text-body-sm text-on-surface-variant text-center">
+                  Código limpio de última generación sin plantillas lentas ni cobros ocultos. Compatible con dominio propio (<code>.com</code> / <code>.com.co</code>) y seguridad HTTPS.
                 </p>
               </div>
             </div>
@@ -1140,145 +1142,146 @@
       <!-- ==========================================
            04 // COTIZADOR INTELIGENTE PERSONALIZADO EN 3 PASOS
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl" id="cotizador-section">
-        <div id="cotizador-card" class="max-w-[1120px] mx-auto rounded-3xl bg-surface-container-high/90 border border-white/10 p-6 sm:p-8 lg:p-12 shadow-2xl relative transition-all duration-500">
-          <div class="text-center max-w-2xl mx-auto space-y-2 pb-8">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16" id="cotizador-section">
+        <div id="cotizador-card" class="max-w-[1120px] mx-auto rounded-2xl sm:rounded-3xl bg-surface-container-high/90 border border-white/10 p-4 sm:p-8 lg:p-12 shadow-2xl relative transition-all duration-500">
+          <div class="text-center max-w-2xl mx-auto space-y-2 pb-6 sm:pb-8">
             <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">04 // CONFIGURADOR DIRECTO</span>
-            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">
+            <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">
               Cotizador Inteligente ARTIMP
             </h2>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Configura tu requerimiento en 3 pasos rápidos. Recibirás atención directa y cotización ajustada exactamente a tus materiales y cantidades en WhatsApp.
+            <p class="font-body-md text-[14px] sm:text-body-md text-on-surface-variant">
+              Configura tu solicitud en 3 pasos rápidos y recíbela atendida directamente en WhatsApp.
             </p>
           </div>
 
-          <div class="space-y-8">
-            <!-- PASO 1 -->
-            <div class="space-y-3">
-              <div class="flex items-center gap-2.5">
-                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px]">1</span>
-                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">Selecciona la Línea de Producción</h3>
+          <div class="space-y-6 sm:space-y-8">
+            <!-- PASO 1 (2x2 Grid on Mobile!) -->
+            <div class="space-y-2.5">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px] shrink-0">1</span>
+                <h3 class="font-title-lg text-[15.5px] sm:text-title-lg font-bold text-on-surface">Elige la Línea de Producción</h3>
               </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
                 <label class="cursor-pointer">
                   <input class="peer sr-only" name="cotiz-linea" type="radio" value="Emprendedor Ágil" />
-                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-primary-container peer-checked:text-on-primary-fixed peer-checked:border-primary-container transition-all flex flex-col justify-between h-full">
-                    <span class="font-title-md text-title-md font-bold block">Impulso Ágil</span>
-                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Arranque económico y veloz</span>
+                  <div class="p-3 sm:p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-primary-container peer-checked:text-on-primary-fixed peer-checked:border-primary-container transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-[14px] sm:text-title-md font-bold block leading-tight">Impulso Ágil</span>
+                    <span class="font-body-sm text-[11.5px] sm:text-body-sm opacity-80 pt-1">Económica y veloz</span>
                   </div>
                 </label>
                 <label class="cursor-pointer">
                   <input checked class="peer sr-only" name="cotiz-linea" type="radio" value="Comercial Estándar" />
-                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-tertiary-container peer-checked:text-on-tertiary peer-checked:border-tertiary-container transition-all flex flex-col justify-between h-full">
-                    <span class="font-title-md text-title-md font-bold block">Comercial Estándar</span>
-                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Durabilidad y alto impacto</span>
+                  <div class="p-3 sm:p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-tertiary-container peer-checked:text-on-tertiary peer-checked:border-tertiary-container transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-[14px] sm:text-title-md font-bold block leading-tight">Comercial</span>
+                    <span class="font-body-sm text-[11.5px] sm:text-body-sm opacity-80 pt-1">Alta durabilidad</span>
                   </div>
                 </label>
                 <label class="cursor-pointer">
                   <input class="peer sr-only" name="cotiz-linea" type="radio" value="Premium Corporativa" />
-                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-secondary-container peer-checked:text-on-secondary peer-checked:border-secondary-container transition-all flex flex-col justify-between h-full">
-                    <span class="font-title-md text-title-md font-bold block">Premium Atelier</span>
-                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Materiales nobles, 3D y lujo</span>
+                  <div class="p-3 sm:p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-secondary-container peer-checked:text-on-secondary peer-checked:border-secondary-container transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-[14px] sm:text-title-md font-bold block leading-tight">Premium</span>
+                    <span class="font-body-sm text-[11.5px] sm:text-body-sm opacity-80 pt-1">Acrílico y 3D LED</span>
                   </div>
                 </label>
                 <label class="cursor-pointer">
                   <input class="peer sr-only" name="cotiz-linea" type="radio" value="Híbrida Físico + Web" />
-                  <div class="p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-surface-bright peer-checked:text-primary peer-checked:border-primary transition-all flex flex-col justify-between h-full">
-                    <span class="font-title-md text-title-md font-bold block">Híbrida 360°</span>
-                    <span class="font-body-sm text-body-sm opacity-80 pt-1">Impresión + QR + Web</span>
+                  <div class="p-3 sm:p-4 rounded-xl bg-surface-container border border-white/5 peer-checked:bg-surface-bright peer-checked:text-primary peer-checked:border-primary transition-all flex flex-col justify-between h-full">
+                    <span class="font-title-md text-[14px] sm:text-title-md font-bold block leading-tight">Híbrida 360°</span>
+                    <span class="font-body-sm text-[11.5px] sm:text-body-sm opacity-80 pt-1">Impresión + Web</span>
                   </div>
                 </label>
               </div>
             </div>
 
             <!-- PASO 2 -->
-            <div class="space-y-3">
-              <div class="flex items-center gap-2.5">
-                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px]">2</span>
-                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">Selecciona los Productos que Necesitas</h3>
+            <div class="space-y-2.5">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px] shrink-0">2</span>
+                <h3 class="font-title-lg text-[15.5px] sm:text-title-lg font-bold text-on-surface">Toca los Productos de Interés</h3>
               </div>
-              <div class="flex flex-wrap gap-2.5" id="chips-container">
-                <button data-prod="Avisos 3D / Fachada" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Avisos 3D / Fachada')" type="button">
-                  + Avisos 3D LED / Fachada
+              <div class="flex flex-wrap gap-2" id="chips-container">
+                <button data-prod="Avisos 3D / Fachada" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Avisos 3D / Fachada')" type="button">
+                  + Avisos 3D LED
                 </button>
-                <button data-prod="Menú Digital QR" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Menú Digital QR')" type="button">
-                  + Menú / Catálogo Digital QR
+                <button data-prod="Menú Digital QR" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Menú Digital QR')" type="button">
+                  + Menú Digital QR
                 </button>
-                <button data-prod="Hablador Nequi & Google" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Hablador Nequi & Google')" type="button">
-                  + Hablador Nequi &amp; Google
+                <button data-prod="Hablador Nequi & Google" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Hablador Nequi & Google')" type="button">
+                  + Hablador QR Nequi
                 </button>
-                <button data-prod="Tarjetas Brillo UV / QR" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Tarjetas Brillo UV / QR')" type="button">
-                  + Tarjetas Brillo UV / QR
+                <button data-prod="Tarjetas Brillo UV / QR" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Tarjetas Brillo UV / QR')" type="button">
+                  + Tarjetas Brillo UV
                 </button>
-                <button data-prod="Volantes y Papelería" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Volantes y Papelería')" type="button">
+                <button data-prod="Volantes y Papelería" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Volantes y Papelería')" type="button">
                   + Volantes &amp; Papelería
                 </button>
-                <button data-prod="Vinilos y Pendones" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Vinilos y Pendones')" type="button">
-                  + Vinilos, Microperforado &amp; Pendones
+                <button data-prod="Vinilos y Pendones" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Vinilos y Pendones')" type="button">
+                  + Vinilos &amp; Pendones
                 </button>
-                <button data-prod="Stickers, Empaques y Bolsas" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Stickers, Empaques y Bolsas')" type="button">
-                  + Stickers, Cajas &amp; Bolsas
+                <button data-prod="Stickers, Empaques y Bolsas" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Stickers, Empaques y Bolsas')" type="button">
+                  + Stickers &amp; Empaques
                 </button>
-                <button data-prod="Página Web Comercial" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Página Web Comercial')" type="button">
-                  + Diseño Página Web
+                <button data-prod="Página Web Comercial" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Página Web Comercial')" type="button">
+                  + Página Web
                 </button>
-                <button data-prod="Diseño de Logotipo / Marca" class="product-chip px-4 py-2.5 rounded-xl bg-surface-container border border-white/10 text-on-surface font-label-md text-label-md hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Diseño de Logotipo / Marca')" type="button">
-                  + Diseño de Logotipo
+                <button data-prod="Diseño de Logotipo / Marca" class="product-chip px-3.5 py-2 rounded-xl bg-surface-container border border-white/10 text-on-surface font-body-sm text-[12.5px] font-semibold hover:border-primary/40 transition-all" onclick="toggleProductChip(this, 'Diseño de Logotipo / Marca')" type="button">
+                  + Diseño de Logo
                 </button>
               </div>
             </div>
 
             <!-- PASO 3 -->
-            <div class="space-y-3">
-              <div class="flex items-center gap-2.5">
-                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px]">3</span>
-                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">Tus Datos para Cotizarte con Precisión</h3>
+            <div class="space-y-2.5">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-extrabold text-[12px] shrink-0">3</span>
+                <h3 class="font-title-lg text-[15.5px] sm:text-title-lg font-bold text-on-surface">Datos para Cotizarte</h3>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div>
-                  <label for="cotiz-nombre" class="block font-label-sm text-label-sm text-on-surface-variant uppercase pb-1">Nombre o Negocio</label>
-                  <input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary-container" id="cotiz-nombre" placeholder="Ej: Café San Antonio" type="text" />
+                  <label for="cotiz-nombre" class="block font-label-sm text-[10.5px] text-on-surface-variant uppercase pb-1">Nombre o Negocio</label>
+                  <input class="w-full px-3.5 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface text-[16px] sm:text-[15px] focus:outline-none focus:border-primary-container" id="cotiz-nombre" placeholder="Ej: Café San Antonio" type="text" />
                 </div>
                 <div>
-                  <label for="cotiz-ciudad" class="block font-label-sm text-label-sm text-on-surface-variant uppercase pb-1">Ciudad / Barrio</label>
-                  <input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary-container" id="cotiz-ciudad" placeholder="Ej: Cali (Sur) / Jamundí" type="text" />
+                  <label for="cotiz-ciudad" class="block font-label-sm text-[10.5px] text-on-surface-variant uppercase pb-1">Ciudad / Barrio</label>
+                  <input class="w-full px-3.5 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface text-[16px] sm:text-[15px] focus:outline-none focus:border-primary-container" id="cotiz-ciudad" placeholder="Ej: Cali - Sur" type="text" />
                 </div>
                 <div>
-                  <label for="cotiz-detalles" class="block font-label-sm text-label-sm text-on-surface-variant uppercase pb-1">Medidas o Cantidad Aprox.</label>
-                  <input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary-container" id="cotiz-detalles" placeholder="Ej: Aviso 2x1m o 1.000 tarjetas" type="text" />
+                  <label for="cotiz-detalles" class="block font-label-sm text-[10.5px] text-on-surface-variant uppercase pb-1">Medidas o Cantidad (Opcional)</label>
+                  <input class="w-full px-3.5 py-3 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface text-[16px] sm:text-[15px] focus:outline-none focus:border-primary-container" id="cotiz-detalles" placeholder="Ej: 1.000 tarjetas" type="text" />
                 </div>
               </div>
             </div>
 
-            <div class="pt-2">
-              <button type="button" class="w-full py-4 rounded-2xl bg-[#25D366] text-[#050811] hover:brightness-105 transition-all font-headline-sm text-[17px] sm:text-[18px] font-extrabold uppercase tracking-wider flex items-center justify-center gap-3 shadow-xl" onclick="enviarCotizacionWhatsApp()">
-                <span class="material-symbols-outlined text-[24px]">chat</span>
-                <span>Enviar Solicitud a WhatsApp ARTIMP</span>
+            <!-- Clean Single/Two-Line Mobile WhatsApp Submit Button -->
+            <div class="pt-1">
+              <button type="button" class="w-full py-3.5 sm:py-4 px-5 rounded-xl bg-[#25D366] text-[#050811] hover:brightness-105 transition-all font-title-lg text-[15px] sm:text-[17px] font-extrabold flex items-center justify-center gap-2.5 shadow-xl leading-snug" onclick="enviarCotizacionWhatsApp()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="shrink-0" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Z"/></svg>
+                <span>Enviar Cotización por WhatsApp</span>
               </button>
             </div>
           </div>
 
           <!-- Trust & Guarantees Strip -->
-          <div class="mt-8 pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-5 text-on-surface-variant">
+          <div class="mt-7 pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 text-on-surface-variant">
             <div class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-primary text-[22px]">local_shipping</span>
+              <span class="material-symbols-outlined text-primary text-[21px] shrink-0">local_shipping</span>
               <div>
-                <div class="font-title-md text-title-md font-bold text-on-surface">Cobertura Regional y Nacional</div>
-                <p class="font-body-sm text-body-sm pt-0.5">Sede en Cali con entregas en Jamundí, Palmira, Yumbo y despachos a toda Colombia.</p>
+                <div class="font-title-md text-[14.5px] font-bold text-on-surface">Cobertura Regional y Nacional</div>
+                <p class="font-body-sm text-[12.5px] sm:text-body-sm pt-0.5">Sede en Cali con entregas en Jamundí, Palmira, Yumbo y despachos a toda Colombia.</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-secondary text-[22px]">brush</span>
+              <span class="material-symbols-outlined text-secondary text-[21px] shrink-0">brush</span>
               <div>
-                <div class="font-title-md text-title-md font-bold text-on-surface">Aprobación Visual Previa</div>
-                <p class="font-body-sm text-body-sm pt-0.5">Revisas y apruebas tu propuesta gráfica digital antes de pasar a impresión o montaje.</p>
+                <div class="font-title-md text-[14.5px] font-bold text-on-surface">Aprobación Visual Previa</div>
+                <p class="font-body-sm text-[12.5px] sm:text-body-sm pt-0.5">Revisas y apruebas tu propuesta gráfica digital antes de pasar a producción.</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-tertiary-container text-[22px]">account_balance_wallet</span>
+              <span class="material-symbols-outlined text-tertiary-container text-[21px] shrink-0">account_balance_wallet</span>
               <div>
-                <div class="font-title-md text-title-md font-bold text-on-surface">Medios de Pago Fáciles</div>
-                <p class="font-body-sm text-body-sm pt-0.5">Nequi, Daviplata, llave Bre-B, transferencia Bancolombia y efectivo (50% inicio / 50% entrega).</p>
+                <div class="font-title-md text-[14.5px] font-bold text-on-surface">Medios de Pago Fáciles</div>
+                <p class="font-body-sm text-[12.5px] sm:text-body-sm pt-0.5">Nequi, Daviplata, llave Bre-B, transferencia Bancolombia y efectivo (50% / 50%).</p>
               </div>
             </div>
           </div>
@@ -1288,19 +1291,18 @@
       <!-- ==========================================
            HUB DE REDES SOCIALES OFICIALES & COMUNIDAD
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl bg-surface-container-lowest border-t border-white/5" id="comunidad">
-        <div class="max-w-[1440px] mx-auto space-y-8">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-surface-container-lowest border-t border-white/5" id="comunidad">
+        <div class="max-w-[1440px] mx-auto space-y-7">
           <div class="text-center max-w-xl mx-auto space-y-1">
             <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">CONOCE NUESTRO TRABAJO EN VIVO</span>
-            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">Comunidad &amp; Redes Oficiales ARTIMP</h2>
+            <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">Redes Oficiales ARTIMP</h2>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <!-- YouTube -->
-            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-error/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://www.youtube.com/@artimppublicidad164" rel="noopener noreferrer" target="_blank">
-              <div class="space-y-3">
-                <div class="w-11 h-11 rounded-xl bg-error/20 text-error flex items-center justify-center">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <a class="p-5 sm:p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-error/50 transition-all flex flex-col justify-between group shadow-lg" href="https://www.youtube.com/@artimppublicidad164" rel="noopener noreferrer" target="_blank">
+              <div class="space-y-2.5">
+                <div class="w-10 h-10 rounded-xl bg-error/20 text-error flex items-center justify-center">
+                  <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
                 </div>
                 <div>
                   <div class="font-title-md text-title-md font-bold text-on-surface">YouTube Oficial</div>
@@ -1310,17 +1312,16 @@
                   Videos de acabados reales, muestras de tarjetas QR, avisos luminosos e ideas publicitarias.
                 </p>
               </div>
-              <div class="pt-4 flex items-center gap-1 text-error font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
-                <span>Suscribirse y Ver Videos</span>
+              <div class="pt-4 flex items-center gap-1 text-error font-label-sm text-label-sm uppercase font-bold">
+                <span>Ver Canal</span>
                 <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
               </div>
             </a>
 
-            <!-- Instagram -->
-            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-secondary/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://www.instagram.com/artimp.cali/" rel="noopener noreferrer" target="_blank">
-              <div class="space-y-3">
-                <div class="w-11 h-11 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center">
-                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a class="p-5 sm:p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-secondary/50 transition-all flex flex-col justify-between group shadow-lg" href="https://www.instagram.com/artimp.cali/" rel="noopener noreferrer" target="_blank">
+              <div class="space-y-2.5">
+                <div class="w-10 h-10 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 </div>
                 <div>
                   <div class="font-title-md text-title-md font-bold text-on-surface">Instagram</div>
@@ -1330,37 +1331,35 @@
                   Reels comerciales, portafolio visual, antes y después de marcas e inspiración para tu local.
                 </p>
               </div>
-              <div class="pt-4 flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+              <div class="pt-4 flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase font-bold">
                 <span>Seguir @artimp.cali</span>
                 <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
               </div>
             </a>
 
-            <!-- Facebook -->
-            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-primary/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://www.facebook.com/artimp.cali" rel="noopener noreferrer" target="_blank">
-              <div class="space-y-3">
-                <div class="w-11 h-11 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
-                  <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <a class="p-5 sm:p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-primary/50 transition-all flex flex-col justify-between group shadow-lg" href="https://www.facebook.com/artimp.cali" rel="noopener noreferrer" target="_blank">
+              <div class="space-y-2.5">
+                <div class="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 </div>
                 <div>
                   <div class="font-title-md text-title-md font-bold text-on-surface">Facebook Fan Page</div>
                   <div class="font-label-sm text-label-sm text-on-surface-variant">facebook.com/artimp.cali</div>
                 </div>
                 <p class="font-body-sm text-body-sm text-on-surface-variant">
-                  Promociones para emprendedores en Cali, lanzamientos de combos y atención por mensaje.
+                  Promociones para emprendedores en Cali, lanzamientos de combos y atención directa.
                 </p>
               </div>
-              <div class="pt-4 flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+              <div class="pt-4 flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase font-bold">
                 <span>Visitar Fan Page</span>
                 <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
               </div>
             </a>
 
-            <!-- WhatsApp -->
-            <a class="p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-[#25D366]/50 hover:bg-surface-container-high transition-all flex flex-col justify-between group shadow-lg" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Los%20visito%20desde%20su%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa." rel="noopener noreferrer" target="_blank">
-              <div class="space-y-3">
-                <div class="w-11 h-11 rounded-xl bg-[#25D366]/20 text-[#25D366] flex items-center justify-center">
-                  <span class="material-symbols-outlined text-[24px]">chat</span>
+            <a class="p-5 sm:p-6 rounded-2xl bg-surface-container border border-white/10 hover:border-[#25D366]/50 transition-all flex flex-col justify-between group shadow-lg" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Los%20visito%20desde%20su%20p%C3%A1gina%20web%20y%20quiero%20asesor%C3%ADa." rel="noopener noreferrer" target="_blank">
+              <div class="space-y-2.5">
+                <div class="w-10 h-10 rounded-xl bg-[#25D366]/20 text-[#25D366] flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[22px]">chat</span>
                 </div>
                 <div>
                   <div class="font-title-md text-title-md font-bold text-on-surface">WhatsApp Directo</div>
@@ -1370,7 +1369,7 @@
                   Asesoría directa sin intermediarios de lunes a sábado para cotizar impresión, avisos o web.
                 </p>
               </div>
-              <div class="pt-4 flex items-center gap-1 text-[#25D366] font-label-sm text-label-sm uppercase font-bold group-hover:gap-2 transition-all">
+              <div class="pt-4 flex items-center gap-1 text-[#25D366] font-label-sm text-label-sm uppercase font-bold">
                 <span>Chatear Ahora</span>
                 <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
               </div>
@@ -1382,51 +1381,51 @@
       <!-- ==========================================
            PREGUNTAS FRECUENTES (FAQ)
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter py-space-xl">
-        <div class="max-w-[900px] mx-auto space-y-8">
-          <div class="text-center space-y-2">
+      <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div class="max-w-[900px] mx-auto space-y-7">
+          <div class="text-center space-y-1.5">
             <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">RESOLVIENDO DUDAS</span>
-            <h2 class="font-headline-lg text-[30px] sm:text-headline-lg font-extrabold">Preguntas Frecuentes</h2>
+            <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">Preguntas Frecuentes</h2>
           </div>
 
           <div class="space-y-3">
             <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
-              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-1')">
-                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Por qué cotizan a medida en lugar de manejar precios únicos cerrados?</span>
-                <span class="material-symbols-outlined text-primary text-[24px] transition-transform rotate-180" id="icon-faq-1">expand_more</span>
+              <button type="button" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3" onclick="toggleFaq('faq-1')">
+                <span class="font-title-md sm:font-title-lg text-[14.5px] sm:text-title-lg font-bold text-on-surface">¿Por qué cotizan a medida en lugar de precios únicos cerrados?</span>
+                <span class="material-symbols-outlined text-primary text-[22px] transition-transform rotate-180 shrink-0" id="icon-faq-1">expand_more</span>
               </button>
-              <div class="px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-1">
-                En publicidad e impresión el costo depende del material exacto (acrílico, vinilo, propalcote, lona), calibre, medidas, cantidad y tipo de acabado. Cotizar tu requerimiento puntual nos permite darte siempre el valor más justo del día y ofrecerte opciones en Línea Impulso, Comercial o Premium según tu presupuesto.
+              <div class="px-4 sm:px-5 pb-4 sm:pb-5 text-on-surface-variant font-body-sm sm:font-body-md" id="faq-1">
+                En publicidad e impresión el costo depende del material exacto (acrílico, vinilo, propalcote, lona), calibre, medidas, cantidad y acabado. Cotizar tu requerimiento puntual nos permite darte siempre el valor más justo del día en Línea Impulso, Comercial o Premium.
               </div>
             </div>
 
             <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
-              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-2')">
-                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Cómo funciona el pago único del Menú Digital QR y las Páginas Web?</span>
-                <span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="icon-faq-2">expand_more</span>
+              <button type="button" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3" onclick="toggleFaq('faq-2')">
+                <span class="font-title-md sm:font-title-lg text-[14.5px] sm:text-title-lg font-bold text-on-surface">¿Cómo funciona el pago único del Menú Digital QR y las Páginas Web?</span>
+                <span class="material-symbols-outlined text-primary text-[22px] transition-transform shrink-0" id="icon-faq-2">expand_more</span>
               </button>
-              <div class="hidden px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-2">
-                A diferencia de plataformas que cobran comisiones por pedido o mensualidades obligatorias altas, en ARTIMP entregamos tu menú digital o sitio web con un único pago de diseño y configuración sobre alojamiento seguro HTTPS gratuito. Tus pedidos llegan sin intermediarios directo a tu WhatsApp.
+              <div class="hidden px-4 sm:px-5 pb-4 sm:pb-5 text-on-surface-variant font-body-sm sm:font-body-md" id="faq-2">
+                Entregamos tu menú digital o sitio web con un único pago de diseño y configuración sobre alojamiento seguro HTTPS gratuito. Tus pedidos llegan sin comisiones ni intermediarios directo a tu WhatsApp.
               </div>
             </div>
 
             <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
-              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-3')">
-                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Atienden solo en Cali o despachan a otras ciudades?</span>
-                <span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="icon-faq-3">expand_more</span>
+              <button type="button" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3" onclick="toggleFaq('faq-3')">
+                <span class="font-title-md sm:font-title-lg text-[14.5px] sm:text-title-lg font-bold text-on-surface">¿Atienden solo en Cali o despachan a otras ciudades?</span>
+                <span class="material-symbols-outlined text-primary text-[22px] transition-transform shrink-0" id="icon-faq-3">expand_more</span>
               </button>
-              <div class="hidden px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-3">
-                Nuestra sede operativa está en Santiago de Cali con cobertura rápida en Jamundí, Palmira, Yumbo y todo el Valle del Cauca. Además, realizamos envíos seguros de material impreso y habladores QR a toda Colombia, y nuestros servicios digitales (Menús QR, Diseño Web, Logos, Video) se entregan 100% en línea a cualquier ciudad.
+              <div class="hidden px-4 sm:px-5 pb-4 sm:pb-5 text-on-surface-variant font-body-sm sm:font-body-md" id="faq-3">
+                Nuestra sede está en Santiago de Cali con cobertura rápida en Jamundí, Palmira, Yumbo y todo el Valle del Cauca, envíos seguros a toda Colombia y entrega 100% en línea para servicios digitales.
               </div>
             </div>
 
             <div class="rounded-2xl bg-surface-container border border-white/10 overflow-hidden">
-              <button type="button" class="w-full p-5 text-left flex items-center justify-between gap-4" onclick="toggleFaq('faq-4')">
-                <span class="font-title-lg text-[16px] sm:text-title-lg font-bold text-on-surface">¿Qué pasa si todavía no tengo logotipo o diseño listo?</span>
-                <span class="material-symbols-outlined text-primary text-[24px] transition-transform" id="icon-faq-4">expand_more</span>
+              <button type="button" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3" onclick="toggleFaq('faq-4')">
+                <span class="font-title-md sm:font-title-lg text-[14.5px] sm:text-title-lg font-bold text-on-surface">¿Qué pasa si todavía no tengo logotipo o diseño listo?</span>
+                <span class="material-symbols-outlined text-primary text-[22px] transition-transform shrink-0" id="icon-faq-4">expand_more</span>
               </button>
-              <div class="hidden px-5 pb-5 text-on-surface-variant font-body-md text-body-md" id="faq-4">
-                Nosotros te acompañamos desde cero. Diseñamos o vectorizamos tu logotipo y preparamos la propuesta visual completa para que la revises y apruebes antes de producir cualquier pieza física o digital.
+              <div class="hidden px-4 sm:px-5 pb-4 sm:pb-5 text-on-surface-variant font-body-sm sm:font-body-md" id="faq-4">
+                Te acompañamos desde cero: diseñamos o vectorizamos tu logotipo y preparamos la propuesta visual completa para que la apruebes antes de producir cualquier pieza.
               </div>
             </div>
           </div>
@@ -1436,23 +1435,23 @@
       <!-- ==========================================
            CALL TO ACTION FINAL DE ATELIER
       ========================================== -->
-      <section class="w-full px-gutter-mobile lg:px-gutter pb-16 pt-4">
-        <div class="max-w-[1440px] mx-auto rounded-3xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container border border-white/10 p-8 lg:p-14 text-center space-y-5 shadow-2xl relative overflow-hidden">
-          <div class="max-w-2xl mx-auto space-y-3">
-            <h2 class="font-headline-lg text-[28px] sm:text-headline-lg font-extrabold">
-              ¿Listo para transformar la presencia física y digital de tu negocio?
+      <section class="w-full px-4 sm:px-6 lg:px-8 pb-14 pt-2">
+        <div class="max-w-[1440px] mx-auto rounded-2xl sm:rounded-3xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container border border-white/10 p-6 sm:p-10 lg:p-14 text-center space-y-5 shadow-2xl">
+          <div class="max-w-2xl mx-auto space-y-2.5">
+            <h2 class="font-headline-lg text-[23px] leading-[1.16] sm:text-[32px] lg:text-headline-lg font-extrabold">
+              ¿Listo para transformar la presencia de tu negocio?
             </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              Escríbenos directamente a nuestro WhatsApp en Cali. Creamos piezas que transmiten categoría, diferencian tu marca y generan ventas reales.
+            <p class="font-body-md text-[14px] sm:text-body-lg text-on-surface-variant">
+              Escríbenos directamente a nuestro WhatsApp en Cali. Creamos piezas que transmiten categoría y generan ventas reales.
             </p>
           </div>
-          <div class="flex flex-wrap justify-center items-center gap-4 pt-2">
-            <a class="px-8 py-4 rounded-xl bg-[#25D366] text-[#050811] font-label-md text-label-md uppercase font-extrabold tracking-wider hover:brightness-105 transition-all flex items-center gap-2 shadow-lg" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20proyecto%20para%20mi%20marca." rel="noopener noreferrer" target="_blank">
+          <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 pt-1">
+            <a class="px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-[#25D366] text-[#050811] font-title-md text-[14.5px] font-extrabold hover:brightness-105 transition-all flex items-center justify-center gap-2 shadow-lg" href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20cotizar%20un%20proyecto%20para%20mi%20marca." rel="noopener noreferrer" target="_blank">
               <span class="material-symbols-outlined text-[20px]">chat</span>
-              <span>Hablar con ARTIMP (+57 316 728 3557)</span>
+              <span>WhatsApp: +57 316 728 3557</span>
             </a>
-            <a class="px-8 py-4 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-label-md text-label-md uppercase font-bold hover:bg-surface-bright transition-all" href="#cotizador-section">
-              Configurar Cotización
+            <a class="px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-surface-container-lowest border border-white/10 text-on-surface font-title-md text-[14.5px] font-bold hover:bg-surface-bright transition-all text-center" href="#cotizador-section">
+              Ir al Cotizador
             </a>
           </div>
         </div>
@@ -1464,12 +1463,12 @@
   <!-- ==========================================
        FOOTER EJECUTIVO COMPLETO
   ========================================== -->
-  <footer class="w-full bg-surface-container-lowest border-t border-white/10 pb-24 lg:pb-12">
-    <div class="max-w-[1440px] mx-auto px-gutter-mobile lg:px-gutter py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10">
+  <footer class="w-full bg-surface-container-lowest border-t border-white/10 pb-20 lg:pb-12">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-8">
         <div class="lg:col-span-4 space-y-3">
           <div class="flex items-center gap-3">
-            <img alt="Logotipo Oficial ARTIMP" class="h-14 w-14 rounded-full object-cover ring-1 ring-white/15" src="assets/artimp-logo-circle.png" loading="lazy" />
+            <img alt="Logotipo Oficial ARTIMP" class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover ring-1 ring-white/15 shrink-0" src="assets/artimp-logo-circle.png" loading="lazy" />
             <div>
               <span class="font-headline-sm text-headline-sm font-extrabold text-on-surface block leading-none">ARTIMP</span>
               <span class="font-label-sm text-[10px] uppercase tracking-widest text-primary">El Arte de la Impresión</span>
@@ -1479,12 +1478,12 @@
             Agencia y taller de publicidad física + tecnología digital en Santiago de Cali. Litografía, avisos 3D LED, habladores QR, empaques, menús interactivos y páginas web comerciales.
           </p>
           <div class="flex items-center gap-2 pt-1">
-            <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
-            <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Atención Lun–Sáb · 8:00 a.m. – 6:30 p.m.</span>
+            <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse shrink-0"></span>
+            <span class="font-label-sm text-[10px] sm:text-label-sm uppercase tracking-wider text-primary">Lun–Sáb · 8:00 a.m. – 6:30 p.m.</span>
           </div>
         </div>
 
-        <div class="lg:col-span-2 space-y-3">
+        <div class="lg:col-span-2 space-y-2.5">
           <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Navegación</h4>
           <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
             <li><a class="hover:text-primary transition-colors" href="#tres-lineas">3 Líneas de Producción</a></li>
@@ -1495,10 +1494,10 @@
           </ul>
         </div>
 
-        <div class="lg:col-span-3 space-y-3">
+        <div class="lg:col-span-3 space-y-2.5">
           <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Cobertura &amp; Despacho</h4>
           <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Sede operativa en Santiago de Cali, Valle del Cauca, con atención directa y envíos seguros en:
+            Sede en Santiago de Cali, Valle del Cauca, con atención directa y envíos seguros en:
           </p>
           <div class="flex flex-wrap gap-1.5 pt-1">
             <span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Cali</span>
@@ -1509,7 +1508,7 @@
           </div>
         </div>
 
-        <div class="lg:col-span-3 space-y-3">
+        <div class="lg:col-span-3 space-y-2.5">
           <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-bold">Contacto &amp; Redes</h4>
           <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
             <a class="flex items-center gap-2 hover:text-[#25D366] transition-colors" href="https://wa.me/573167283557" target="_blank" rel="noopener">
@@ -1537,27 +1536,24 @@
         </div>
       </div>
 
-      <div class="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm">
+      <div class="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-2 text-on-surface-variant font-label-sm text-[10.5px] sm:text-label-sm text-center md:text-left">
         <p>© 2026 ARTIMP · El Arte de la Impresión (Cali, Colombia). Todos los derechos reservados.</p>
-        <div class="flex items-center gap-4">
-          <span>Publicidad Física &amp; Digital</span>
-          <span>·</span>
-          <span>Diseño Web por ARTIMP Studio</span>
-        </div>
+        <p>Diseño &amp; Desarrollo Web por ARTIMP Studio.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Quick Action -->
+  <!-- Floating WhatsApp Quick Action (Auto-hides near Cotizador so it never covers buttons/text!) -->
   <a
+    id="wa-float-btn"
     href="https://wa.me/573167283557?text=%C2%A1Hola%20ARTIMP!%20Quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20negocio."
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Cotizar por WhatsApp"
-    class="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-[#25D366] text-[#050811] font-label-md text-label-md uppercase font-extrabold shadow-[0_12px_32px_rgba(37,211,102,0.5)] hover:scale-105 transition-transform"
+    class="fixed right-3.5 bottom-3.5 sm:right-5 sm:bottom-5 z-40 inline-flex items-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-full bg-[#25D366] text-[#050811] font-title-md text-[12.5px] sm:text-[13.5px] font-extrabold shadow-[0_10px_28px_rgba(37,211,102,0.48)] transition-all duration-300"
   >
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Z"/></svg>
-    <span>Cotizar Ahora</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42Z"/></svg>
+    <span>Cotizar</span>
   </a>
 
   <!-- Interactive Scripts -->
@@ -1707,6 +1703,21 @@
         }
       }
     }
+
+    // Auto-hide floating WhatsApp pill when user is inside Cotizador so it never covers form/guarantees
+    (() => {
+      const floatBtn = document.getElementById('wa-float-btn');
+      const cotiz = document.getElementById('cotizador-section');
+      if (floatBtn && cotiz && 'IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            floatBtn.style.opacity = e.isIntersecting ? '0' : '1';
+            floatBtn.style.pointerEvents = e.isIntersecting ? 'none' : 'auto';
+          });
+        }, { threshold: 0.15 });
+        obs.observe(cotiz);
+      }
+    })();
   </script>
 </body>
 </html>
